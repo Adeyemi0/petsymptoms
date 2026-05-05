@@ -1,0 +1,160 @@
+# robots.txt for PetSymptoms.com
+# Last updated: May 2026
+# Website: https://petsymptoms.com
+
+# ============================================
+# GLOBAL RULES - All Crawlers
+# ============================================
+User-agent: *
+
+# Allow crawling of all public content
+Allow: /
+
+# Disallow sensitive, duplicate, or non-public areas
+Disallow: /admin/
+Disallow: /wp-admin/
+Disallow: /wp-includes/
+Disallow: /wp-login.php
+Disallow: /login/
+Disallow: /private/
+Disallow: /tmp/
+Disallow: /backup/
+Disallow: /drafts/
+Disallow: /test/
+Disallow: /staging/
+
+# Disallow crawl of search results pages (prevent duplicate content)
+Disallow: /search?*
+Disallow: /?s=
+Disallow: /page-search/
+
+# Disallow crawl of filter/sort parameters (e-commerce style URLs)
+Disallow: /*?sort=
+Disallow: /*?filter=
+Disallow: /*?order=
+Disallow: /*?price=
+
+# Disallow crawl of session IDs and tracking parameters
+Disallow: /*?sessionid=
+Disallow: /*?utm_
+Disallow: /*?ref=
+
+# Disallow crawling of image directories if you prefer images indexed via pages only
+# Uncomment below if needed:
+# Disallow: /img/
+# Disallow: /images/
+# Disallow: /assets/
+
+# Block crawling of PDF downloads if not meant for SEO
+# Disallow: /downloads/
+# Disallow: /*.pdf$
+
+# Prevent crawling of comment feed endpoints (reduce spam)
+Disallow: /comments/feed/
+Disallow: */comments/feed/
+
+# Crawl delay for polite crawling (adjust based on server capacity)
+# Note: Google ignores Crawl-delay; Bing, Yandex, and others respect it
+Crawl-delay: 1
+
+# ============================================
+# GOOGLEBOT - Enhanced crawling for Google
+# ============================================
+User-agent: Googlebot
+Allow: /
+Disallow: /admin/
+Disallow: /wp-admin/
+Disallow: /search?*
+# Google handles parameters well, but keep search pages blocked
+Crawl-delay: 0
+
+# ============================================
+# GOOGLEBOT-IMAGE - For image search optimization
+# ============================================
+User-agent: Googlebot-Image
+Allow: /img/
+Allow: /images/
+Allow: /*.jpg$
+Allow: /*.jpeg$
+Allow: /*.png$
+Allow: /*.webp$
+Disallow: /admin/
+Disallow: /private/
+
+# ============================================
+# BINGBOT - Microsoft Bing crawler
+# ============================================
+User-agent: Bingbot
+Allow: /
+Disallow: /admin/
+Disallow: /search?*
+Crawl-delay: 1
+
+# ============================================
+# SLURP - Yahoo crawler (via Bing)
+# ============================================
+User-agent: Slurp
+Allow: /
+Disallow: /admin/
+Crawl-delay: 2
+
+# ============================================
+# DUCKDUCKBOT - DuckDuckGo crawler
+# ============================================
+User-agent: DuckDuckBot
+Allow: /
+Disallow: /admin/
+Crawl-delay: 2
+
+# ============================================
+# BLOCK BAD BOTS & SCRAPERS
+# ============================================
+# Block known spam/scraping user-agents
+User-agent: AhrefsBot
+Disallow: /
+
+User-agent: SemrushBot
+Disallow: /
+
+User-agent: MJ12bot
+Disallow: /
+
+User-agent: DotBot
+Disallow: /
+
+User-agent: BarkRowler
+Disallow: /
+
+User-agent: Exabot
+Disallow: /
+
+# Block empty or malicious user-agents
+User-agent: ^$
+Disallow: /
+
+# ============================================
+# SITEMAP DECLARATIONS
+# ============================================
+# Primary XML sitemap
+Sitemap: https://petsymptoms.com/sitemap.xml
+
+# Optional: Image sitemap (if you create one)
+# Sitemap: https://petsymptoms.com/sitemap-images.xml
+
+# Optional: News sitemap (if publishing pet health news)
+# Sitemap: https://petsymptoms.com/sitemap-news.xml
+
+# Optional: Video sitemap (if adding pet care videos)
+# Sitemap: https://petsymptoms.com/sitemap-video.xml
+
+# ============================================
+# ADDITIONAL BEST PRACTICES
+# ============================================
+# 1. Keep this file under 500KB (Google limit)
+# 2. Place at root: https://petsymptoms.com/robots.txt
+# 3. Test with Google Search Console > robots.txt Tester
+# 4. Update after major site structure changes
+# 5. Monitor crawl stats in Search Console for adjustments
+
+# For questions about crawling policy, contact:
+# Webmaster: webmaster@petsymptoms.com
