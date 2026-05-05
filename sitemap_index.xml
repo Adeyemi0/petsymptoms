@@ -194,14 +194,12 @@
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
-  <!-- NEW: Small Fluffy Dog Breeds -->
   <url>
     <loc>https://petsymptoms.com/small-fluffy-dog-breeds/</loc>
     <lastmod>2026-05-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
-  <!-- NEW: Big Fluffy Dog Breeds -->
   <url>
     <loc>https://petsymptoms.com/big-fluffy-dog-breeds/</loc>
     <lastmod>2026-05-06</lastmod>
@@ -266,6 +264,12 @@
   </url>
   <url>
     <loc>https://petsymptoms.com/signs-scared-cat/</loc>
+    <lastmod>2026-05-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://petsymptoms.com/cat-mites/</loc>
     <lastmod>2026-05-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
