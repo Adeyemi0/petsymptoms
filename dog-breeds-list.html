@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Complete dog breeds list A to Z — breed profiles, temperament, size, lifespan, and care requirements for every popular dog breed.">
+    <meta name="keywords" content="dog breeds list, dog breeds a to z, all dog breeds, dog breed guide, breed profiles">
+    <meta name="author" content="PetSymptoms">
+    <meta name="robots" content="index, follow">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://petsymptoms.com/dog-breeds-list/">
+    <meta property="og:title" content="Dog Breeds A to Z — Complete Breed Directory | PetSymptoms">
+    <meta property="og:description" content="Browse every dog breed from Affenpinscher to Yorkshire Terrier. Find profiles, temperament, size, lifespan and care guides.">
+    <meta property="og:image" content="https://petsymptoms.com/img/golden-retriever-dogs-puppies.jpg">
+    <title>Dog Breeds A to Z — Complete Breed Directory | PetSymptoms</title>
+    <link rel="canonical" href="https://petsymptoms.com/dog-breeds-list/">
+    <script type="application/ld+json">
+    {"@context":"https://schema.org","@type":"CollectionPage","name":"Dog Breeds A to Z","description":"Complete directory of dog breeds with profiles, temperament guides and care information.","url":"https://petsymptoms.com/dog-breeds-list/"}
+    </script>
+    <script type="application/ld+json">
+    {"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://petsymptoms.com/"},{"@type":"ListItem","position":2,"name":"Dogs","item":"https://petsymptoms.com/dogs/"},{"@type":"ListItem","position":3,"name":"Dog Breeds A to Z","item":"https://petsymptoms.com/dog-breeds-list/"}]}
+    </script>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        :root {
+            --primary: #0f442d; --primary-light: #2a5c43; --primary-container: #9dd2b3;
+            --secondary: #25667b; --surface: #faf9f6; --surface-container: #efeeeb;
+            --on-surface: #1a1c1a; --on-surface-variant: #414943; --outline: #717972;
+        }
+        body { font-family: 'Manrope', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: var(--surface); color: var(--on-surface); line-height: 1.6; }
+        h1,h2,h3,h4 { font-weight: 700; line-height: 1.2; }
+        a { color: var(--primary); text-decoration: none; transition: all 0.3s ease; }
+        a:hover { color: var(--secondary); }
+
+        .navbar { background: var(--surface); border-bottom: 1px solid #e8e4db; position: sticky; top: 0; z-index: 1000; box-shadow: 0 2px 10px rgba(42,92,67,0.08); }
+        .nav-container { max-width: 1280px; margin: 0 auto; padding: 0 2rem; height: 80px; display: flex; align-items: center; justify-content: space-between; }
+        .logo { font-size: 1.75rem; font-weight: 800; color: var(--primary); letter-spacing: -0.02em; }
+        .nav-links { display: flex; gap: 2rem; align-items: center; list-style: none; }
+        .nav-links a { color: var(--on-surface-variant); font-weight: 600; font-size: 0.95rem; }
+        .nav-links a:hover { color: var(--primary); }
+        .mobile-menu-btn { display: none; background: none; border: none; cursor: pointer; padding: 0.5rem; }
+
+        .breadcrumb { background: var(--surface-container); padding: 1rem 2rem; font-size: 0.9rem; }
+        .breadcrumb-container { max-width: 1280px; margin: 0 auto; }
+        .breadcrumb a { color: var(--on-surface-variant); }
+        .breadcrumb span { margin: 0 0.5rem; color: var(--outline); }
+
+        .page-hero { background: linear-gradient(135deg, var(--primary) 0%, var(--primary-light) 100%); color: white; padding: 4rem 2rem; text-align: center; position: relative; overflow: hidden; }
+        .page-hero::before { content: ''; position: absolute; top: -30%; right: -10%; width: 500px; height: 500px; background: rgba(255,255,255,0.05); border-radius: 50%; }
+        .hero-content { max-width: 760px; margin: 0 auto; position: relative; z-index: 1; }
+        .page-hero h1 { font-size: 2.5rem; margin-bottom: 1rem; font-weight: 800; }
+        .page-hero p { font-size: 1.1rem; opacity: 0.95; margin-bottom: 1.5rem; }
+        .breed-count-badge { background: rgba(255,255,255,0.15); padding: 0.5rem 1.25rem; border-radius: 20px; font-size: 0.9rem; font-weight: 600; display: inline-block; }
+
+        /* Search + filter bar */
+        .filter-bar { background: white; border-bottom: 1px solid var(--surface-container); padding: 1.25rem 2rem; position: sticky; top: 80px; z-index: 99; box-shadow: 0 2px 8px rgba(0,0,0,0.04); }
+        .filter-inner { max-width: 1280px; margin: 0 auto; display: flex; gap: 1rem; align-items: center; flex-wrap: wrap; }
+        .search-input { flex: 1; min-width: 200px; padding: 0.65rem 1rem; border: 1.5px solid var(--surface-container); border-radius: 8px; font-size: 0.95rem; font-family: inherit; outline: none; }
+        .search-input:focus { border-color: var(--primary); }
+        .size-filters { display: flex; gap: 0.5rem; flex-wrap: wrap; }
+        .size-btn { padding: 0.5rem 1rem; border: 1.5px solid var(--surface-container); border-radius: 20px; font-size: 0.85rem; font-weight: 600; cursor: pointer; background: white; color: var(--on-surface-variant); transition: all 0.2s; }
+        .size-btn.active, .size-btn:hover { background: var(--primary); color: white; border-color: var(--primary); }
+        .result-count { font-size: 0.85rem; color: var(--on-surface-variant); margin-left: auto; }
+
+        /* Letter index */
+        .letter-nav { max-width: 1280px; margin: 0 auto; padding: 1.5rem 2rem 0; display: flex; flex-wrap: wrap; gap: 0.4rem; }
+        .letter-nav a { width: 34px; height: 34px; display: flex; align-items: center; justify-content: center; border-radius: 6px; font-weight: 700; font-size: 0.85rem; background: white; border: 1px solid var(--surface-container); color: var(--on-surface-variant); transition: all 0.2s; }
+        .letter-nav a:hover, .letter-nav a.active { background: var(--primary); color: white; border-color: var(--primary); }
+        .letter-nav a.empty { opacity: 0.3; pointer-events: none; }
+
+        /* Breed grid */
+        .breeds-section { max-width: 1280px; margin: 0 auto; padding: 2rem; }
+        .letter-group { margin-bottom: 3rem; }
+        .letter-heading { font-size: 2rem; font-weight: 800; color: var(--primary); border-bottom: 3px solid var(--primary-container); padding-bottom: 0.5rem; margin-bottom: 1.5rem; }
+        .breed-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(290px, 1fr)); gap: 1.5rem; }
+        .breed-card { background: white; border-radius: 12px; overflow: hidden; box-shadow: 0 2px 10px rgba(0,0,0,0.06); border: 1px solid var(--surface-container); transition: all 0.3s; display: flex; flex-direction: column; }
+        .breed-card:hover { box-shadow: 0 8px 28px rgba(0,0,0,0.12); transform: translateY(-3px); }
+        .breed-img { width: 100%; height: 170px; object-fit: cover; background: var(--surface-container); }
+        .breed-body { padding: 1.25rem; flex: 1; display: flex; flex-direction: column; }
+        .breed-body h3 { font-size: 1.1rem; color: var(--primary); margin-bottom: 0.4rem; }
+        .breed-tags { display: flex; gap: 0.5rem; flex-wrap: wrap; margin-bottom: 0.75rem; }
+        .breed-tag { font-size: 0.75rem; padding: 2px 8px; border-radius: 12px; font-weight: 600; background: var(--surface-container); color: var(--on-surface-variant); }
+        .breed-tag.size-small  { background: #dcfce7; color: #166534; }
+        .breed-tag.size-medium { background: #dbeafe; color: #1e40af; }
+        .breed-tag.size-large  { background: #fef3c7; color: #92400e; }
+        .breed-body p { font-size: 0.9rem; color: var(--on-surface-variant); flex: 1; margin-bottom: 1rem; }
+        .breed-link { font-weight: 700; font-size: 0.9rem; color: var(--primary); display: inline-flex; align-items: center; gap: 0.3rem; }
+        .breed-link::after { content: '→'; transition: transform 0.2s; }
+        .breed-link:hover::after { transform: translateX(4px); }
+
+        /* No-results */
+        .no-results { text-align: center; padding: 4rem 2rem; color: var(--on-surface-variant); display: none; }
+        .no-results .icon { font-size: 3rem; margin-bottom: 1rem; }
+
+        /* Footer */
+        .site-footer { background: var(--primary); color: rgba(255,255,255,0.85); padding: 3rem 2rem 1.5rem; margin-top: 4rem; }
+        .footer-grid { max-width: 1280px; margin: 0 auto; display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 2rem; margin-bottom: 2rem; }
+        .footer-section h4 { color: white; font-size: 1rem; margin-bottom: 1rem; }
+        .footer-section ul { list-style: none; }
+        .footer-section ul li { margin-bottom: 0.5rem; }
+        .footer-section ul li a { color: rgba(255,255,255,0.75); font-size: 0.9rem; }
+        .footer-section ul li a:hover { color: white; }
+        .footer-bottom { max-width: 1280px; margin: 0 auto; border-top: 1px solid rgba(255,255,255,0.15); padding-top: 1.5rem; text-align: center; font-size: 0.85rem; }
+
+        @media (max-width: 768px) {
+            .page-hero h1 { font-size: 1.75rem; }
+            .filter-inner { flex-direction: column; align-items: stretch; }
+            .result-count { margin-left: 0; }
+            .mobile-menu-btn { display: block; }
+            .nav-links { display: none; }
+        }
+    </style>
+</head>
+<body>
+
+<nav class="navbar" role="navigation" aria-label="Main navigation">
+    <div class="nav-container">
+        <a href="index.html" class="logo" aria-label="PetSymptoms Home">PetSymptoms</a>
+        <ul class="nav-links">
+            <li><a href="dogs.html">Dog Breeds</a></li>
+            <li><a href="top-signs-sick-dog.html">Symptoms</a></li>
+            <li><a href="about-us.html">Pet Care</a></li>
+            <li><a href="dog-fever-pet-symptoms.html">First Aid</a></li>
+            <li><a href="about-us.html">About</a></li>
+            <li><a href="contact-us.html">Contact</a></li>
+        </ul>
+        <button class="mobile-menu-btn" aria-label="Toggle menu">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <line x1="3" y1="12" x2="21" y2="12"></line>
+                <line x1="3" y1="6" x2="21" y2="6"></line>
+                <line x1="3" y1="18" x2="21" y2="18"></line>
+            </svg>
+        </button>
+    </div>
+</nav>
+
+<div class="breadcrumb" aria-label="Breadcrumb">
+    <div class="breadcrumb-container">
+        <a href="index.html">Home</a> <span>/</span>
+        <a href="dogs.html">Dogs</a> <span>/</span>
+        <span>Dog Breeds A to Z</span>
+    </div>
+</div>
+
+<div class="page-hero">
+    <div class="hero-content">
+        <h1>🐕 Dog Breeds A to Z</h1>
+        <p>Explore profiles for every popular dog breed — from tiny Chihuahuas to giant Great Danes. Find your perfect match by size, temperament, and lifestyle.</p>
+        <span class="breed-count-badge">40+ breeds covered</span>
+    </div>
+</div>
+
+<!-- Filter Bar -->
+<div class="filter-bar">
+    <div class="filter-inner">
+        <input type="text" class="search-input" id="breedSearch" placeholder="🔍  Search breeds e.g. Labrador, Poodle…" aria-label="Search dog breeds">
+        <div class="size-filters">
+            <button class="size-btn active" data-size="all">All Sizes</button>
+            <button class="size-btn" data-size="small">Small</button>
+            <button class="size-btn" data-size="medium">Medium</button>
+            <button class="size-btn" data-size="large">Large</button>
+        </div>
+        <span class="result-count" id="resultCount"></span>
+    </div>
+</div>
+
+<!-- Letter A–Z quick nav -->
+<nav class="letter-nav" aria-label="Jump to letter">
+    <a href="#letter-B">B</a><a href="#letter-B">Be</a>
+</nav>
+
+<div id="letterNav" class="letter-nav" aria-label="Jump to letter section"></div>
+
+<div class="breeds-section" id="breedsContainer"></div>
+<div class="no-results" id="noResults">
+    <div class="icon">🐾</div>
+    <h3>No breeds found</h3>
+    <p>Try a different search term or size filter.</p>
+</div>
+
+<footer class="site-footer">
+    <div class="footer-grid">
+        <div class="footer-section">
+            <h4>PetSymptoms</h4>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about-us.html">About Us</a></li>
+                <li><a href="contact-us.html">Contact</a></li>
+                <li><a href="amy-shojai.html">Our Authors</a></li>
+            </ul>
+        </div>
+        <div class="footer-section">
+            <h4>Dog Guides</h4>
+            <ul>
+                <li><a href="dogs.html">All Dog Care</a></li>
+                <li><a href="dog-breeds-list.html">Breeds A to Z</a></li>
+                <li><a href="top-signs-sick-dog.html">Dog Symptoms</a></li>
+                <li><a href="crate-training-puppy.html">Puppy Training</a></li>
+            </ul>
+        </div>
+        <div class="footer-section">
+            <h4>Other Pets</h4>
+            <ul>
+                <li><a href="cats.html">Cat Care</a></li>
+                <li><a href="pet-birds.html">Bird Care</a></li>
+                <li><a href="pet-reptiles.html">Exotic Pets</a></li>
+            </ul>
+        </div>
+        <div class="footer-section">
+            <h4>Support</h4>
+            <ul>
+                <li><a href="about-us.html">About Us</a></li>
+                <li><a href="contact-us.html">Contact</a></li>
+                <li><a href="about-us.html">Medical Disclaimer</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>&copy; 2024 PetSymptoms.com. All rights reserved.</p>
+    </div>
+</footer>
+
+<script>
+const BREEDS = [
+  // A
+  { name:"Affenpinscher",       size:"small",  life:"12–15 yrs", origin:"Germany",      tags:["Playful","Curious","Stubborn"],         img:"img/poodle-big-dog-breeds-vh.jpg",                      link:"dogs.html",                            desc:"A tiny, terrier-like toy breed with a monkey-like face and fearless personality. Great for apartment living." },
+  { name:"Australian Shepherd", size:"medium", life:"13–15 yrs", origin:"USA",          tags:["Energetic","Intelligent","Loyal"],       img:"img/border-collie-dogs-puppies-breeds.jpg",             link:"dogs.html",                            desc:"Highly intelligent herding dog that thrives with a job to do. Needs plenty of exercise and mental stimulation." },
+  // B
+  { name:"Basset Hound",        size:"medium", life:"10–12 yrs", origin:"France",       tags:["Laid-back","Friendly","Stubborn"],       img:"img/bassett-hound-big-dog-breeds-vh.jpg",               link:"dogs.html",                            desc:"A low-to-the-ground scent hound with droopy ears and a calm temperament. Great with children." },
+  { name:"Beagle",              size:"medium", life:"12–15 yrs", origin:"England",      tags:["Curious","Merry","Friendly"],            img:"img/bassett-hound-big-dog-breeds-vh.jpg",               link:"beagle-dogs-puppies-breeds.html",       desc:"A compact, hardy scent hound. Beagles are merry, curious and friendly with a tendency to follow their nose." },
+  { name:"Bernese Mountain Dog",size:"large",  life:"7–10 yrs",  origin:"Switzerland",  tags:["Gentle","Loyal","Calm"],                img:"img/bernese-mountain-dog-big-dog-breeds-px.jpg",        link:"dogs.html",                            desc:"A large, sturdy working breed with a tricolour coat and gentle nature. Loves cold weather and family life." },
+  { name:"Border Collie",       size:"medium", life:"12–15 yrs", origin:"UK",           tags:["Intelligent","Energetic","Responsive"],  img:"img/border-collie-dogs-puppies-breeds.jpg",             link:"dogs.html",                            desc:"Widely regarded as the world's most intelligent dog breed. Needs a lot of exercise and a mental challenge daily." },
+  { name:"Boxer",               size:"large",  life:"10–12 yrs", origin:"Germany",      tags:["Playful","Loyal","Energetic"],           img:"img/boxer-big-dog-breeds-px.jpg",                       link:"dogs.html",                            desc:"A medium to large breed with a square muzzle and boundless energy. Devoted family companion and excellent guard dog." },
+  { name:"Bull Terrier",        size:"medium", life:"12–13 yrs", origin:"England",      tags:["Playful","Stubborn","Affectionate"],     img:"img/bull-terrier-big-dog-breeds-vh.jpg",                link:"dogs.html",                            desc:"Known for its distinctive egg-shaped head. Playful and mischievous, with a clown-like personality." },
+  { name:"Bulldog",             size:"medium", life:"8–10 yrs",  origin:"England",      tags:["Calm","Courageous","Friendly"],          img:"img/bulldog-big-dog-breeds-px.jpg",                     link:"dogs.html",                            desc:"A breed synonymous with tenacity and courage. Despite their tough appearance, Bulldogs are gentle and affectionate." },
+  // C
+  { name:"Chihuahua",           size:"small",  life:"14–16 yrs", origin:"Mexico",       tags:["Confident","Bold","Loyal"],              img:"img/poodle-big-dog-breeds-vh.jpg",                      link:"pomeranian-dogs-puppies-dog-breeds.html",desc:"The world's smallest dog breed packed with enormous personality. Fiercely loyal to their owner." },
+  { name:"Cocker Spaniel",      size:"medium", life:"12–15 yrs", origin:"England",      tags:["Gentle","Smart","Happy"],                img:"img/Irish-setter-big-dog-breeds-vh.jpg",                link:"dogs.html",                            desc:"A joyful, gentle breed with a silky coat. Adaptable to apartment life and wonderful with children." },
+  // D
+  { name:"Dalmatian",           size:"large",  life:"11–13 yrs", origin:"Croatia",      tags:["Energetic","Outgoing","Sensitive"],      img:"img/German-short-haired-pointer-big-dog-breeds-vh.jpg", link:"dogs.html",                            desc:"Instantly recognisable by their spotted coat. Athletic and energetic, Dalmatians need lots of daily exercise." },
+  { name:"Dobermann",           size:"large",  life:"10–12 yrs", origin:"Germany",      tags:["Alert","Loyal","Fearless"],              img:"img/rottweiler-big-dog-breeds-vh.jpg",                  link:"dogs.html",                            desc:"A sleek, powerful breed and natural protector. Highly trainable and devoted to their family." },
+  // F
+  { name:"French Bulldog",      size:"small",  life:"10–12 yrs", origin:"France",       tags:["Playful","Adaptable","Affectionate"],   img:"img/bulldog-big-dog-breeds-px.jpg",                     link:"dogs.html",                            desc:"A small, compact breed with bat ears and a big personality. Ideal for city living — low exercise needs." },
+  // G
+  { name:"German Shepherd",     size:"large",  life:"9–13 yrs",  origin:"Germany",      tags:["Loyal","Courageous","Intelligent"],      img:"img/German-short-haired-pointer-big-dog-breeds-vh.jpg", link:"dogs.html",                            desc:"One of the most versatile working dogs in the world. Used in police, military, and search & rescue roles." },
+  { name:"Golden Retriever",    size:"large",  life:"10–12 yrs", origin:"Scotland",     tags:["Friendly","Reliable","Trustworthy"],     img:"img/golden-retriever-dogs-puppies.jpg",                 link:"golden-retriever-dogs-puppies.html",    desc:"America's most popular family dog. Kind-natured, eager to please, and brilliant with children of all ages." },
+  { name:"Great Dane",          size:"large",  life:"7–10 yrs",  origin:"Germany",      tags:["Friendly","Patient","Dependable"],       img:"img/Newfoundland-big-dog-breeds-vh.jpg",                link:"dogs.html",                            desc:"The 'Apollo of Dogs' — enormous in size but gentle in temperament. A devoted and patient family companion." },
+  // H
+  { name:"Husky (Siberian)",    size:"large",  life:"12–14 yrs", origin:"Russia",       tags:["Outgoing","Mischievous","Loyal"],        img:"img/bernese-mountain-dog-big-dog-breeds-px.jpg",        link:"dogs.html",                            desc:"Bred to run, Siberian Huskies have incredible endurance and a wolf-like appearance. Love cold weather." },
+  // I
+  { name:"Irish Setter",        size:"large",  life:"12–15 yrs", origin:"Ireland",      tags:["Energetic","Affectionate","Fun-loving"], img:"img/Irish-setter-big-dog-breeds-vh.jpg",                link:"dogs.html",                            desc:"Known for their stunning mahogany coat and outgoing personality. High energy — needs daily runs." },
+  // J
+  { name:"Jack Russell Terrier",size:"small",  life:"13–16 yrs", origin:"England",      tags:["Feisty","Tenacious","Alert"],            img:"img/poodle-big-dog-breeds-vh.jpg",                      link:"dogs.html",                            desc:"A small dog with a huge personality. Athletic, determined and always ready for action." },
+  // L
+  { name:"Labrador Retriever",  size:"large",  life:"10–12 yrs", origin:"Canada",       tags:["Friendly","Active","Outgoing"],          img:"img/black-labrador-big-dog-breeds-px.jpg",              link:"labrador-dogs-puppies.html",            desc:"The UK and USA's most popular breed. Friendly, outgoing and trainable. Ideal guide and assistance dog." },
+  { name:"Lhasa Apso",          size:"small",  life:"12–15 yrs", origin:"Tibet",        tags:["Confident","Assertive","Smart"],         img:"img/poodle-big-dog-breeds-vh.jpg",                      link:"dogs.html",                            desc:"An ancient breed originally used as sentinel dogs in Tibetan monasteries. Wary of strangers, loyal to family." },
+  // M
+  { name:"Maltese",             size:"small",  life:"12–15 yrs", origin:"Malta",        tags:["Gentle","Playful","Charming"],           img:"img/poodle-big-dog-breeds-vh.jpg",                      link:"dogs.html",                            desc:"A toy breed covered in long, silky white hair. Lively and playful, thriving on human companionship." },
+  { name:"Mastiff",             size:"large",  life:"6–10 yrs",  origin:"England",      tags:["Calm","Courageous","Dignified"],         img:"img/Mastiff-big-dog-breeds-vh.jpg",                     link:"dogs.html",                            desc:"One of the largest dog breeds by mass. Despite their imposing size, Mastiffs are gentle giants." },
+  // N
+  { name:"Newfoundland",        size:"large",  life:"9–10 yrs",  origin:"Canada",       tags:["Sweet","Patient","Devoted"],             img:"img/Newfoundland-big-dog-breeds-vh.jpg",                link:"dogs.html",                            desc:"A giant working breed renowned for water rescue. Gentle and patient — nicknamed the 'nanny dog'." },
+  // P
+  { name:"Pomeranian",          size:"small",  life:"12–16 yrs", origin:"Germany",      tags:["Bold","Lively","Inquisitive"],           img:"img/poodle-big-dog-breeds-vh.jpg",                      link:"pomeranian-dogs-puppies-dog-breeds.html",desc:"A fluffy toy breed bursting with personality. Alert and intelligent, they make excellent watchdogs." },
+  { name:"Poodle (Standard)",   size:"large",  life:"12–15 yrs", origin:"Germany/France",tags:["Intelligent","Active","Elegant"],       img:"img/poodle-big-dog-breeds-vh.jpg",                      link:"dogs.html",                            desc:"One of the most intelligent breeds and highly trainable. Their curly coat is hypoallergenic and minimal shedding." },
+  { name:"Pug",                 size:"small",  life:"12–15 yrs", origin:"China",        tags:["Charming","Mischievous","Loving"],       img:"img/bulldog-big-dog-breeds-px.jpg",                     link:"dogs.html",                            desc:"A small breed with a wrinkled face and curled tail. Adaptable, even-tempered and great for flat living." },
+  // R
+  { name:"Rottweiler",          size:"large",  life:"9–10 yrs",  origin:"Germany",      tags:["Loyal","Confident","Calm"],              img:"img/rottweiler-big-dog-breeds-vh.jpg",                  link:"dogs.html",                            desc:"A powerful working dog with a natural instinct to protect. Calm and confident when properly socialised." },
+  // S
+  { name:"Samoyed",             size:"large",  life:"12–14 yrs", origin:"Russia",       tags:["Friendly","Gentle","Adaptable"],        img:"img/dog-animal-pet-samoyed-breed-sick-dog-pb.jpg",      link:"dogs.html",                            desc:"A fluffy white Arctic breed with a permanent 'smile'. Friendly and gentle, a true family companion." },
+  { name:"Shih Tzu",            size:"small",  life:"10–16 yrs", origin:"China/Tibet",  tags:["Affectionate","Playful","Outgoing"],     img:"img/poodle-big-dog-breeds-vh.jpg",                      link:"dogs.html",                            desc:"A small dog with a regal long coat and lion-like mane. Bred as a companion — loves cuddles and people." },
+  { name:"Springer Spaniel",    size:"medium", life:"12–14 yrs", origin:"England",      tags:["Friendly","Playful","Obedient"],         img:"img/Irish-setter-big-dog-breeds-vh.jpg",                link:"dogs.html",                            desc:"A cheerful, active gundog that excels in the field and in the home. Great for active families." },
+  { name:"Staffordshire Bull Terrier",size:"medium",life:"12–14 yrs",origin:"England",  tags:["Loyal","Affectionate","Bold"],           img:"img/bull-terrier-big-dog-breeds-vh.jpg",                link:"dogs.html",                            desc:"Muscular yet gentle, Staffies are renowned for their love of people especially children." },
+  // W
+  { name:"Weimaraner",          size:"large",  life:"11–14 yrs", origin:"Germany",      tags:["Friendly","Fearless","Alert"],           img:"img/German-short-haired-pointer-big-dog-breeds-vh.jpg", link:"dogs.html",                            desc:"A sleek, silver-grey hunting breed with striking amber or blue eyes. Loyal and energetic." },
+  { name:"Welsh Corgi (Pembroke)",size:"small",life:"12–15 yrs", origin:"Wales",        tags:["Bold","Friendly","Outgoing"],            img:"img/poodle-big-dog-breeds-vh.jpg",                      link:"dogs.html",                            desc:"Short-legged herding breed famous for being the Queen's favourite. Surprisingly agile and very smart." },
+  // Y
+  { name:"Yorkshire Terrier",   size:"small",  life:"13–16 yrs", origin:"England",      tags:["Bold","Confident","Independent"],        img:"img/poodle-big-dog-breeds-vh.jpg",                      link:"dogs.html",                            desc:"A tiny but spirited terrier with a silky steel-blue and tan coat. Brave, bossy and fiercely devoted." },
+];
+
+const container = document.getElementById('breedsContainer');
+const noResults = document.getElementById('noResults');
+const searchInput = document.getElementById('breedSearch');
+const resultCount = document.getElementById('resultCount');
+const letterNavEl = document.getElementById('letterNav');
+const sizeButtons = document.querySelectorAll('.size-btn');
+
+// Remove the placeholder nav we wrote inline
+document.querySelector('.letter-nav:not(#letterNav)').remove();
+
+let activeSize = 'all';
+
+function render(list) {
+    container.innerHTML = '';
+    if (!list.length) { noResults.style.display = 'block'; resultCount.textContent = ''; return; }
+    noResults.style.display = 'none';
+
+    // Group by first letter
+    const groups = {};
+    list.forEach(b => {
+        const l = b.name[0].toUpperCase();
+        if (!groups[l]) groups[l] = [];
+        groups[l].push(b);
+    });
+
+    resultCount.textContent = `${list.length} breed${list.length !== 1 ? 's' : ''} shown`;
+
+    // Build letter nav
+    const allLetters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'.split('');
+    letterNavEl.innerHTML = allLetters.map(l =>
+        groups[l]
+            ? `<a href="#letter-${l}">${l}</a>`
+            : `<a class="empty">${l}</a>`
+    ).join('');
+
+    Object.keys(groups).sort().forEach(letter => {
+        const section = document.createElement('div');
+        section.className = 'letter-group';
+        section.id = `letter-${letter}`;
+        section.innerHTML = `<h2 class="letter-heading">${letter}</h2>
+        <div class="breed-grid">${groups[letter].map(b => `
+            <article class="breed-card" data-size="${b.size}">
+                <img src="${b.img}" alt="${b.name}" class="breed-img" loading="lazy" onerror="this.style.background='var(--surface-container)';this.style.display='block'">
+                <div class="breed-body">
+                    <h3>${b.name}</h3>
+                    <div class="breed-tags">
+                        <span class="breed-tag size-${b.size}">${b.size.charAt(0).toUpperCase()+b.size.slice(1)}</span>
+                        <span class="breed-tag">⏳ ${b.life}</span>
+                        <span class="breed-tag">🌍 ${b.origin}</span>
+                        ${b.tags.map(t=>`<span class="breed-tag">${t}</span>`).join('')}
+                    </div>
+                    <p>${b.desc}</p>
+                    <a href="${b.link}" class="breed-link">Full care guide</a>
+                </div>
+            </article>`).join('')}
+        </div>`;
+        container.appendChild(section);
+    });
+}
+
+function filter() {
+    const q = searchInput.value.toLowerCase().trim();
+    return BREEDS.filter(b =>
+        (activeSize === 'all' || b.size === activeSize) &&
+        (!q || b.name.toLowerCase().includes(q) || b.tags.some(t => t.toLowerCase().includes(q)) || b.origin.toLowerCase().includes(q))
+    );
+}
+
+sizeButtons.forEach(btn => {
+    btn.addEventListener('click', () => {
+        sizeButtons.forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+        activeSize = btn.dataset.size;
+        render(filter());
+    });
+});
+
+searchInput.addEventListener('input', () => render(filter()));
+
+// Mobile nav
+const mobileBtn = document.querySelector('.mobile-menu-btn');
+const navLinks = document.querySelector('.nav-links');
+if (mobileBtn) {
+    mobileBtn.addEventListener('click', () => {
+        const isHidden = navLinks.style.display === 'none' || !navLinks.style.display;
+        navLinks.style.display = isHidden ? 'flex' : 'none';
+        if (isHidden) {
+            Object.assign(navLinks.style, { position:'absolute', top:'80px', left:'0', right:'0', background:'var(--surface)', flexDirection:'column', padding:'2rem', boxShadow:'0 4px 10px rgba(0,0,0,0.1)' });
+        }
+    });
+}
+
+render(BREEDS);
+</script>
+</body>
+</html>

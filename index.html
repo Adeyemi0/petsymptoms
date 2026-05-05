@@ -1,0 +1,1149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="PetSymptoms.com - Your trusted resource for pet health information, symptom guides, dog breeds, cat care, and veterinary advice. Find answers about your pet's health concerns.">
+    <meta name="keywords" content="pet symptoms, dog health, cat care, pet diseases, veterinary advice, dog breeds, pet health guide">
+    <meta name="author" content="PetSymptoms">
+    <meta name="robots" content="index, follow">
+    
+    <!-- Open Graph / Social Media -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://petsymptoms.com/">
+    <meta property="og:title" content="PetSymptoms - Pet Health Information & Symptom Guide">
+    <meta property="og:description" content="Comprehensive pet health resources, symptom checkers, and care guides for dogs, cats, birds, and exotic pets.">
+    <meta property="og:image" content="https://petsymptoms.com/img/pet-health-hero.jpg">
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://petsymptoms.com/">
+    <meta property="twitter:title" content="PetSymptoms - Pet Health Information & Symptom Guide">
+    <meta property="twitter:description" content="Comprehensive pet health resources, symptom checkers, and care guides for dogs, cats, birds, and exotic pets.">
+    
+    <title>PetSymptoms - Pet Health Information, Symptom Guides & Care Resources</title>
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://petsymptoms.com/">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    
+    <!-- Schema Markup -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "name": "PetSymptoms",
+        "url": "https://petsymptoms.com",
+        "description": "Pet health information and symptom guides",
+        "potentialAction": {
+            "@type": "ViewAction",
+            "target": "https://petsymptoms.com"
+        }
+    }
+    </script>
+    
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+            {
+                "@type": "Question",
+                "name": "When should I take my pet to the vet?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "You should take your pet to the vet if you notice sudden changes in behavior, loss of appetite, difficulty breathing, persistent vomiting or diarrhea, lethargy, unexplained weight loss, or any signs of pain. When in doubt, it's always better to consult with a veterinarian."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "How can I tell if my pet is sick?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Common signs of illness in pets include changes in eating or drinking habits, unusual lethargy, vomiting, diarrhea, coughing, difficulty breathing, changes in bathroom habits, excessive scratching or licking, and behavioral changes. Regular observation of your pet's normal behavior helps identify when something is wrong."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "What are the most common pet health problems?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Common pet health problems include dental disease, obesity, ear infections, skin allergies, arthritis, diabetes, kidney disease, urinary tract infections, and parasites like fleas and ticks. Regular vet checkups can help prevent and catch these issues early."
+                }
+            }
+        ]
+    }
+    </script>
+    
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+            {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Home",
+                "item": "https://petsymptoms.com/"
+            }
+        ]
+    }
+    </script>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        :root {
+            --primary: #0f442d;
+            --primary-light: #2a5c43;
+            --primary-container: #9dd2b3;
+            --secondary: #25667b;
+            --secondary-container: #aae6fe;
+            --surface: #faf9f6;
+            --surface-container: #efeeeb;
+            --on-surface: #1a1c1a;
+            --on-surface-variant: #414943;
+            --error: #ba1a1a;
+            --outline: #717972;
+        }
+        
+        body {
+            font-family: 'Manrope', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background-color: var(--surface);
+            color: var(--on-surface);
+            line-height: 1.6;
+        }
+        
+        h1, h2, h3, h4 {
+            font-weight: 700;
+            line-height: 1.2;
+        }
+        
+        a {
+            color: var(--primary);
+            text-decoration: none;
+            transition: all 0.3s ease;
+        }
+        
+        a:hover {
+            color: var(--secondary);
+        }
+        
+        /* Navigation */
+        .navbar {
+            background: var(--surface);
+            border-bottom: 1px solid #e8e4db;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 10px rgba(42, 92, 67, 0.08);
+        }
+        
+        .nav-container {
+            max-width: 1280px;
+            margin: 0 auto;
+            padding: 0 2rem;
+            height: 80px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        
+        .logo {
+            font-size: 1.75rem;
+            font-weight: 800;
+            color: var(--primary);
+            letter-spacing: -0.02em;
+        }
+        
+        .nav-links {
+            display: flex;
+            gap: 2rem;
+            align-items: center;
+            list-style: none;
+        }
+        
+        .nav-links a {
+            color: var(--on-surface-variant);
+            font-weight: 600;
+            font-size: 0.95rem;
+            padding: 0.5rem 0;
+            position: relative;
+        }
+        
+        .nav-links a:hover {
+            color: var(--primary);
+        }
+        
+        .nav-links a::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: var(--primary);
+            transition: width 0.3s;
+        }
+        
+        .nav-links a:hover::after {
+            width: 100%;
+        }
+        
+        .mobile-menu-btn {
+            display: none;
+            background: none;
+            border: none;
+            cursor: pointer;
+            padding: 0.5rem;
+        }
+        
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(135deg, var(--primary) 0%, var(--primary-light) 100%);
+            color: white;
+            padding: 5rem 2rem;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            right: -10%;
+            width: 600px;
+            height: 600px;
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 50%;
+        }
+        
+        .hero-container {
+            max-width: 900px;
+            margin: 0 auto;
+            position: relative;
+            z-index: 1;
+        }
+        
+        .hero h1 {
+            font-size: 3rem;
+            margin-bottom: 1.5rem;
+            font-weight: 800;
+        }
+        
+        .hero p {
+            font-size: 1.25rem;
+            margin-bottom: 2.5rem;
+            opacity: 0.95;
+            max-width: 700px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+        .hero-nav {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 0.85rem;
+            margin-top: 0.5rem;
+        }
+
+        .hero-nav-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            background: rgba(255, 255, 255, 0.15);
+            color: white;
+            border: 1.5px solid rgba(255, 255, 255, 0.45);
+            padding: 0.7rem 1.4rem;
+            border-radius: 50px;
+            font-weight: 700;
+            font-size: 0.95rem;
+            text-decoration: none;
+            backdrop-filter: blur(6px);
+            transition: all 0.25s ease;
+            letter-spacing: 0.01em;
+        }
+
+        .hero-nav-btn:hover {
+            background: rgba(255, 255, 255, 0.28);
+            border-color: white;
+            color: white;
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+        }
+
+        .hero-nav-btn .btn-icon {
+            font-size: 1.1rem;
+            line-height: 1;
+        }
+
+        .hero-divider {
+            width: 50px;
+            height: 2px;
+            background: rgba(255,255,255,0.35);
+            margin: 1.75rem auto 1.5rem;
+            border-radius: 2px;
+        }
+        
+        /* Breadcrumb */
+        .breadcrumb {
+            background: var(--surface-container);
+            padding: 1rem 2rem;
+            font-size: 0.9rem;
+        }
+        
+        .breadcrumb-container {
+            max-width: 1280px;
+            margin: 0 auto;
+        }
+        
+        .breadcrumb a {
+            color: var(--on-surface-variant);
+        }
+        
+        .breadcrumb span {
+            margin: 0 0.5rem;
+            color: var(--outline);
+        }
+        
+        /* Section Styles */
+        .section {
+            padding: 5rem 2rem;
+            max-width: 1280px;
+            margin: 0 auto;
+        }
+        
+        .section-title {
+            font-size: 2.25rem;
+            color: var(--primary);
+            margin-bottom: 1rem;
+            text-align: center;
+        }
+        
+        .section-subtitle {
+            text-align: center;
+            color: var(--on-surface-variant);
+            margin-bottom: 3rem;
+            font-size: 1.1rem;
+        }
+        
+        /* Category Grid */
+        .category-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+            margin: 3rem 0;
+        }
+        
+        .category-card {
+            background: white;
+            border-radius: 16px;
+            overflow: hidden;
+            box-shadow: 0 4px 20px rgba(42, 92, 67, 0.08);
+            transition: all 0.3s ease;
+            border: 1px solid var(--surface-container);
+        }
+        
+        .category-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 12px 40px rgba(42, 92, 67, 0.15);
+        }
+        
+        .category-image {
+            width: 100%;
+            height: 220px;
+            object-fit: cover;
+            background: var(--surface-container);
+        }
+        
+        .category-content {
+            padding: 1.75rem;
+        }
+        
+        .category-content h3 {
+            font-size: 1.5rem;
+            color: var(--primary);
+            margin-bottom: 0.75rem;
+        }
+        
+        .category-content p {
+            color: var(--on-surface-variant);
+            margin-bottom: 1.25rem;
+            line-height: 1.6;
+        }
+        
+        .category-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            font-weight: 700;
+            color: var(--primary);
+        }
+        
+        .category-link::after {
+            content: '→';
+            transition: transform 0.3s;
+        }
+        
+        .category-link:hover::after {
+            transform: translateX(4px);
+        }
+        
+        /* Featured Articles */
+        .featured-section {
+            background: var(--surface-container);
+        }
+        
+        .articles-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 2.5rem;
+        }
+        
+        .article-card {
+            background: white;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
+            transition: all 0.3s;
+        }
+        
+        .article-card:hover {
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
+        }
+        
+        .article-image {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            background: var(--surface-container);
+        }
+        
+        .article-content {
+            padding: 1.5rem;
+        }
+        
+        .article-category {
+            display: inline-block;
+            background: var(--secondary-container);
+            color: var(--secondary);
+            padding: 0.35rem 0.85rem;
+            border-radius: 20px;
+            font-size: 0.75rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            margin-bottom: 0.75rem;
+        }
+        
+        .article-content h3 {
+            font-size: 1.25rem;
+            margin-bottom: 0.75rem;
+            color: var(--primary);
+        }
+        
+        .article-content p {
+            color: var(--on-surface-variant);
+            font-size: 0.95rem;
+            line-height: 1.6;
+        }
+        
+        /* Symptom Checker CTA */
+        .symptom-cta {
+            background: linear-gradient(135deg, var(--primary-container) 0%, var(--secondary-container) 100%);
+            border-radius: 24px;
+            padding: 4rem 3rem;
+            text-align: center;
+            margin: 4rem auto;
+            max-width: 1000px;
+        }
+        
+        .symptom-cta h2 {
+            font-size: 2.5rem;
+            color: var(--primary);
+            margin-bottom: 1rem;
+        }
+        
+        .symptom-cta p {
+            font-size: 1.15rem;
+            color: var(--on-surface-variant);
+            margin-bottom: 2rem;
+            max-width: 650px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+        .btn-primary {
+            display: inline-block;
+            background: var(--primary);
+            color: white;
+            padding: 1rem 2.5rem;
+            border-radius: 50px;
+            font-weight: 700;
+            font-size: 1.05rem;
+            transition: all 0.3s;
+            box-shadow: 0 4px 15px rgba(15, 68, 45, 0.3);
+        }
+        
+        .btn-primary:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 25px rgba(15, 68, 45, 0.4);
+            color: white;
+        }
+        
+        /* FAQ Section */
+        .faq-item {
+            background: white;
+            border-radius: 12px;
+            margin-bottom: 1.25rem;
+            overflow: hidden;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+            border: 1px solid var(--surface-container);
+        }
+        
+        .faq-question {
+            padding: 1.5rem;
+            font-weight: 700;
+            font-size: 1.1rem;
+            color: var(--primary);
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            transition: background 0.3s;
+        }
+        
+        .faq-question:hover {
+            background: var(--surface-container);
+        }
+        
+        .faq-answer {
+            padding: 0 1.5rem 1.5rem;
+            color: var(--on-surface-variant);
+            line-height: 1.7;
+        }
+        
+        /* Internal Links Section */
+        .links-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 3rem;
+            margin-top: 3rem;
+        }
+        
+        .links-column h4 {
+            color: var(--primary);
+            margin-bottom: 1.25rem;
+            font-size: 1.15rem;
+        }
+        
+        .links-column ul {
+            list-style: none;
+        }
+        
+        .links-column li {
+            margin-bottom: 0.65rem;
+        }
+        
+        .links-column a {
+            color: var(--on-surface-variant);
+            font-size: 0.95rem;
+            transition: all 0.2s;
+        }
+        
+        .links-column a:hover {
+            color: var(--primary);
+            padding-left: 4px;
+        }
+        
+        /* Footer */
+        .footer {
+            background: var(--on-surface);
+            color: white;
+            padding: 4rem 2rem 2rem;
+            margin-top: 6rem;
+        }
+        
+        .footer-container {
+            max-width: 1280px;
+            margin: 0 auto;
+        }
+        
+        .footer-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 3rem;
+            margin-bottom: 3rem;
+        }
+        
+        .footer-section h4 {
+            color: var(--primary-container);
+            margin-bottom: 1.25rem;
+            font-size: 1.1rem;
+        }
+        
+        .footer-section p {
+            color: rgba(255, 255, 255, 0.8);
+            line-height: 1.7;
+            margin-bottom: 1rem;
+        }
+        
+        .footer-section ul {
+            list-style: none;
+        }
+        
+        .footer-section li {
+            margin-bottom: 0.6rem;
+        }
+        
+        .footer-section a {
+            color: rgba(255, 255, 255, 0.8);
+            transition: all 0.2s;
+        }
+        
+        .footer-section a:hover {
+            color: var(--primary-container);
+        }
+        
+        .footer-bottom {
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            padding-top: 2rem;
+            text-align: center;
+            color: rgba(255, 255, 255, 0.6);
+            font-size: 0.9rem;
+        }
+        
+        .medical-disclaimer {
+            background: rgba(186, 26, 26, 0.1);
+            border-left: 4px solid var(--error);
+            padding: 1.5rem;
+            border-radius: 8px;
+            margin: 3rem 0;
+            font-size: 0.9rem;
+            color: var(--on-surface-variant);
+        }
+        
+        .medical-disclaimer strong {
+            color: var(--error);
+            display: block;
+            margin-bottom: 0.5rem;
+        }
+        
+        /* Responsive */
+        @media (max-width: 768px) {
+            .nav-links {
+                display: none;
+            }
+            
+            .mobile-menu-btn {
+                display: block;
+            }
+            
+            .hero h1 {
+                font-size: 2rem;
+            }
+            
+            .hero p {
+                font-size: 1rem;
+            }
+            
+            .hero-nav {
+                gap: 0.65rem;
+            }
+
+            .hero-nav-btn {
+                font-size: 0.88rem;
+                padding: 0.6rem 1.1rem;
+            }
+
+            .section {
+                padding: 3rem 1.5rem;
+            }
+            
+            .section-title {
+                font-size: 1.75rem;
+            }
+            
+            .symptom-cta {
+                padding: 2.5rem 1.5rem;
+            }
+            
+            .symptom-cta h2 {
+                font-size: 1.75rem;
+            }
+        }
+        
+        /* Utility Classes */
+        .text-center {
+            text-align: center;
+        }
+        
+        .mb-4 {
+            margin-bottom: 2rem;
+        }
+        
+        .mt-8 {
+            margin-top: 4rem;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar" role="navigation" aria-label="Main navigation">
+        <div class="nav-container">
+            <a href="index.html" class="logo" aria-label="PetSymptoms Home">PetSymptoms</a>
+            
+            <ul class="nav-links">
+                <li><a href="dogs.html">Dogs</a></li>
+                <li><a href="cats.html">Cats</a></li>
+                <li><a href="pet-birds.html">Birds</a></li>
+                <li><a href="pet-reptiles.html">Exotic Pets</a></li>
+                <li><a href="about-us.html">About</a></li>
+                <li><a href="contact-us.html">Contact</a></li>
+            </ul>
+            
+            <button class="mobile-menu-btn" aria-label="Toggle menu">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <line x1="3" y1="12" x2="21" y2="12"></line>
+                    <line x1="3" y1="6" x2="21" y2="6"></line>
+                    <line x1="3" y1="18" x2="21" y2="18"></line>
+                </svg>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Breadcrumb -->
+    <div class="breadcrumb" aria-label="Breadcrumb">
+        <div class="breadcrumb-container">
+            <a href="index.html">Home</a>
+        </div>
+    </div>
+
+    <!-- Hero Section -->
+    <header class="hero">
+        <div class="hero-container">
+            <h1>Your Pet's Health Resource</h1>
+            <p>Find comprehensive information about pet symptoms, diseases, breeds, and care guides. Helping pet parents make informed decisions about their furry friends.</p>
+            
+            <div class="hero-divider"></div>
+
+            <nav class="hero-nav" aria-label="Quick navigation">
+                <a href="dogs.html" class="hero-nav-btn"><span class="btn-icon">🐕</span> Dogs</a>
+                <a href="cats.html" class="hero-nav-btn"><span class="btn-icon">🐈</span> Cats</a>
+                <a href="pet-birds.html" class="hero-nav-btn"><span class="btn-icon">🦜</span> Birds</a>
+                <a href="pet-reptiles.html" class="hero-nav-btn"><span class="btn-icon">🦎</span> Exotic Pets</a>
+                <a href="top-signs-sick-dog.html" class="hero-nav-btn"><span class="btn-icon">🩺</span> Symptoms</a>
+                <a href="dog-fever-pet-symptoms.html" class="hero-nav-btn"><span class="btn-icon">🚑</span> First Aid</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Categories -->
+    <section class="section" aria-labelledby="categories-heading">
+        <h2 id="categories-heading" class="section-title">Explore Pet Care Topics</h2>
+        <p class="section-subtitle">Comprehensive guides and resources for your pet's health and wellbeing</p>
+        
+        <div class="category-grid">
+            <!-- Dog Breeds -->
+            <article class="category-card">
+                <img src="img/golden-retriever-dogs-puppies.jpg" alt="Golden Retriever puppy" class="category-image" loading="lazy">
+                <div class="category-content">
+                    <h3>Dog Breeds A to Z</h3>
+                    <p>Discover detailed information about different dog breeds, from Affenpinschers to Yorkshire Terriers. Find the perfect breed for your lifestyle.</p>
+                    <a href="dogs.html" class="category-link">Explore all breeds</a>
+                </div>
+            </article>
+            
+            <!-- Cat Care -->
+            <article class="category-card">
+                <img src="img/persian-cats-kittens-breeds.jpg" alt="Persian cat" class="category-image" loading="lazy">
+                <div class="category-content">
+                    <h3>Cat Health & Care</h3>
+                    <p>Learn about cat breeds, common health issues, behavior, nutrition, and how to keep your feline companion happy and healthy.</p>
+                    <a href="cats.html" class="category-link">Cat care guides</a>
+                </div>
+            </article>
+            
+            <!-- Pet Symptoms -->
+            <article class="category-card">
+                <img src="img/dog-animal-pet-samoyed-breed-sick-dog-pb.jpg" alt="Sick dog needing care" class="category-image" loading="lazy">
+                <div class="category-content">
+                    <h3>Pet Symptoms & Diseases</h3>
+                    <p>Understand common pet health issues, from allergies to serious conditions. Learn when to seek veterinary care and how to support recovery.</p>
+                    <a href="top-signs-sick-dog.html" class="category-link">View symptom guide</a>
+                </div>
+            </article>
+            
+            <!-- Birds & Exotic -->
+            <article class="category-card">
+                <img src="img/cockatiels-birds-fledglings-breeds.jpg" alt="Cockatiel bird" class="category-image" loading="lazy">
+                <div class="category-content">
+                    <h3>Birds & Exotic Pets</h3>
+                    <p>Care guides for pet birds, reptiles, and other exotic companions. Learn about proper housing, nutrition, and health maintenance.</p>
+                    <a href="pet-birds.html" class="category-link">Exotic pet care</a>
+                </div>
+            </article>
+        </div>
+    </section>
+
+    <!-- Featured Articles -->
+    <section class="section featured-section" aria-labelledby="featured-heading">
+        <h2 id="featured-heading" class="section-title">Featured Pet Health Articles</h2>
+        <p class="section-subtitle">Expert information to help you care for your pets</p>
+        
+        <div class="articles-grid">
+            <article class="article-card">
+                <img src="img/black-labrador-big-dog-breeds-px.jpg" alt="Black Labrador" class="article-image" loading="lazy">
+                <div class="article-content">
+                    <span class="article-category">Dog Health</span>
+                    <h3><a href="top-signs-sick-dog.html">Top Signs Your Dog Is Sick</a></h3>
+                    <p>Learn to recognize the early warning signs of illness in dogs, from changes in appetite to behavioral shifts that indicate a vet visit is needed.</p>
+                </div>
+            </article>
+            
+            <article class="article-card">
+                <img src="img/bernese-mountain-dog-big-dog-breeds-vh.jpg" alt="Bernese Mountain Dog" class="article-image" loading="lazy">
+                <div class="article-content">
+                    <span class="article-category">Preventive Care</span>
+                    <h3><a href="dogs.html">Essential Vaccine Schedule for Dogs</a></h3>
+                    <p>Complete guide to keeping your dog protected with proper vaccination schedules, from puppy shots to adult boosters.</p>
+                </div>
+            </article>
+            
+            <article class="article-card">
+                <img src="img/bengal-cats-kittens-breeds.jpg" alt="Bengal cat" class="article-image" loading="lazy">
+                <div class="article-content">
+                    <span class="article-category">Cat Care</span>
+                    <h3><a href="signs-cat-has-cystitis.html">Understanding Feline Cystitis</a></h3>
+                    <p>Recognize the symptoms of urinary tract issues in cats and learn how to help your cat stay comfortable and healthy.</p>
+                </div>
+            </article>
+            
+            <article class="article-card">
+                <img src="img/bulldog-big-dog-breeds-px.jpg" alt="Bulldog" class="article-image" loading="lazy">
+                <div class="article-content">
+                    <span class="article-category">Nutrition</span>
+                    <h3><a href="healthy-dog-treats-pups.html">Healthy Treat Options for Dogs</a></h3>
+                    <p>Discover nutritious treat alternatives that reward your dog without compromising their health or weight management goals.</p>
+                </div>
+            </article>
+            
+            <article class="article-card">
+                <img src="img/border-collie-dogs-puppies-breeds.jpg" alt="Border Collie puppy" class="article-image" loading="lazy">
+                <div class="article-content">
+                    <span class="article-category">Training</span>
+                    <h3><a href="crate-training-puppy.html">Puppy Crate Training Guide</a></h3>
+                    <p>Step-by-step instructions for successfully crate training your puppy, creating a safe space they'll love.</p>
+                </div>
+            </article>
+            
+            <article class="article-card">
+                <img src="img/rottweiler-big-dog-breeds-vh.jpg" alt="Rottweiler" class="article-image" loading="lazy">
+                <div class="article-content">
+                    <span class="article-category">Emergency Care</span>
+                    <h3><a href="dog-fever-pet-symptoms.html">Pet First Aid Essentials</a></h3>
+                    <p>Essential first aid knowledge every pet owner should have, from treating minor injuries to recognizing emergencies.</p>
+                </div>
+            </article>
+        </div>
+    </section>
+
+    <!-- Symptom Checker CTA -->
+    <section class="symptom-cta" aria-labelledby="symptom-heading">
+        <h2 id="symptom-heading">Concerned About Your Pet?</h2>
+        <p>Our comprehensive symptom guides can help you understand what might be wrong and when to seek veterinary care.</p>
+        <a href="top-signs-sick-dog.html" class="btn-primary">Check Pet Symptoms</a>
+    </section>
+
+    <!-- Popular Health Topics -->
+    <section class="section" aria-labelledby="health-topics-heading">
+        <h2 id="health-topics-heading" class="section-title">Common Pet Health Concerns</h2>
+        <p class="section-subtitle">Information about conditions that affect pets most frequently</p>
+        
+        <div class="category-grid">
+            <article class="category-card">
+                <div class="category-content">
+                    <h3><a href="dogs.html">Dog Allergies</a></h3>
+                    <p>Learn about common allergens affecting dogs, from food sensitivities to environmental triggers, and how to provide relief.</p>
+                </div>
+            </article>
+            
+            <article class="category-card">
+                <div class="category-content">
+                    <h3><a href="prevent-dog-obesity.html">Pet Obesity Prevention</a></h3>
+                    <p>Understand the risks of pet obesity and discover practical strategies to maintain your pet's healthy weight.</p>
+                </div>
+            </article>
+            
+            <article class="category-card">
+                <div class="category-content">
+                    <h3><a href="dog-teeth-cleaning-tips.html">Dental Health</a></h3>
+                    <p>Proper dental care is essential for your pet's overall health. Learn brushing techniques and dental care tips.</p>
+                </div>
+            </article>
+            
+            <article class="category-card">
+                <div class="category-content">
+                    <h3><a href="cat-parasites-news.html">Parasite Prevention</a></h3>
+                    <p>Protect your pets from fleas, ticks, worms, and other parasites with our comprehensive prevention guide.</p>
+                </div>
+            </article>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="section" aria-labelledby="faq-heading">
+        <h2 id="faq-heading" class="section-title">Frequently Asked Questions</h2>
+        <p class="section-subtitle">Quick answers to common pet health questions</p>
+        
+        <div class="faq-container" itemscope itemtype="https://schema.org/FAQPage">
+            <div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+                <div class="faq-question" itemprop="name">
+                    When should I take my pet to the vet?
+                    <span aria-hidden="true">+</span>
+                </div>
+                <div class="faq-answer" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+                    <div itemprop="text">
+                        You should take your pet to the vet if you notice sudden changes in behavior, loss of appetite, difficulty breathing, persistent vomiting or diarrhea, lethargy, unexplained weight loss, or any signs of pain. When in doubt, it's always better to consult with a veterinarian. Regular checkups at least once a year are also important for preventive care.
+                    </div>
+                </div>
+            </div>
+            
+            <div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+                <div class="faq-question" itemprop="name">
+                    How can I tell if my pet is sick?
+                    <span aria-hidden="true">+</span>
+                </div>
+                <div class="faq-answer" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+                    <div itemprop="text">
+                        Common signs of illness in pets include changes in eating or drinking habits, unusual lethargy, vomiting, diarrhea, coughing, difficulty breathing, changes in bathroom habits, excessive scratching or licking, and behavioral changes. Regular observation of your pet's normal behavior helps identify when something is wrong.
+                    </div>
+                </div>
+            </div>
+            
+            <div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+                <div class="faq-question" itemprop="name">
+                    What are the most common pet health problems?
+                    <span aria-hidden="true">+</span>
+                </div>
+                <div class="faq-answer" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+                    <div itemprop="text">
+                        Common pet health problems include dental disease, obesity, ear infections, skin allergies, arthritis, diabetes, kidney disease, urinary tract infections, and parasites like fleas and ticks. Regular vet checkups can help prevent and catch these issues early.
+                    </div>
+                </div>
+            </div>
+            
+            <div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+                <div class="faq-question" itemprop="name">
+                    How often should I feed my pet?
+                    <span aria-hidden="true">+</span>
+                </div>
+                <div class="faq-answer" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+                    <div itemprop="text">
+                        Most adult dogs do well with two meals per day, while puppies may need three to four smaller meals. Cats typically prefer smaller, more frequent meals throughout the day. The exact feeding schedule depends on your pet's age, breed, health status, and your veterinarian's recommendations.
+                    </div>
+                </div>
+            </div>
+            
+            <div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+                <div class="faq-question" itemprop="name">
+                    What vaccinations does my pet need?
+                    <span aria-hidden="true">+</span>
+                </div>
+                <div class="faq-answer" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+                    <div itemprop="text">
+                        Core vaccines for dogs include rabies, distemper, parvovirus, and adenovirus. Cats need rabies, feline distemper (panleukopenia), calicivirus, and rhinotracheitis vaccines. Non-core vaccines depend on lifestyle and location. Your veterinarian will create a vaccination schedule appropriate for your pet.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Medical Disclaimer -->
+    <!-- <div class="section">
+        <div class="medical-disclaimer" role="alert">
+            <strong>Medical Disclaimer</strong>
+            The content on PetSymptoms.com is for informational and educational purposes only and is not intended as a substitute for professional veterinary advice, diagnosis, or treatment. Always seek the advice of your veterinarian or other qualified animal health provider with any questions you may have regarding your pet's medical condition. Never disregard professional veterinary advice or delay seeking it because of something you have read on this website. If you think your pet has a medical emergency, contact your veterinarian or an emergency animal hospital immediately.
+        </div>
+    </div> -->
+
+    <!-- Internal Links Section -->
+    <section class="section" aria-labelledby="resources-heading">
+        <h2 id="resources-heading" class="section-title">Pet Care Resources</h2>
+        <p class="section-subtitle">Quick access to our most helpful guides and information</p>
+        
+        <div class="links-grid">
+            <div class="links-column">
+                <h4>Dog Breed Guides</h4>
+                <ul>
+                    <li><a href="golden-retriever-dogs-puppies.html">Golden Retrievers</a></li>
+                    <li><a href="labrador-dogs-puppies.html">Labrador Retrievers</a></li>
+                    <li><a href="dogs.html">German Shepherds</a></li>
+                    <li><a href="dogs.html">Bulldogs</a></li>
+                    <li><a href="beagle-dogs-puppies-breeds.html">Beagles</a></li>
+                    <li><a href="pomeranian-dogs-puppies-dog-breeds.html">Pomeranians</a></li>
+                    <li><a href="pomeranian-dogs-puppies-dog-breeds.html">Chihuahuas</a></li>
+                    <li><a href="dogs.html">Large Dog Breeds</a></li>
+                </ul>
+            </div>
+            
+            <div class="links-column">
+                <h4>Cat Breed Guides</h4>
+                <ul>
+                    <li><a href="persian-cats-kittens-breeds.html">Persian Cats</a></li>
+                    <li><a href="siamese-cats-kittens-breeds.html">Siamese Cats</a></li>
+                    <li><a href="bengal-cats-kittens-breeds.html">Bengal Cats</a></li>
+                    <li><a href="cats.html">Friendly Cat Breeds</a></li>
+                    <li><a href="cats.html">Large Cat Breeds</a></li>
+                    <li><a href="litter-box-training-cats.html">Litter Box Training</a></li>
+                </ul>
+            </div>
+            
+            <div class="links-column">
+                <h4>Health & Symptoms</h4>
+                <ul>
+                    <li><a href="top-signs-sick-dog.html">Dog Diseases</a></li>
+                    <li><a href="cat-kidney-disease.html">Cat Kidney Disease</a></li>
+                    <li><a href="epileptic-seizure-in-dogs.html">Seizures in Dogs</a></li>
+                    <li><a href="liver-disease-in-dogs.html">Liver Disease</a></li>
+                    <li><a href="urinary-tract-infection-in-dogs.html">UTI in Dogs</a></li>
+                    <li><a href="urinary-tract-infection-in-cats.html">UTI in Cats</a></li>
+                    <li><a href="parvo-symptoms.html">Parvo Symptoms</a></li>
+                </ul>
+            </div>
+            
+            <div class="links-column">
+                <h4>Pet Care Tips</h4>
+                <ul>
+                    <li><a href="crate-training-puppy.html">New Puppy Checklist</a></li>
+                    <li><a href="crate-training-puppy.html">Dog Training Tips</a></li>
+                    <li><a href="dog-teeth-cleaning-tips.html">Grooming Tips</a></li>
+                    <li><a href="prevent-dog-obesity.html">Diet & Nutrition</a></li>
+                    <li><a href="healthy-dog-treats-pups.html">Homemade Dog Food</a></li>
+                    <li><a href="keep-your-dog-warm-winter.html">Winter Care</a></li>
+                    <li><a href="holiday-pet-safety-tips.html">Holiday Safety</a></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer" role="contentinfo">
+        <div class="footer-container">
+            <div class="footer-grid">
+                <div class="footer-section">
+                    <h4>About PetSymptoms</h4>
+                    <p>PetSymptoms is your comprehensive resource for pet health information, breed guides, and care tips. We're dedicated to helping pet parents make informed decisions about their companions' health and wellbeing.</p>
+                    <p><strong>Our Mission:</strong> To provide accessible, research-based pet care information that helps you give your pets the best possible life.</p>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="dogs.html">All Dog Breeds</a></li>
+                        <li><a href="top-signs-sick-dog.html">Symptom Checker</a></li>
+                        <li><a href="dog-fever-pet-symptoms.html">First Aid Guide</a></li>
+                        <li><a href="about-us.html">Pet Insurance Info</a></li>
+                        <li><a href="pet-reptiles.html">Exotic Pet Care</a></li>
+                        <li><a href="pet-birds.html">Bird Care</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Popular Topics</h4>
+                    <ul>
+                        <li><a href="dogs.html">Small Dog Breeds</a></li>
+                        <li><a href="dogs.html">Large Dog Breeds</a></li>
+                        <li><a href="prevent-dog-obesity.html">Pet Obesity</a></li>
+                        <li><a href="dogs.html">Dog Allergies</a></li>
+                        <li><a href="crate-training-puppy.html">Puppy Training</a></li>
+                        <li><a href="dog-teeth-cleaning-tips.html">Dental Care</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Legal & Support</h4>
+                    <ul>
+                        <li><a href="about-us.html">About Us</a></li>
+                        <li><a href="contact-us.html">Contact Us</a></li>
+                        <li><a href="about-us.html">Privacy Policy</a></li>
+                        <li><a href="about-us.html">Terms of Service</a></li>
+                        <li><a href="about-us.html">Medical Disclaimer</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2024 PetSymptoms.com. All rights reserved.</p>
+                <p style="margin-top: 0.5rem; font-size: 0.85rem;">Remember: This website provides general information only. Always consult a licensed veterinarian for professional medical advice.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Simple FAQ accordion functionality
+        document.querySelectorAll('.faq-question').forEach(question => {
+            question.addEventListener('click', () => {
+                const answer = question.nextElementSibling;
+                const isVisible = answer.style.display === 'block';
+                
+                // Close all answers
+                document.querySelectorAll('.faq-answer').forEach(a => {
+                    a.style.display = 'none';
+                });
+                
+                // Open clicked answer if it wasn't visible
+                if (!isVisible) {
+                    answer.style.display = 'block';
+                }
+            });
+        });
+        
+        // Initialize all FAQ answers as closed
+        document.querySelectorAll('.faq-answer').forEach(answer => {
+            answer.style.display = 'none';
+        });
+        
+        // Mobile menu toggle
+        const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
+        const navLinks = document.querySelector('.nav-links');
+        
+        if (mobileMenuBtn) {
+            mobileMenuBtn.addEventListener('click', () => {
+                navLinks.style.display = navLinks.style.display === 'flex' ? 'none' : 'flex';
+                navLinks.style.position = 'absolute';
+                navLinks.style.top = '80px';
+                navLinks.style.left = '0';
+                navLinks.style.right = '0';
+                navLinks.style.background = 'var(--surface)';
+                navLinks.style.flexDirection = 'column';
+                navLinks.style.padding = '2rem';
+                navLinks.style.boxShadow = '0 4px 10px rgba(0,0,0,0.1)';
+            });
+        }
+        
+        // Smooth scroll for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+</html>

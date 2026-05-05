@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Care guides for reptiles, small mammals, and exotic pets: habitat setup, nutrition, health symptoms, and species specific advice for responsible pet ownership.">
+    <meta name="keywords" content="pet reptiles, exotic pets, small mammals, bearded dragon, leopard gecko, habitat setup, reptile diet, pet care guides">
+    <meta name="author" content="PetSymptoms">
+    <meta name="robots" content="index, follow">
+    
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://petsymptoms.com/pet-reptiles/">
+    <meta property="og:title" content="Exotic Pet Care - Reptiles, Small Mammals & More | PetSymptoms">
+    <meta property="og:description" content="Specialized information for reptiles, small mammals, and other unique pets. Learn about proper housing, nutrition, health monitoring, and species specific needs.">
+    <meta property="og:image" content="https://petsymptoms.com/img/pet-reptiles.jpg">
+    
+    <title>Exotic Pet Care - Reptiles, Small Mammals & More | PetSymptoms</title>
+    <link rel="canonical" href="https://petsymptoms.com/pet-reptiles/">
+    
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "CollectionPage",
+        "name": "Exotic Pet Care Guides",
+        "description": "Comprehensive care information for reptiles, small mammals, and exotic pets including habitat setup, nutrition, and health monitoring.",
+        "url": "https://petsymptoms.com/pet-reptiles/"
+    }
+    </script>
+    
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+            {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://petsymptoms.com/"},
+            {"@type": "ListItem", "position": 2, "name": "Pet Reptiles", "item": "https://petsymptoms.com/pet-reptiles/"}
+        ]
+    }
+    </script>
+    
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+            {
+                "@type": "Question",
+                "name": "Are reptiles good pets for beginners?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Yes, several reptile species are well suited for beginners. Leopard geckos, corn snakes, and crested geckos have manageable care requirements, calm temperaments, and do not require daily handling. Proper research and habitat setup are essential before bringing any exotic pet home."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "What temperature and lighting do reptiles need?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Most reptiles require a temperature gradient in their enclosure with a warm basking spot and a cooler area. UVB lighting is essential for many species to synthesize vitamin D3 and metabolize calcium properly. Specific requirements vary significantly by species, so consult a care sheet or exotic veterinarian."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "How can I tell if my exotic pet is sick?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Signs of illness in exotic pets often include loss of appetite, lethargy, abnormal shedding, swelling, discharge from eyes or nose, changes in droppings, or hiding more than usual. Exotic animals can decline quickly, so prompt evaluation by a veterinarian experienced with reptiles or small mammals is critical."
+                }
+            }
+        ]
+    }
+    </script>
+
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        :root {
+            --primary: #0f442d; --primary-light: #2a5c43; --primary-container: #9dd2b3;
+            --secondary: #25667b; --secondary-container: #aae6fe;
+            --surface: #faf9f6; --surface-container: #efeeeb;
+            --on-surface: #1a1c1a; --on-surface-variant: #414943;
+            --error: #ba1a1a; --outline: #717972;
+        }
+        body { font-family: 'Manrope', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: var(--surface); color: var(--on-surface); line-height: 1.6; }
+        h1, h2, h3, h4 { font-weight: 700; line-height: 1.2; }
+        a { color: var(--primary); text-decoration: none; transition: all 0.3s ease; }
+        a:hover { color: var(--secondary); }
+        
+        .navbar { background: var(--surface); border-bottom: 1px solid #e8e4db; position: sticky; top: 0; z-index: 1000; box-shadow: 0 2px 10px rgba(42, 92, 67, 0.08); }
+        .nav-container { max-width: 1280px; margin: 0 auto; padding: 0 2rem; height: 80px; display: flex; align-items: center; justify-content: space-between; }
+        .logo { font-size: 1.75rem; font-weight: 800; color: var(--primary); letter-spacing: -0.02em; }
+        .nav-links { display: flex; gap: 2rem; align-items: center; list-style: none; }
+        .nav-links a { color: var(--on-surface-variant); font-weight: 600; font-size: 0.95rem; }
+        .nav-links a:hover { color: var(--primary); }
+        .mobile-menu-btn { display: none; background: none; border: none; cursor: pointer; padding: 0.5rem; }
+        
+        .breadcrumb { background: var(--surface-container); padding: 1rem 2rem; font-size: 0.9rem; }
+        .breadcrumb-container { max-width: 1280px; margin: 0 auto; }
+        .breadcrumb a { color: var(--on-surface-variant); }
+        .breadcrumb span { margin: 0 0.5rem; color: var(--outline); }
+        
+        .category-hero { background: linear-gradient(135deg, var(--primary) 0%, var(--primary-light) 100%); color: white; padding: 4rem 2rem; text-align: center; position: relative; overflow: hidden; }
+        .category-hero::before { content: ''; position: absolute; top: -30%; right: -10%; width: 500px; height: 500px; background: rgba(255, 255, 255, 0.05); border-radius: 50%; }
+        .hero-content { max-width: 800px; margin: 0 auto; position: relative; z-index: 1; }
+        .category-hero h1 { font-size: 2.75rem; margin-bottom: 1.25rem; font-weight: 800; }
+        .category-hero p { font-size: 1.15rem; margin-bottom: 2rem; opacity: 0.95; }
+        .category-disclaimer { font-size: 0.85rem; opacity: 0.9; background: rgba(255, 255, 255, 0.1); padding: 0.75rem 1.5rem; border-radius: 8px; display: inline-block; }
+        
+        .section { padding: 4rem 2rem; max-width: 1280px; margin: 0 auto; }
+        .section-title { font-size: 2rem; color: var(--primary); margin-bottom: 0.75rem; }
+        .section-subtitle { color: var(--on-surface-variant); margin-bottom: 2.5rem; font-size: 1.05rem; }
+        
+        .subcategory-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 1.5rem; margin: 2.5rem 0; }
+        .subcategory-card { background: white; border-radius: 12px; padding: 1.75rem; box-shadow: 0 2px 12px rgba(42, 92, 67, 0.08); border: 1px solid var(--surface-container); transition: all 0.3s ease; text-align: center; }
+        .subcategory-card:hover { transform: translateY(-4px); box-shadow: 0 8px 25px rgba(42, 92, 67, 0.15); }
+        .subcategory-icon { width: 60px; height: 60px; background: var(--primary-container); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 1rem; font-size: 1.75rem; color: var(--primary); }
+        .subcategory-card h3 { font-size: 1.25rem; color: var(--primary); margin-bottom: 0.75rem; }
+        .subcategory-card p { color: var(--on-surface-variant); font-size: 0.95rem; margin-bottom: 1rem; }
+        .subcategory-link { font-weight: 700; color: var(--primary); display: inline-flex; align-items: center; gap: 0.35rem; }
+        .subcategory-link::after { content: '→'; transition: transform 0.3s; }
+        .subcategory-link:hover::after { transform: translateX(4px); }
+        
+        .breed-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 2rem; margin: 2rem 0; }
+        .breed-card { background: white; border-radius: 12px; overflow: hidden; box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06); transition: all 0.3s; border: 1px solid var(--surface-container); }
+        .breed-card:hover { box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12); }
+        .breed-image { width: 100%; height: 180px; object-fit: cover; background: var(--surface-container); }
+        .breed-content { padding: 1.5rem; }
+        .breed-content h3 { font-size: 1.2rem; color: var(--primary); margin-bottom: 0.5rem; }
+        .breed-meta { display: flex; gap: 1rem; font-size: 0.85rem; color: var(--on-surface-variant); margin-bottom: 0.75rem; flex-wrap: wrap; }
+        .breed-content p { color: var(--on-surface-variant); font-size: 0.95rem; margin-bottom: 1rem; line-height: 1.6; }
+        .breed-link { font-weight: 700; color: var(--primary); }
+        
+        .article-list { display: flex; flex-direction: column; gap: 1.5rem; margin: 2rem 0; }
+        .article-item { background: white; border-radius: 12px; padding: 1.5rem; box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06); border: 1px solid var(--surface-container); display: grid; grid-template-columns: 1fr 3fr; gap: 1.5rem; align-items: center; }
+        @media (max-width: 768px) { .article-item { grid-template-columns: 1fr; } }
+        .article-item img { width: 100%; height: 140px; object-fit: cover; border-radius: 8px; background: var(--surface-container); }
+        .article-item-content h3 { font-size: 1.25rem; color: var(--primary); margin-bottom: 0.5rem; }
+        .article-item-content p { color: var(--on-surface-variant); font-size: 0.95rem; margin-bottom: 0.75rem; }
+        .article-tag { display: inline-block; background: var(--secondary-container); color: var(--secondary); padding: 0.25rem 0.75rem; border-radius: 20px; font-size: 0.75rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 0.5rem; }
+        
+        .faq-container { max-width: 800px; margin: 0 auto; }
+        .faq-item { background: white; border-radius: 12px; margin-bottom: 1rem; overflow: hidden; box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05); border: 1px solid var(--surface-container); }
+        .faq-question { padding: 1.25rem 1.5rem; font-weight: 700; font-size: 1.05rem; color: var(--primary); cursor: pointer; display: flex; justify-content: space-between; align-items: center; }
+        .faq-question:hover { background: var(--surface-container); }
+        .faq-answer { padding: 0 1.5rem 1.25rem; color: var(--on-surface-variant); line-height: 1.7; display: none; }
+        .faq-answer.active { display: block; }
+        
+        .medical-disclaimer { background: rgba(186, 26, 26, 0.1); border-left: 4px solid var(--error); padding: 1.5rem; border-radius: 8px; margin: 3rem 0; font-size: 0.9rem; color: var(--on-surface-variant); }
+        .medical-disclaimer strong { color: var(--error); display: block; margin-bottom: 0.5rem; }
+        
+        .footer { background: var(--on-surface); color: white; padding: 4rem 2rem 2rem; margin-top: 4rem; }
+        .footer-container { max-width: 1280px; margin: 0 auto; }
+        .footer-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 3rem; margin-bottom: 3rem; }
+        .footer-section h4 { color: var(--primary-container); margin-bottom: 1.25rem; font-size: 1.1rem; }
+        .footer-section p { color: rgba(255, 255, 255, 0.8); line-height: 1.7; margin-bottom: 1rem; }
+        .footer-section ul { list-style: none; }
+        .footer-section li { margin-bottom: 0.6rem; }
+        .footer-section a { color: rgba(255, 255, 255, 0.8); transition: all 0.2s; }
+        .footer-section a:hover { color: var(--primary-container); }
+        .footer-bottom { border-top: 1px solid rgba(255, 255, 255, 0.1); padding-top: 2rem; text-align: center; color: rgba(255, 255, 255, 0.6); font-size: 0.9rem; }
+        
+        @media (max-width: 768px) {
+            .nav-links { display: none; }
+            .mobile-menu-btn { display: block; }
+            .category-hero h1 { font-size: 2rem; }
+            .category-hero p { font-size: 1rem; }
+            .section { padding: 3rem 1.5rem; }
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar" role="navigation" aria-label="Main navigation">
+        <div class="nav-container">
+            <a href="index.html" class="logo" aria-label="PetSymptoms Home">PetSymptoms</a>
+            <ul class="nav-links">
+                <li><a href="dogs.html">Dogs</a></li>
+                <li><a href="cats.html">Cats</a></li>
+                <li><a href="pet-birds.html">Birds</a></li>
+                <li><a href="pet-reptiles.html">Exotic Pets</a></li>
+                <li><a href="about-us.html">About</a></li>
+                <li><a href="contact-us.html">Contact</a></li>
+            </ul>
+            <button class="mobile-menu-btn" aria-label="Toggle menu">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <line x1="3" y1="12" x2="21" y2="12"></line>
+                    <line x1="3" y1="6" x2="21" y2="6"></line>
+                    <line x1="3" y1="18" x2="21" y2="18"></line>
+                </svg>
+            </button>
+        </div>
+    </nav>
+
+    <div class="breadcrumb" aria-label="Breadcrumb">
+        <div class="breadcrumb-container">
+            <a href="index.html">Home</a> <span>/</span> <span>Pet Reptiles</span>
+        </div>
+    </div>
+
+    <header class="category-hero">
+        <div class="hero-content">
+            <h1>Complete Exotic Pet Care Guides</h1>
+            <p>Specialized information for reptiles, small mammals, and other unique pets. Learn about proper housing, nutrition, health monitoring, and species specific needs.</p>
+            <!-- <div class="category-disclaimer">⚠️ Educational information only. Always consult an exotic animal veterinarian for medical advice.</div> -->
+        </div>
+    </header>
+
+    <section class="section">
+        <h2 class="section-title">Explore Exotic Pet Topics</h2>
+        <p class="section-subtitle">Find what you need quickly with our organized guides</p>
+        
+        <div class="subcategory-grid">
+            <a href="pet-reptiles.html" class="subcategory-card">
+                <div class="subcategory-icon">🦎</div>
+                <h3>Reptile Basics</h3>
+                <p>Essential care principles for lizards, snakes, and turtles: temperature, humidity, and enclosure setup.</p>
+                <span class="subcategory-link">Reptile fundamentals</span>
+            </a>
+            
+            <a href="small-pets-for-kids.html" class="subcategory-card">
+                <div class="subcategory-icon">🐹</div>
+                <h3>Small Mammals</h3>
+                <p>Care guides for hamsters, guinea pigs, rabbits, and other small furry companions.</p>
+                <span class="subcategory-link">Small pet resources</span>
+            </a>
+            
+            <a href="top-signs-sick-dog.html" class="subcategory-card">
+                <div class="subcategory-icon">🏥</div>
+                <h3>Health & Symptoms</h3>
+                <p>Recognize signs of illness in exotic pets and understand when to seek specialized veterinary care.</p>
+                <span class="subcategory-link">Health guides</span>
+            </a>
+            
+            <a href="about-us.html" class="subcategory-card">
+                <div class="subcategory-icon">💰</div>
+                <h3>Exotic Pet Costs</h3>
+                <p>Understand the financial commitment of exotic pets, including insurance options and routine care expenses.</p>
+                <span class="subcategory-link">Cost guides</span>
+            </a>
+            
+            <a href="top-signs-sick-dog.html" class="subcategory-card">
+                <div class="subcategory-icon">👁️</div>
+                <h3>Behavior & Handling</h3>
+                <p>Learn to read exotic pet body language and practice safe, stress free handling techniques.</p>
+                <span class="subcategory-link">Behavior resources</span>
+            </a>
+            
+            <a href="crate-training-puppy.html" class="subcategory-card">
+                <div class="subcategory-icon">📋</div>
+                <h3>Beginner Checklists</h3>
+                <p>Step by step preparation guides for bringing home your first reptile or small mammal.</p>
+                <span class="subcategory-link">Preparation guides</span>
+            </a>
+        </div>
+    </section>
+
+    <section class="section" style="background: var(--surface-container);">
+        <h2 class="section-title">Popular Exotic Pets</h2>
+        <p class="section-subtitle">Detailed guides for common beginner friendly exotic species</p>
+        
+        <div class="breed-grid">
+            <article class="breed-card">
+                <img src="img/bearded-dragon.jpg" alt="Bearded Dragon" class="breed-image" loading="lazy">
+                <div class="breed-content">
+                    <h3>Bearded Dragon</h3>
+                    <div class="breed-meta">
+                        <span>📏 Medium</span>
+                        <span>⏱️ 10-15 years</span>
+                        <span>🌞 Diurnal</span>
+                    </div>
+                    <p>Calm, interactive, and highly trainable. Bearded dragons are one of the most popular beginner reptiles due to their docile nature.</p>
+                    <a href="pet-reptiles.html" class="breed-link">Learn more about Bearded Dragons</a>
+                </div>
+            </article>
+            
+            <article class="breed-card">
+                <img src="img/leopard-gecko.jpg" alt="Leopard Gecko" class="breed-image" loading="lazy">
+                <div class="breed-content">
+                    <h3>Leopard Gecko</h3>
+                    <div class="breed-meta">
+                        <span>📏 Small</span>
+                        <span>⏱️ 15-20 years</span>
+                        <span>🌙 Nocturnal</span>
+                    </div>
+                    <p>Low maintenance, quiet, and easy to handle. Leopard geckos thrive in simple enclosures and have straightforward dietary needs.</p>
+                    <a href="pet-reptiles.html" class="breed-link">Learn more about Leopard Geckos</a>
+                </div>
+            </article>
+            
+            <article class="breed-card">
+                <img src="img/corn-snake.jpg" alt="Corn Snake" class="breed-image" loading="lazy">
+                <div class="breed-content">
+                    <h3>Corn Snake</h3>
+                    <div class="breed-meta">
+                        <span>📏 Medium</span>
+                        <span>⏱️ 15-20 years</span>
+                        <span>🐍 Docile</span>
+                    </div>
+                    <p>Excellent beginner snakes with vibrant colors and gentle temperaments. They adapt well to captivity and have simple feeding routines.</p>
+                    <a href="pet-reptiles.html" class="breed-link">Learn more about Corn Snakes</a>
+                </div>
+            </article>
+            
+            <article class="breed-card">
+                <img src="img/small-pets-for-kids.jpg" alt="Small Mammals" class="breed-image" loading="lazy">
+                <div class="breed-content">
+                    <h3>Small Mammals</h3>
+                    <div class="breed-meta">
+                        <span>🐰 Variety</span>
+                        <span>⏱️ 2-10 years</span>
+                        <span> Social</span>
+                    </div>
+                    <p>Rabbits, guinea pigs, and hamsters offer companionship with different care requirements. Learn which fits your household best.</p>
+                    <a href="small-pets-for-kids.html" class="breed-link">View small pet guides</a>
+                </div>
+            </article>
+        </div>
+        
+        <div style="text-align: center; margin-top: 2rem;">
+            <a href="pet-reptiles.html" class="btn-primary" style="display: inline-block; background: var(--primary); color: white; padding: 0.85rem 2rem; border-radius: 50px; font-weight: 700; text-decoration: none;">View All Exotic Pet Guides</a>
+        </div>
+    </section>
+
+    <section class="section">
+        <h2 class="section-title">Featured Exotic Pet Articles</h2>
+        <p class="section-subtitle">Essential information to keep your exotic pets healthy and thriving</p>
+        
+        <div class="article-list">
+            <article class="article-item">
+                <img src="img/pet-reptiles.jpg" alt="Reptile habitat setup" loading="lazy">
+                <div class="article-item-content">
+                    <span class="article-tag">Housing</span>
+                    <h3><a href="pet-reptiles.html">Complete Reptile Habitat Setup Guide</a></h3>
+                    <p>Learn how to create proper temperature gradients, humidity levels, and lighting setups for healthy reptile enclosures.</p>
+                    <a href="pet-reptiles.html" class="breed-link">Read more</a>
+                </div>
+            </article>
+            
+            <article class="article-item">
+                <img src="img/small-pets-for-kids.jpg" alt="Small pet care" loading="lazy">
+                <div class="article-item-content">
+                    <span class="article-tag">Care</span>
+                    <h3><a href="small-pets-for-kids.html">Small Pets for Kids: Best Choices and Care Tips</a></h3>
+                    <p>Discover which small mammals are suitable for families, how to teach children responsible handling, and daily care routines.</p>
+                    <a href="small-pets-for-kids.html" class="breed-link">Read more</a>
+                </div>
+            </article>
+            
+            <article class="article-item">
+                <img src="img/pet-symptom-solver-cushings-disease.jpg" alt="Exotic pet health" loading="lazy">
+                <div class="article-item-content">
+                    <span class="article-tag">Health</span>
+                    <h3><a href="top-signs-sick-dog.html">Understanding Cushing's Disease in Pets</a></h3>
+                    <p>Cushing's disease can affect various species. Learn the symptoms, diagnostic process, and management strategies for affected animals.</p>
+                    <a href="top-signs-sick-dog.html" class="breed-link">Read more</a>
+                </div>
+            </article>
+            
+            <article class="article-item">
+                <img src="img/pet-body-language.jpg" alt="Pet behavior" loading="lazy">
+                <div class="article-item-content">
+                    <span class="article-tag">Behavior</span>
+                    <h3><a href="top-signs-sick-dog.html">Reading Exotic Pet Body Language</a></h3>
+                    <p>Reptiles and small mammals communicate differently than dogs and cats. Learn to interpret stress, comfort, and health signals.</p>
+                    <a href="top-signs-sick-dog.html" class="breed-link">Read more</a>
+                </div>
+            </article>
+        </div>
+    </section>
+
+    <section class="section" style="background: var(--surface-container);">
+        <h2 class="section-title">Exotic Pet Care FAQs</h2>
+        <p class="section-subtitle">Quick answers to common questions exotic pet owners ask</p>
+        
+        <div class="faq-container" itemscope itemtype="https://schema.org/FAQPage">
+            <div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+                <div class="faq-question" itemprop="name">Are reptiles good pets for beginners?<span aria-hidden="true">+</span></div>
+                <div class="faq-answer" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+                    <div itemprop="text">Yes, several reptile species are well suited for beginners. Leopard geckos, corn snakes, and crested geckos have manageable care requirements, calm temperaments, and do not require daily handling. Proper research and habitat setup are essential before bringing any exotic pet home.</div>
+                </div>
+            </div>
+            
+            <div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+                <div class="faq-question" itemprop="name">What temperature and lighting do reptiles need?<span aria-hidden="true">+</span></div>
+                <div class="faq-answer" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+                    <div itemprop="text">Most reptiles require a temperature gradient in their enclosure with a warm basking spot and a cooler area. UVB lighting is essential for many species to synthesize vitamin D3 and metabolize calcium properly. Specific requirements vary significantly by species, so consult a care sheet or exotic veterinarian.</div>
+                </div>
+            </div>
+            
+            <div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+                <div class="faq-question" itemprop="name">How can I tell if my exotic pet is sick?<span aria-hidden="true">+</span></div>
+                <div class="faq-answer" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+                    <div itemprop="text">Signs of illness in exotic pets often include loss of appetite, lethargy, abnormal shedding, swelling, discharge from eyes or nose, changes in droppings, or hiding more than usual. Exotic animals can decline quickly, so prompt evaluation by a veterinarian experienced with reptiles or small mammals is critical.</div>
+                </div>
+            </div>
+            
+            <div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+                <div class="faq-question" itemprop="name">What do pet reptiles eat?<span aria-hidden="true">+</span></div>
+                <div class="faq-answer" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+                    <div itemprop="text">Diet varies widely by species. Insectivores like geckos eat crickets, dubia roaches, and mealworms dusted with calcium. Herbivores like bearded dragons require leafy greens and vegetables. Carnivores like snakes eat appropriately sized frozen thawed rodents. Always research species specific dietary needs.</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- <div class="section">
+        <div class="medical-disclaimer" role="alert">
+            <strong>Medical Disclaimer</strong>
+            The content on PetSymptoms.com is for informational and educational purposes only and is not intended as a substitute for professional veterinary advice, diagnosis, or treatment. Always seek the advice of your veterinarian or other qualified animal health provider with any questions you may have regarding your pet's medical condition. Never disregard professional veterinary advice or delay seeking it because of something you have read on this website. If you think your pet has a medical emergency, contact your veterinarian or an emergency animal hospital immediately.
+        </div>
+    </div> -->
+
+    <footer class="footer" role="contentinfo">
+        <div class="footer-container">
+            <div class="footer-grid">
+                <div class="footer-section">
+                    <h4>About PetSymptoms</h4>
+                    <p>PetSymptoms is your comprehensive resource for pet health information, breed guides, and care tips.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Exotic Resources</h4>
+                    <ul>
+                        <li><a href="pet-reptiles.html">Reptile Care</a></li>
+                        <li><a href="small-pets-for-kids.html">Small Mammals</a></li>
+                        <li><a href="about-us.html">Pet Insurance</a></li>
+                        <li><a href="top-signs-sick-dog.html">Behavior Guides</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Other Pets</h4>
+                    <ul>
+                        <li><a href="dogs.html">Dog Care</a></li>
+                        <li><a href="cats.html">Cat Care</a></li>
+                        <li><a href="pet-birds.html">Bird Care</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Support</h4>
+                    <ul>
+                        <li><a href="about-us.html">About Us</a></li>
+                        <li><a href="contact-us.html">Contact</a></li>
+                        <li><a href="about-us.html">Medical Disclaimer</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 PetSymptoms.com. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        document.querySelectorAll('.faq-question').forEach(question => {
+            question.addEventListener('click', () => {
+                const answer = question.nextElementSibling;
+                const isActive = answer.classList.contains('active');
+                document.querySelectorAll('.faq-answer').forEach(a => a.classList.remove('active'));
+                if (!isActive) answer.classList.add('active');
+            });
+        });
+        
+        const mobileBtn = document.querySelector('.mobile-menu-btn');
+        const navLinks = document.querySelector('.nav-links');
+        if (mobileBtn) {
+            mobileBtn.addEventListener('click', () => {
+                const isHidden = navLinks.style.display === 'none' || !navLinks.style.display;
+                navLinks.style.display = isHidden ? 'flex' : 'none';
+                if (isHidden) {
+                    navLinks.style.position = 'absolute';
+                    navLinks.style.top = '80px';
+                    navLinks.style.left = '0';
+                    navLinks.style.right = '0';
+                    navLinks.style.background = 'var(--surface)';
+                    navLinks.style.flexDirection = 'column';
+                    navLinks.style.padding = '2rem';
+                    navLinks.style.boxShadow = '0 4px 10px rgba(0,0,0,0.1)';
+                }
+            });
+        }
+    </script>
+</body>
+</html>

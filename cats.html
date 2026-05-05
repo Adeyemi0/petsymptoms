@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Complete cat care guides: breed information, health symptoms, behavior tips, nutrition advice, and preventive care for all cat breeds. Find answers for your feline companion.">
+    <meta name="keywords" content="cat breeds, cat health, cat behavior, kitten care, cat symptoms, feline diseases, cat nutrition, litter training">
+    <meta name="author" content="PetSymptoms">
+    <meta name="robots" content="index, follow">
+    
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://petsymptoms.com/cats/">
+    <meta property="og:title" content="Cat Care Guides - Breeds, Health, Behavior & Nutrition | PetSymptoms">
+    <meta property="og:description" content="Everything you need to know about cat care: breed guides, health symptoms, behavior tips, and nutrition advice for happy, healthy cats.">
+    <meta property="og:image" content="https://petsymptoms.com/img/Persian-cats-kittens-breeds.jpg">
+    
+    <title>Cat Care Guides - Breeds, Health, Behavior & Nutrition | PetSymptoms</title>
+    <link rel="canonical" href="https://petsymptoms.com/cats/">
+    
+    <!-- Schema Markup -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "CollectionPage",
+        "name": "Cat Care Guides",
+        "description": "Comprehensive cat care information including breed guides, health symptoms, behavior tips, and nutrition advice.",
+        "url": "https://petsymptoms.com/cats/"
+    }
+    </script>
+    
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+            {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://petsymptoms.com/"},
+            {"@type": "ListItem", "position": 2, "name": "Cats", "item": "https://petsymptoms.com/cats/"}
+        ]
+    }
+    </script>
+    
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+            {
+                "@type": "Question",
+                "name": "What is the best cat breed for apartments?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Breeds like the Russian Blue, British Shorthair, and Ragdoll are often recommended for apartments due to their calm temperament and lower exercise needs. However, any cat can thrive in an apartment with adequate vertical space, toys, and attention."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "How often should cats visit the vet?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Adult cats should have a wellness exam at least once a year. Kittens need more frequent visits for vaccinations and checkups, typically every 3 to 4 weeks until they are about 16 weeks old. Senior cats (7+ years) benefit from twice yearly visits to monitor for age-related conditions."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "What are signs of illness in cats?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Cats often hide illness, so look for subtle changes like hiding more than usual, changes in litter box habits, reduced grooming, lethargy, changes in appetite, vomiting, or vocalizing differently. Any persistent change warrants a veterinary consultation."
+                }
+            }
+        ]
+    }
+    </script>
+
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        :root {
+            --primary: #0f442d; --primary-light: #2a5c43; --primary-container: #9dd2b3;
+            --secondary: #25667b; --secondary-container: #aae6fe;
+            --surface: #faf9f6; --surface-container: #efeeeb;
+            --on-surface: #1a1c1a; --on-surface-variant: #414943;
+            --error: #ba1a1a; --outline: #717972;
+        }
+        body { font-family: 'Manrope', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: var(--surface); color: var(--on-surface); line-height: 1.6; }
+        h1, h2, h3, h4 { font-weight: 700; line-height: 1.2; }
+        a { color: var(--primary); text-decoration: none; transition: all 0.3s ease; }
+        a:hover { color: var(--secondary); }
+        
+        .navbar { background: var(--surface); border-bottom: 1px solid #e8e4db; position: sticky; top: 0; z-index: 1000; box-shadow: 0 2px 10px rgba(42, 92, 67, 0.08); }
+        .nav-container { max-width: 1280px; margin: 0 auto; padding: 0 2rem; height: 80px; display: flex; align-items: center; justify-content: space-between; }
+        .logo { font-size: 1.75rem; font-weight: 800; color: var(--primary); letter-spacing: -0.02em; }
+        .nav-links { display: flex; gap: 2rem; align-items: center; list-style: none; }
+        .nav-links a { color: var(--on-surface-variant); font-weight: 600; font-size: 0.95rem; }
+        .nav-links a:hover { color: var(--primary); }
+        .mobile-menu-btn { display: none; background: none; border: none; cursor: pointer; padding: 0.5rem; }
+        
+        .breadcrumb { background: var(--surface-container); padding: 1rem 2rem; font-size: 0.9rem; }
+        .breadcrumb-container { max-width: 1280px; margin: 0 auto; }
+        .breadcrumb a { color: var(--on-surface-variant); }
+        .breadcrumb span { margin: 0 0.5rem; color: var(--outline); }
+        
+        .category-hero { background: linear-gradient(135deg, var(--primary) 0%, var(--primary-light) 100%); color: white; padding: 4rem 2rem; text-align: center; position: relative; overflow: hidden; }
+        .category-hero::before { content: ''; position: absolute; top: -30%; right: -10%; width: 500px; height: 500px; background: rgba(255, 255, 255, 0.05); border-radius: 50%; }
+        .hero-content { max-width: 800px; margin: 0 auto; position: relative; z-index: 1; }
+        .category-hero h1 { font-size: 2.75rem; margin-bottom: 1.25rem; font-weight: 800; }
+        .category-hero p { font-size: 1.15rem; margin-bottom: 2rem; opacity: 0.95; }
+        .category-disclaimer { font-size: 0.85rem; opacity: 0.9; background: rgba(255, 255, 255, 0.1); padding: 0.75rem 1.5rem; border-radius: 8px; display: inline-block; }
+        
+        .section { padding: 4rem 2rem; max-width: 1280px; margin: 0 auto; }
+        .section-title { font-size: 2rem; color: var(--primary); margin-bottom: 0.75rem; }
+        .section-subtitle { color: var(--on-surface-variant); margin-bottom: 2.5rem; font-size: 1.05rem; }
+        
+        .subcategory-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 1.5rem; margin: 2.5rem 0; }
+        .subcategory-card { background: white; border-radius: 12px; padding: 1.75rem; box-shadow: 0 2px 12px rgba(42, 92, 67, 0.08); border: 1px solid var(--surface-container); transition: all 0.3s ease; text-align: center; }
+        .subcategory-card:hover { transform: translateY(-4px); box-shadow: 0 8px 25px rgba(42, 92, 67, 0.15); }
+        .subcategory-icon { width: 60px; height: 60px; background: var(--primary-container); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 1rem; font-size: 1.75rem; color: var(--primary); }
+        .subcategory-card h3 { font-size: 1.25rem; color: var(--primary); margin-bottom: 0.75rem; }
+        .subcategory-card p { color: var(--on-surface-variant); font-size: 0.95rem; margin-bottom: 1rem; }
+        .subcategory-link { font-weight: 700; color: var(--primary); display: inline-flex; align-items: center; gap: 0.35rem; }
+        .subcategory-link::after { content: '→'; transition: transform 0.3s; }
+        .subcategory-link:hover::after { transform: translateX(4px); }
+        
+        .breed-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 2rem; margin: 2rem 0; }
+        .breed-card { background: white; border-radius: 12px; overflow: hidden; box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06); transition: all 0.3s; border: 1px solid var(--surface-container); }
+        .breed-card:hover { box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12); }
+        .breed-image { width: 100%; height: 180px; object-fit: cover; background: var(--surface-container); }
+        .breed-content { padding: 1.5rem; }
+        .breed-content h3 { font-size: 1.2rem; color: var(--primary); margin-bottom: 0.5rem; }
+        .breed-meta { display: flex; gap: 1rem; font-size: 0.85rem; color: var(--on-surface-variant); margin-bottom: 0.75rem; flex-wrap: wrap; }
+        .breed-content p { color: var(--on-surface-variant); font-size: 0.95rem; margin-bottom: 1rem; line-height: 1.6; }
+        .breed-link { font-weight: 700; color: var(--primary); }
+        
+        .article-list { display: flex; flex-direction: column; gap: 1.5rem; margin: 2rem 0; }
+        .article-item { background: white; border-radius: 12px; padding: 1.5rem; box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06); border: 1px solid var(--surface-container); display: grid; grid-template-columns: 1fr 3fr; gap: 1.5rem; align-items: center; }
+        @media (max-width: 768px) { .article-item { grid-template-columns: 1fr; } }
+        .article-item img { width: 100%; height: 140px; object-fit: cover; border-radius: 8px; background: var(--surface-container); }
+        .article-item-content h3 { font-size: 1.25rem; color: var(--primary); margin-bottom: 0.5rem; }
+        .article-item-content p { color: var(--on-surface-variant); font-size: 0.95rem; margin-bottom: 0.75rem; }
+        .article-tag { display: inline-block; background: var(--secondary-container); color: var(--secondary); padding: 0.25rem 0.75rem; border-radius: 20px; font-size: 0.75rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 0.5rem; }
+        
+        .faq-container { max-width: 800px; margin: 0 auto; }
+        .faq-item { background: white; border-radius: 12px; margin-bottom: 1rem; overflow: hidden; box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05); border: 1px solid var(--surface-container); }
+        .faq-question { padding: 1.25rem 1.5rem; font-weight: 700; font-size: 1.05rem; color: var(--primary); cursor: pointer; display: flex; justify-content: space-between; align-items: center; }
+        .faq-question:hover { background: var(--surface-container); }
+        .faq-answer { padding: 0 1.5rem 1.25rem; color: var(--on-surface-variant); line-height: 1.7; display: none; }
+        .faq-answer.active { display: block; }
+        
+        .medical-disclaimer { background: rgba(186, 26, 26, 0.1); border-left: 4px solid var(--error); padding: 1.5rem; border-radius: 8px; margin: 3rem 0; font-size: 0.9rem; color: var(--on-surface-variant); }
+        .medical-disclaimer strong { color: var(--error); display: block; margin-bottom: 0.5rem; }
+        
+        .footer { background: var(--on-surface); color: white; padding: 4rem 2rem 2rem; margin-top: 4rem; }
+        .footer-container { max-width: 1280px; margin: 0 auto; }
+        .footer-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 3rem; margin-bottom: 3rem; }
+        .footer-section h4 { color: var(--primary-container); margin-bottom: 1.25rem; font-size: 1.1rem; }
+        .footer-section p { color: rgba(255, 255, 255, 0.8); line-height: 1.7; margin-bottom: 1rem; }
+        .footer-section ul { list-style: none; }
+        .footer-section li { margin-bottom: 0.6rem; }
+        .footer-section a { color: rgba(255, 255, 255, 0.8); transition: all 0.2s; }
+        .footer-section a:hover { color: var(--primary-container); }
+        .footer-bottom { border-top: 1px solid rgba(255, 255, 255, 0.1); padding-top: 2rem; text-align: center; color: rgba(255, 255, 255, 0.6); font-size: 0.9rem; }
+        
+        @media (max-width: 768px) {
+            .nav-links { display: none; }
+            .mobile-menu-btn { display: block; }
+            .category-hero h1 { font-size: 2rem; }
+            .category-hero p { font-size: 1rem; }
+            .section { padding: 3rem 1.5rem; }
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar" role="navigation" aria-label="Main navigation">
+        <div class="nav-container">
+            <a href="index.html" class="logo" aria-label="PetSymptoms Home">PetSymptoms</a>
+            <ul class="nav-links">
+                <li><a href="dogs.html">Dogs</a></li>
+                <li><a href="cats.html">Cats</a></li>
+                <li><a href="pet-birds.html">Birds</a></li>
+                <li><a href="pet-reptiles.html">Exotic Pets</a></li>
+                <li><a href="about-us.html">About</a></li>
+                <li><a href="contact-us.html">Contact</a></li>
+            </ul>
+            <button class="mobile-menu-btn" aria-label="Toggle menu">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <line x1="3" y1="12" x2="21" y2="12"></line>
+                    <line x1="3" y1="6" x2="21" y2="6"></line>
+                    <line x1="3" y1="18" x2="21" y2="18"></line>
+                </svg>
+            </button>
+        </div>
+    </nav>
+
+    <div class="breadcrumb" aria-label="Breadcrumb">
+        <div class="breadcrumb-container">
+            <a href="index.html">Home</a> <span>/</span> <span>Cats</span>
+        </div>
+    </div>
+
+    <header class="category-hero">
+        <div class="hero-content">
+            <h1>Complete Cat Care Guides</h1>
+            <p>From kitten care to senior cat wellness, find expert information about cat breeds, health symptoms, behavior, nutrition, and litter training for your feline friend.</p>
+            <!-- <div class="category-disclaimer">⚠️ Educational information only. Always consult a licensed veterinarian for medical advice.</div> -->
+        </div>
+    </header>
+
+    <section class="section">
+        <h2 class="section-title">Explore Cat Topics</h2>
+        <p class="section-subtitle">Find what you need quickly with our organized guides</p>
+        
+        <div class="subcategory-grid">
+            <a href="persian-cats-kittens-breeds.html" class="subcategory-card">
+                <div class="subcategory-icon">🐱</div>
+                <h3>Cat Breeds</h3>
+                <p>Discover different cat breeds, their personalities, and which might be the perfect match for your home.</p>
+                <span class="subcategory-link">Browse all breeds</span>
+            </a>
+            
+            <a href="cat-kidney-disease.html" class="subcategory-card">
+                <div class="subcategory-icon">🏥</div>
+                <h3>Health & Symptoms</h3>
+                <p>Recognize signs of illness and understand common cat health conditions like kidney disease and UTIs.</p>
+                <span class="subcategory-link">View health guides</span>
+            </a>
+            
+            <a href="cat-care-tips.html" class="subcategory-card">
+                <div class="subcategory-icon">🧠</div>
+                <h3>Behavior & Communication</h3>
+                <p>Understand what your cat is telling you through tail signals, vocalizations, and body language.</p>
+                <span class="subcategory-link">Behavior resources</span>
+            </a>
+            
+            <a href="cat-care-tips.html" class="subcategory-card">
+                <div class="subcategory-icon">🥗</div>
+                <h3>Nutrition & Diet</h3>
+                <p>Feeding guidelines, healthy treat options, and nutrition advice for every stage of your cat's life.</p>
+                <span class="subcategory-link">Nutrition guides</span>
+            </a>
+            
+            <a href="litter-box-training-cats.html" class="subcategory-card">
+                <div class="subcategory-icon">🚽</div>
+                <h3>Litter Training</h3>
+                <p>Tips for introducing litter boxes, solving litter issues, and keeping your cat comfortable.</p>
+                <span class="subcategory-link">Litter guides</span>
+            </a>
+            
+            <a href="cat-care-tips.html" class="subcategory-card">
+                <div class="subcategory-icon">🛡️</div>
+                <h3>Preventive Care</h3>
+                <p>Vaccination schedules, parasite prevention, and wellness tips to keep your cat healthy long-term.</p>
+                <span class="subcategory-link">Prevention tips</span>
+            </a>
+        </div>
+    </section>
+
+    <section class="section" style="background: var(--surface-container);">
+        <h2 class="section-title">Popular Cat Breeds</h2>
+        <p class="section-subtitle">Detailed guides for some of the most loved cat breeds</p>
+        
+        <div class="breed-grid">
+            <article class="breed-card">
+                <img src="img/Persian-cats-kittens-breeds.jpg" alt="Persian Cat" class="breed-image" loading="lazy">
+                <div class="breed-content">
+                    <h3>Persian Cat</h3>
+                    <div class="breed-meta">
+                        <span>📏 Medium-Large</span>
+                        <span>⏱️ 12-17 years</span>
+                        <span>👑 Calm & Sweet</span>
+                    </div>
+                    <p>Known for their luxurious long coats and sweet, gentle personalities. Persians are perfect lap cats who love a quiet home.</p>
+                    <a href="persian-cats-kittens-breeds.html" class="breed-link">Learn more about Persians</a>
+                </div>
+            </article>
+            
+            <article class="breed-card">
+                <img src="img/bengal-cats-kittens-breeds.jpg" alt="Bengal Cat" class="breed-image" loading="lazy">
+                <div class="breed-content">
+                    <h3>Bengal Cat</h3>
+                    <div class="breed-meta">
+                        <span>📏 Medium-Large</span>
+                        <span>⏱️ 12-16 years</span>
+                        <span>⚡ High Energy</span>
+                    </div>
+                    <p>Distinctive spotted coats and wild appearance. Bengals are active, playful, and intelligent cats that need engagement.</p>
+                    <a href="bengal-cats-kittens-breeds.html" class="breed-link">Learn more about Bengals</a>
+                </div>
+            </article>
+            
+            <article class="breed-card">
+                <img src="img/siamese-cats-kittens-breeds.jpg" alt="Siamese Cat" class="breed-image" loading="lazy">
+                <div class="breed-content">
+                    <h3>Siamese Cat</h3>
+                    <div class="breed-meta">
+                        <span>📏 Medium</span>
+                        <span>⏱️ 12-15 years</span>
+                        <span>🗣️ Vocal & Social</span>
+                    </div>
+                    <p>Famous for their striking blue eyes and color points. Siamese are highly social, vocal, and form strong bonds with owners.</p>
+                    <a href="siamese-cats-kittens-breeds.html" class="breed-link">Learn more about Siamese</a>
+                </div>
+            </article>
+            
+            <article class="breed-card">
+                <img src="img/persian-cats-kittens-breeds.jpg" alt="Large Cat Breeds" class="breed-image" loading="lazy">
+                <div class="breed-content">
+                    <h3>Large Cat Breeds</h3>
+                    <div class="breed-meta">
+                        <span> Large</span>
+                        <span>️ Varies</span>
+                        <span>🐾 Gentle Giants</span>
+                    </div>
+                    <p>Breeds like Maine Coons and Ragdolls offer big personalities in big packages. Gentle, affectionate, and impressive.</p>
+                    <a href="siamese-cats-kittens-breeds.html" class="breed-link">View Siamese & large breeds</a>
+                </div>
+            </article>
+        </div>
+        
+        <div style="text-align: center; margin-top: 2rem;">
+            <a href="bengal-cats-kittens-breeds.html" class="btn-primary" style="display: inline-block; background: var(--primary); color: white; padding: 0.85rem 2rem; border-radius: 50px; font-weight: 700; text-decoration: none;">Explore Cat Breeds</a>
+        </div>
+    </section>
+
+    <section class="section">
+        <h2 class="section-title">Featured Cat Health Articles</h2>
+        <p class="section-subtitle">Essential information to keep your cat healthy and happy</p>
+        
+        <div class="article-list">
+            <article class="article-item">
+                <img src="img/Persian-cats-kittens-breeds.jpg" alt="Cat with kidney disease" loading="lazy">
+                <div class="article-item-content">
+                    <span class="article-tag">Health</span>
+                    <h3><a href="cat-kidney-disease.html">Understanding Kidney Disease in Cats</a></h3>
+                    <p>Kidney disease is common in older cats. Learn the early signs, dietary management, and how to support your cat's kidney health.</p>
+                    <a href="cat-kidney-disease.html" class="breed-link">Read more</a>
+                </div>
+            </article>
+            
+            <article class="article-item">
+                <img src="img/bengal-cats-kittens-breeds.jpg" alt="Cat with urinary issues" loading="lazy">
+                <div class="article-item-content">
+                    <span class="article-tag">Urinary Health</span>
+                    <h3><a href="signs-cat-has-cystitis.html">Recognizing Feline Cystitis Symptoms</a></h3>
+                    <p>Cystitis can be painful and dangerous. Learn to spot the signs of urinary inflammation and when to seek urgent care.</p>
+                    <a href="signs-cat-has-cystitis.html" class="breed-link">Read more</a>
+                </div>
+            </article>
+            
+            <article class="article-item">
+                <img src="img/persian-cats-kittens-breeds.jpg" alt="Cat behavior" loading="lazy">
+                <div class="article-item-content">
+                    <span class="article-tag">Behavior</span>
+                    <h3><a href="cat-care-tips.html">What Your Cat's Tail Is Telling You</a></h3>
+                    <p>A cat's tail is a powerful communication tool. Decode tail positions to understand your cat's mood and needs better.</p>
+                    <a href="cat-care-tips.html" class="breed-link">Read more</a>
+                </div>
+            </article>
+            
+            <article class="article-item">
+                <img src="img/Persian-cats-kittens-breeds.jpg" alt="Cat grooming" loading="lazy">
+                <div class="article-item-content">
+                    <span class="article-tag">Grooming</span>
+                    <h3><a href="cat-care-tips.html">Essential Cat Care & Grooming Tips</a></h3>
+                    <p>Regular grooming prevents matting, hairballs, and skin issues. Learn brushing techniques and nail trimming basics.</p>
+                    <a href="cat-care-tips.html" class="breed-link">Read more</a>
+                </div>
+            </article>
+        </div>
+    </section>
+
+    <section class="section" style="background: var(--surface-container);">
+        <h2 class="section-title">Cat Care FAQs</h2>
+        <p class="section-subtitle">Quick answers to common questions cat owners ask</p>
+        
+        <div class="faq-container" itemscope itemtype="https://schema.org/FAQPage">
+            <div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+                <div class="faq-question" itemprop="name">What is the best cat breed for apartments?<span aria-hidden="true">+</span></div>
+                <div class="faq-answer" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+                    <div itemprop="text">Breeds like the Russian Blue, British Shorthair, and Ragdoll are often recommended for apartments due to their calm temperament and lower exercise needs. However, any cat can thrive in an apartment with adequate vertical space, toys, and attention.</div>
+                </div>
+            </div>
+            
+            <div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+                <div class="faq-question" itemprop="name">How often should cats visit the vet?<span aria-hidden="true">+</span></div>
+                <div class="faq-answer" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+                    <div itemprop="text">Adult cats should have a wellness exam at least once a year. Kittens need more frequent visits for vaccinations and checkups, typically every 3 to 4 weeks until they are about 16 weeks old. Senior cats (7+ years) benefit from twice yearly visits.</div>
+                </div>
+            </div>
+            
+            <div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+                <div class="faq-question" itemprop="name">What are signs of illness in cats?<span aria-hidden="true">+</span></div>
+                <div class="faq-answer" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+                    <div itemprop="text">Cats often hide illness, so look for subtle changes like hiding more than usual, changes in litter box habits, reduced grooming, lethargy, changes in appetite, vomiting, or vocalizing differently. Any persistent change warrants a veterinary consultation.</div>
+                </div>
+            </div>
+            
+            <div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+                <div class="faq-question" itemprop="name">How do I introduce a new cat to my home?<span aria-hidden="true">+</span></div>
+                <div class="faq-answer" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+                    <div itemprop="text">Start by keeping the new cat in a separate room with food, water, and litter. Swap scents using blankets, then allow visual contact through a barrier before supervised face-to-face meetings. Go slowly and reward calm behavior.</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- <div class="section">
+        <div class="medical-disclaimer" role="alert">
+            <strong>Medical Disclaimer</strong>
+            The content on PetSymptoms.com is for informational and educational purposes only and is not intended as a substitute for professional veterinary advice, diagnosis, or treatment. Always seek the advice of your veterinarian or other qualified animal health provider with any questions you may have regarding your pet's medical condition. Never disregard professional veterinary advice or delay seeking it because of something you have read on this website. If you think your pet has a medical emergency, contact your veterinarian or an emergency animal hospital immediately.
+        </div>
+    </div> -->
+
+    <footer class="footer" role="contentinfo">
+        <div class="footer-container">
+            <div class="footer-grid">
+                <div class="footer-section">
+                    <h4>About PetSymptoms</h4>
+                    <p>PetSymptoms is your comprehensive resource for pet health information, breed guides, and care tips.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Cat Resources</h4>
+                    <ul>
+                        <li><a href="cats.html">Cat Breeds</a></li>
+                        <li><a href="cat-kidney-disease.html">Cat Health</a></li>
+                        <li><a href="cat-care-tips.html">Behavior Guides</a></li>
+                        <li><a href="cat-care-tips.html">Nutrition Tips</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Other Pets</h4>
+                    <ul>
+                        <li><a href="dogs.html">Dog Care</a></li>
+                        <li><a href="pet-birds.html">Bird Care</a></li>
+                        <li><a href="pet-reptiles.html">Exotic Pets</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Support</h4>
+                    <ul>
+                        <li><a href="about-us.html">About Us</a></li>
+                        <li><a href="contact-us.html">Contact</a></li>
+                        <li><a href="about-us.html">Medical Disclaimer</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 PetSymptoms.com. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        document.querySelectorAll('.faq-question').forEach(question => {
+            question.addEventListener('click', () => {
+                const answer = question.nextElementSibling;
+                const isActive = answer.classList.contains('active');
+                document.querySelectorAll('.faq-answer').forEach(a => a.classList.remove('active'));
+                if (!isActive) answer.classList.add('active');
+            });
+        });
+        
+        const mobileBtn = document.querySelector('.mobile-menu-btn');
+        const navLinks = document.querySelector('.nav-links');
+        if (mobileBtn) {
+            mobileBtn.addEventListener('click', () => {
+                const isHidden = navLinks.style.display === 'none' || !navLinks.style.display;
+                navLinks.style.display = isHidden ? 'flex' : 'none';
+                if (isHidden) {
+                    navLinks.style.position = 'absolute';
+                    navLinks.style.top = '80px';
+                    navLinks.style.left = '0';
+                    navLinks.style.right = '0';
+                    navLinks.style.background = 'var(--surface)';
+                    navLinks.style.flexDirection = 'column';
+                    navLinks.style.padding = '2rem';
+                    navLinks.style.boxShadow = '0 4px 10px rgba(0,0,0,0.1)';
+                }
+            });
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contact the PetSymptoms team with feedback or questions. Note: We cannot provide individual veterinary advice or medical consultations.">
+    <meta name="keywords" content="contact petsymptoms, get in touch, pet care feedback, website support">
+    <meta name="author" content="PetSymptoms Editorial Team">
+    <meta name="robots" content="index, follow">
+    
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://petsymptoms.com/contact-us/">
+    <meta property="og:title" content="Contact PetSymptoms - Get in Touch">
+    <meta property="og:description" content="Contact the PetSymptoms team with feedback or questions. Note: We cannot provide individual veterinary advice.">
+    
+    <title>Contact PetSymptoms - Get in Touch</title>
+    <link rel="canonical" href="https://petsymptoms.com/contact-us/">
+    
+    <!-- Schema Markup -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "ContactPage",
+        "name": "Contact PetSymptoms",
+        "description": "Contact the PetSymptoms team with feedback or questions. Note: We cannot provide individual veterinary advice.",
+        "url": "https://petsymptoms.com/contact-us/"
+    }
+    </script>
+    
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+            {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://petsymptoms.com/"},
+            {"@type": "ListItem", "position": 2, "name": "Contact Us", "item": "https://petsymptoms.com/contact-us/"}
+        ]
+    }
+    </script>
+
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        :root {
+            --primary: #0f442d; --primary-light: #2a5c43; --primary-container: #9dd2b3;
+            --secondary: #25667b; --secondary-container: #aae6fe;
+            --surface: #faf9f6; --surface-container: #efeeeb;
+            --on-surface: #1a1c1a; --on-surface-variant: #414943;
+            --error: #ba1a1a; --outline: #717972;
+        }
+        body { font-family: 'Manrope', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: var(--surface); color: var(--on-surface); line-height: 1.6; }
+        h1, h2, h3 { font-weight: 700; line-height: 1.2; }
+        a { color: var(--primary); text-decoration: none; transition: all 0.3s ease; }
+        a:hover { color: var(--secondary); }
+        
+        .navbar { background: var(--surface); border-bottom: 1px solid #e8e4db; position: sticky; top: 0; z-index: 1000; box-shadow: 0 2px 10px rgba(42, 92, 67, 0.08); }
+        .nav-container { max-width: 1280px; margin: 0 auto; padding: 0 2rem; height: 80px; display: flex; align-items: center; justify-content: space-between; }
+        .logo { font-size: 1.75rem; font-weight: 800; color: var(--primary); letter-spacing: -0.02em; }
+        .nav-links { display: flex; gap: 2rem; align-items: center; list-style: none; }
+        .nav-links a { color: var(--on-surface-variant); font-weight: 600; font-size: 0.95rem; }
+        .nav-links a:hover { color: var(--primary); }
+        .mobile-menu-btn { display: none; background: none; border: none; cursor: pointer; padding: 0.5rem; }
+        
+        .breadcrumb { background: var(--surface-container); padding: 1rem 2rem; font-size: 0.9rem; }
+        .breadcrumb-container { max-width: 1280px; margin: 0 auto; }
+        .breadcrumb a { color: var(--on-surface-variant); }
+        .breadcrumb span { margin: 0 0.5rem; color: var(--outline); }
+        
+        .page-hero { background: var(--surface-container); padding: 4rem 2rem; text-align: center; }
+        .page-hero h1 { font-size: 2.75rem; color: var(--primary); margin-bottom: 1rem; }
+        .page-hero p { max-width: 700px; margin: 0 auto; font-size: 1.15rem; color: var(--on-surface-variant); }
+        
+        .contact-grid { display: grid; grid-template-columns: 1fr 1.5fr; gap: 4rem; max-width: 1000px; margin: 4rem auto; padding: 0 2rem; }
+        @media (max-width: 768px) { .contact-grid { grid-template-columns: 1fr; gap: 2rem; } }
+        
+        .contact-info h2 { font-size: 1.75rem; color: var(--primary); margin-bottom: 1rem; }
+        .contact-info p { margin-bottom: 1.5rem; font-size: 1.05rem; }
+        .contact-item { display: flex; align-items: center; gap: 1rem; margin-bottom: 1.5rem; font-size: 1.05rem; }
+        .contact-icon { width: 40px; height: 40px; background: var(--primary-container); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: var(--primary); }
+        
+        .contact-form { background: white; padding: 2.5rem; border-radius: 12px; box-shadow: 0 4px 20px rgba(42, 92, 67, 0.08); border: 1px solid var(--surface-container); }
+        .form-group { margin-bottom: 1.5rem; }
+        .form-group label { display: block; margin-bottom: 0.5rem; font-weight: 600; font-size: 0.95rem; }
+        .form-group input, .form-group textarea { width: 100%; padding: 1rem; border: 1px solid var(--outline-variant); border-radius: 8px; font-size: 1rem; font-family: inherit; transition: border-color 0.3s; }
+        .form-group input:focus, .form-group textarea:focus { outline: none; border-color: var(--primary); }
+        
+        .btn-submit { background: var(--primary); color: white; padding: 1rem 2.5rem; border-radius: 50px; font-weight: 700; font-size: 1rem; border: none; cursor: pointer; transition: all 0.3s; }
+        .btn-submit:hover { background: var(--primary-light); transform: translateY(-2px); }
+        
+        .important-note { background: #e8e4db; border-left: 4px solid var(--primary-light); padding: 1.5rem; border-radius: 8px; margin-bottom: 2rem; font-size: 0.95rem; }
+        .important-note strong { display: block; margin-bottom: 0.5rem; color: var(--primary); }
+        
+        .footer { background: var(--on-surface); color: white; padding: 4rem 2rem 2rem; margin-top: 4rem; }
+        .footer-container { max-width: 1280px; margin: 0 auto; }
+        .footer-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 3rem; margin-bottom: 3rem; }
+        .footer-section h4 { color: var(--primary-container); margin-bottom: 1.25rem; font-size: 1.1rem; }
+        .footer-section p { color: rgba(255, 255, 255, 0.8); line-height: 1.7; margin-bottom: 1rem; }
+        .footer-section ul { list-style: none; }
+        .footer-section li { margin-bottom: 0.6rem; }
+        .footer-section a { color: rgba(255, 255, 255, 0.8); transition: all 0.2s; }
+        .footer-section a:hover { color: var(--primary-container); }
+        .footer-bottom { border-top: 1px solid rgba(255, 255, 255, 0.1); padding-top: 2rem; text-align: center; color: rgba(255, 255, 255, 0.6); font-size: 0.9rem; }
+        
+        @media (max-width: 768px) {
+            .nav-links { display: none; }
+            .mobile-menu-btn { display: block; }
+            .page-hero h1 { font-size: 2rem; }
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar" role="navigation" aria-label="Main navigation">
+        <div class="nav-container">
+            <a href="index.html" class="logo" aria-label="PetSymptoms Home">PetSymptoms</a>
+            <ul class="nav-links">
+                <li><a href="dogs.html">Dogs</a></li>
+                <li><a href="cats.html">Cats</a></li>
+                <li><a href="pet-birds.html">Birds</a></li>
+                <li><a href="pet-reptiles.html">Exotic Pets</a></li>
+                <li><a href="about-us.html">About</a></li>
+                <li><a href="contact-us.html" style="color: var(--primary);">Contact</a></li>
+            </ul>
+            <button class="mobile-menu-btn" aria-label="Toggle menu">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <line x1="3" y1="12" x2="21" y2="12"></line>
+                    <line x1="3" y1="6" x2="21" y2="6"></line>
+                    <line x1="3" y1="18" x2="21" y2="18"></line>
+                </svg>
+            </button>
+        </div>
+    </nav>
+
+    <div class="breadcrumb" aria-label="Breadcrumb">
+        <div class="breadcrumb-container">
+            <a href="index.html">Home</a> <span>/</span> <span>Contact Us</span>
+        </div>
+    </div>
+
+    <header class="page-hero">
+        <h1>Contact Us</h1>
+        <p>We value your feedback and questions. Please use the form below to reach out to our editorial team.</p>
+    </header>
+
+    <main class="contact-grid">
+        <div class="contact-info">
+            <h2>Get in Touch</h2>
+            <p>Whether you have a suggestion for new content, feedback on an article, or a general inquiry, we would love to hear from you.</p>
+            
+            <div class="important-note">
+                <strong>Important Note</strong>
+                Please note that we are an educational resource and <strong>cannot provide individual veterinary advice or medical diagnoses</strong>. If your pet is experiencing a medical emergency, please contact your local veterinarian immediately.
+            </div>
+            
+            <div class="contact-item">
+                <div class="contact-icon">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+                </div>
+                <span>contact@petsymptoms.com</span>
+            </div>
+            
+            <div class="contact-item">
+                <div class="contact-icon">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+                </div>
+                <span>Response time: 24-48 hours</span>
+            </div>
+        </div>
+
+        <div class="contact-form">
+            <form action="#" method="POST">
+                <div class="form-group">
+                    <label for="name">Your Name</label>
+                    <input type="text" id="name" name="name" required placeholder="Enter your full name">
+                </div>
+                
+                <div class="form-group">
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" name="email" required placeholder="Enter your email address">
+                </div>
+                
+                <div class="form-group">
+                    <label for="subject">Subject</label>
+                    <input type="text" id="subject" name="subject" required placeholder="What is this regarding?">
+                </div>
+                
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" rows="6" required placeholder="How can we help you?"></textarea>
+                </div>
+                
+                <button type="submit" class="btn-submit">Send Message</button>
+            </form>
+        </div>
+    </main>
+
+    <footer class="footer" role="contentinfo">
+        <div class="footer-container">
+            <div class="footer-grid">
+                <div class="footer-section">
+                    <h4>About PetSymptoms</h4>
+                    <p>PetSymptoms is your comprehensive resource for pet health information, breed guides, and care tips.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="dogs.html">Dog Care</a></li>
+                        <li><a href="cats.html">Cat Care</a></li>
+                        <li><a href="pet-birds.html">Bird Care</a></li>
+                        <li><a href="pet-reptiles.html">Exotic Pets</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Resources</h4>
+                    <ul>
+                        <li><a href="about-us.html">About Us</a></li>
+                        <li><a href="contact-us.html">Contact Us</a></li>
+                        <li><a href="about-us.html">Privacy Policy</a></li>
+                        <li><a href="about-us.html">Medical Disclaimer</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 PetSymptoms.com. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        const mb = document.querySelector('.mobile-menu-btn'), nl = document.querySelector('.nav-links');
+        if(mb) mb.addEventListener('click', () => {
+            const h = nl.style.display === 'none' || !nl.style.display;
+            nl.style.display = h ? 'flex' : 'none';
+            if(h) { nl.style.position = 'absolute'; nl.style.top = '80px'; nl.style.left = '0'; nl.style.right = '0'; nl.style.background = 'var(--surface)'; nl.style.flexDirection = 'column'; nl.style.padding = '2rem'; nl.style.boxShadow = '0 4px 10px rgba(0,0,0,0.1)'; }
+        });
+    </script>
+</body>
+</html>

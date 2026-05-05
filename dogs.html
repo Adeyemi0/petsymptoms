@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Complete dog care guides: breed information, health symptoms, training tips, nutrition advice, and preventive care for all dog breeds. Find answers for your canine companion.">
+    <meta name="keywords" content="dog breeds, dog health, dog training, puppy care, dog symptoms, canine diseases, dog nutrition">
+    <meta name="author" content="PetSymptoms">
+    <meta name="robots" content="index, follow">
+    
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://petsymptoms.com/dogs/">
+    <meta property="og:title" content="Dog Care Guides - Breeds, Health, Training & Nutrition | PetSymptoms">
+    <meta property="og:description" content="Everything you need to know about dog care: breed guides, health symptoms, training tips, and nutrition advice for happy, healthy dogs.">
+    <meta property="og:image" content="https://petsymptoms.com/img/golden-retriever-dogs-puppies.jpg">
+    
+    <title>Dog Care Guides - Breeds, Health, Training & Nutrition | PetSymptoms</title>
+    <link rel="canonical" href="https://petsymptoms.com/dogs/">
+    
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "CollectionPage",
+        "name": "Dog Care Guides",
+        "description": "Comprehensive dog care information including breed guides, health symptoms, training tips, and nutrition advice.",
+        "url": "https://petsymptoms.com/dogs/"
+    }
+    </script>
+    
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+            {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://petsymptoms.com/"},
+            {"@type": "ListItem", "position": 2, "name": "Dogs", "item": "https://petsymptoms.com/dogs/"}
+        ]
+    }
+    </script>
+    
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+            {
+                "@type": "Question",
+                "name": "What is the best dog breed for first time owners?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Breeds like Labrador Retrievers, Golden Retrievers, and Cavalier King Charles Spaniels are often recommended for first time owners due to their friendly temperament, trainability, and adaptability. However, the best breed depends on your lifestyle, living situation, and activity level."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "How often should I take my dog to the vet?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Adult dogs should have a wellness exam at least once a year. Puppies need more frequent visits for vaccinations and checkups, typically every 3 to 4 weeks until they are about 16 weeks old. Senior dogs may benefit from twice yearly visits."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "What are common signs of illness in dogs?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Common signs include changes in appetite or water consumption, lethargy, vomiting, diarrhea, coughing, difficulty breathing, limping, excessive scratching, behavioral changes, and unexplained weight loss."
+                }
+            }
+        ]
+    }
+    </script>
+
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        :root {
+            --primary: #0f442d; --primary-light: #2a5c43; --primary-container: #9dd2b3;
+            --secondary: #25667b; --secondary-container: #aae6fe;
+            --surface: #faf9f6; --surface-container: #efeeeb;
+            --on-surface: #1a1c1a; --on-surface-variant: #414943;
+            --error: #ba1a1a; --outline: #717972;
+        }
+        body { font-family: 'Manrope', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: var(--surface); color: var(--on-surface); line-height: 1.6; }
+        h1, h2, h3, h4 { font-weight: 700; line-height: 1.2; }
+        a { color: var(--primary); text-decoration: none; transition: all 0.3s ease; }
+        a:hover { color: var(--secondary); }
+        
+        .navbar { background: var(--surface); border-bottom: 1px solid #e8e4db; position: sticky; top: 0; z-index: 1000; box-shadow: 0 2px 10px rgba(42, 92, 67, 0.08); }
+        .nav-container { max-width: 1280px; margin: 0 auto; padding: 0 2rem; height: 80px; display: flex; align-items: center; justify-content: space-between; }
+        .logo { font-size: 1.75rem; font-weight: 800; color: var(--primary); letter-spacing: -0.02em; }
+        .nav-links { display: flex; gap: 2rem; align-items: center; list-style: none; }
+        .nav-links a { color: var(--on-surface-variant); font-weight: 600; font-size: 0.95rem; }
+        .nav-links a:hover { color: var(--primary); }
+        .mobile-menu-btn { display: none; background: none; border: none; cursor: pointer; padding: 0.5rem; }
+        
+        .breadcrumb { background: var(--surface-container); padding: 1rem 2rem; font-size: 0.9rem; }
+        .breadcrumb-container { max-width: 1280px; margin: 0 auto; }
+        .breadcrumb a { color: var(--on-surface-variant); }
+        .breadcrumb span { margin: 0 0.5rem; color: var(--outline); }
+        
+        .category-hero { background: linear-gradient(135deg, var(--primary) 0%, var(--primary-light) 100%); color: white; padding: 4rem 2rem; text-align: center; position: relative; overflow: hidden; }
+        .category-hero::before { content: ''; position: absolute; top: -30%; right: -10%; width: 500px; height: 500px; background: rgba(255, 255, 255, 0.05); border-radius: 50%; }
+        .hero-content { max-width: 800px; margin: 0 auto; position: relative; z-index: 1; }
+        .category-hero h1 { font-size: 2.75rem; margin-bottom: 1.25rem; font-weight: 800; }
+        .category-hero p { font-size: 1.15rem; margin-bottom: 2rem; opacity: 0.95; }
+        .category-disclaimer { font-size: 0.85rem; opacity: 0.9; background: rgba(255, 255, 255, 0.1); padding: 0.75rem 1.5rem; border-radius: 8px; display: inline-block; }
+        
+        .section { padding: 4rem 2rem; max-width: 1280px; margin: 0 auto; }
+        .section-title { font-size: 2rem; color: var(--primary); margin-bottom: 0.75rem; }
+        .section-subtitle { color: var(--on-surface-variant); margin-bottom: 2.5rem; font-size: 1.05rem; }
+        
+        .subcategory-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 1.5rem; margin: 2.5rem 0; }
+        .subcategory-card { background: white; border-radius: 12px; padding: 1.75rem; box-shadow: 0 2px 12px rgba(42, 92, 67, 0.08); border: 1px solid var(--surface-container); transition: all 0.3s ease; text-align: center; }
+        .subcategory-card:hover { transform: translateY(-4px); box-shadow: 0 8px 25px rgba(42, 92, 67, 0.15); }
+        .subcategory-icon { width: 60px; height: 60px; background: var(--primary-container); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 1rem; font-size: 1.75rem; color: var(--primary); }
+        .subcategory-card h3 { font-size: 1.25rem; color: var(--primary); margin-bottom: 0.75rem; }
+        .subcategory-card p { color: var(--on-surface-variant); font-size: 0.95rem; margin-bottom: 1rem; }
+        .subcategory-link { font-weight: 700; color: var(--primary); display: inline-flex; align-items: center; gap: 0.35rem; }
+        .subcategory-link::after { content: '→'; transition: transform 0.3s; }
+        .subcategory-link:hover::after { transform: translateX(4px); }
+        
+        .breed-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 2rem; margin: 2rem 0; }
+        .breed-card { background: white; border-radius: 12px; overflow: hidden; box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06); transition: all 0.3s; border: 1px solid var(--surface-container); }
+        .breed-card:hover { box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12); }
+        .breed-image { width: 100%; height: 180px; object-fit: cover; background: var(--surface-container); }
+        .breed-content { padding: 1.5rem; }
+        .breed-content h3 { font-size: 1.2rem; color: var(--primary); margin-bottom: 0.5rem; }
+        .breed-meta { display: flex; gap: 1rem; font-size: 0.85rem; color: var(--on-surface-variant); margin-bottom: 0.75rem; flex-wrap: wrap; }
+        .breed-content p { color: var(--on-surface-variant); font-size: 0.95rem; margin-bottom: 1rem; line-height: 1.6; }
+        .breed-link { font-weight: 700; color: var(--primary); }
+        
+        .article-list { display: flex; flex-direction: column; gap: 1.5rem; margin: 2rem 0; }
+        .article-item { background: white; border-radius: 12px; padding: 1.5rem; box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06); border: 1px solid var(--surface-container); display: grid; grid-template-columns: 1fr 3fr; gap: 1.5rem; align-items: center; }
+        @media (max-width: 768px) { .article-item { grid-template-columns: 1fr; } }
+        .article-item img { width: 100%; height: 140px; object-fit: cover; border-radius: 8px; background: var(--surface-container); }
+        .article-item-content h3 { font-size: 1.25rem; color: var(--primary); margin-bottom: 0.5rem; }
+        .article-item-content p { color: var(--on-surface-variant); font-size: 0.95rem; margin-bottom: 0.75rem; }
+        .article-tag { display: inline-block; background: var(--secondary-container); color: var(--secondary); padding: 0.25rem 0.75rem; border-radius: 20px; font-size: 0.75rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 0.5rem; }
+        
+        .faq-container { max-width: 800px; margin: 0 auto; }
+        .faq-item { background: white; border-radius: 12px; margin-bottom: 1rem; overflow: hidden; box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05); border: 1px solid var(--surface-container); }
+        .faq-question { padding: 1.25rem 1.5rem; font-weight: 700; font-size: 1.05rem; color: var(--primary); cursor: pointer; display: flex; justify-content: space-between; align-items: center; }
+        .faq-question:hover { background: var(--surface-container); }
+        .faq-answer { padding: 0 1.5rem 1.25rem; color: var(--on-surface-variant); line-height: 1.7; display: none; }
+        .faq-answer.active { display: block; }
+        
+        .medical-disclaimer { background: rgba(186, 26, 26, 0.1); border-left: 4px solid var(--error); padding: 1.5rem; border-radius: 8px; margin: 3rem 0; font-size: 0.9rem; color: var(--on-surface-variant); }
+        .medical-disclaimer strong { color: var(--error); display: block; margin-bottom: 0.5rem; }
+        
+        .footer { background: var(--on-surface); color: white; padding: 4rem 2rem 2rem; margin-top: 4rem; }
+        .footer-container { max-width: 1280px; margin: 0 auto; }
+        .footer-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 3rem; margin-bottom: 3rem; }
+        .footer-section h4 { color: var(--primary-container); margin-bottom: 1.25rem; font-size: 1.1rem; }
+        .footer-section p { color: rgba(255, 255, 255, 0.8); line-height: 1.7; margin-bottom: 1rem; }
+        .footer-section ul { list-style: none; }
+        .footer-section li { margin-bottom: 0.6rem; }
+        .footer-section a { color: rgba(255, 255, 255, 0.8); transition: all 0.2s; }
+        .footer-section a:hover { color: var(--primary-container); }
+        .footer-bottom { border-top: 1px solid rgba(255, 255, 255, 0.1); padding-top: 2rem; text-align: center; color: rgba(255, 255, 255, 0.6); font-size: 0.9rem; }
+        
+        @media (max-width: 768px) {
+            .nav-links { display: none; }
+            .mobile-menu-btn { display: block; }
+            .category-hero h1 { font-size: 2rem; }
+            .category-hero p { font-size: 1rem; }
+            .section { padding: 3rem 1.5rem; }
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar" role="navigation" aria-label="Main navigation">
+        <div class="nav-container">
+            <a href="index.html" class="logo" aria-label="PetSymptoms Home">PetSymptoms</a>
+            <ul class="nav-links">
+                <li><a href="dogs.html">Dogs</a></li>
+                <li><a href="cats.html">Cats</a></li>
+                <li><a href="pet-birds.html">Birds</a></li>
+                <li><a href="pet-reptiles.html">Exotic Pets</a></li>
+                <li><a href="about-us.html">About</a></li>
+                <li><a href="contact-us.html">Contact</a></li>
+            </ul>
+            <button class="mobile-menu-btn" aria-label="Toggle menu">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <line x1="3" y1="12" x2="21" y2="12"></line>
+                    <line x1="3" y1="6" x2="21" y2="6"></line>
+                    <line x1="3" y1="18" x2="21" y2="18"></line>
+                </svg>
+            </button>
+        </div>
+    </nav>
+
+    <div class="breadcrumb" aria-label="Breadcrumb">
+        <div class="breadcrumb-container">
+            <a href="index.html">Home</a> <span>/</span> <span>Dogs</span>
+        </div>
+    </div>
+
+    <header class="category-hero">
+        <div class="hero-content">
+            <h1>Complete Dog Care Guides</h1>
+            <p>From puppy training to senior care, find expert information about dog breeds, health symptoms, nutrition, and wellness for your canine companion.</p>
+            <!-- <div class="category-disclaimer">⚠️ Educational information only. Always consult a licensed veterinarian for medical advice.</div> -->
+        </div>
+    </header>
+
+    <section class="section">
+        <h2 class="section-title">Explore Dog Topics</h2>
+        <p class="section-subtitle">Find what you need quickly with our organized guides</p>
+        
+        <div class="subcategory-grid">
+            <a href="dogs.html" class="subcategory-card">
+                <div class="subcategory-icon">🐕</div>
+                <h3>Dog Breeds</h3>
+                <p>Learn about different breeds, temperaments, and which might be right for your home.</p>
+                <span class="subcategory-link">Browse all breeds</span>
+            </a>
+            
+            <a href="top-signs-sick-dog.html" class="subcategory-card">
+                <div class="subcategory-icon">🏥</div>
+                <h3>Health & Symptoms</h3>
+                <p>Recognize signs of illness and understand common dog health conditions.</p>
+                <span class="subcategory-link">View health guides</span>
+            </a>
+            
+            <a href="crate-training-puppy.html" class="subcategory-card">
+                <div class="subcategory-icon">🎾</div>
+                <h3>Training & Behavior</h3>
+                <p>Practical tips for obedience, behavior issues, and building a strong bond.</p>
+                <span class="subcategory-link">Training resources</span>
+            </a>
+            
+            <a href="prevent-dog-obesity.html" class="subcategory-card">
+                <div class="subcategory-icon">🥣</div>
+                <h3>Nutrition & Diet</h3>
+                <p>Feeding guidelines, healthy treats, and nutrition advice for every life stage.</p>
+                <span class="subcategory-link">Nutrition guides</span>
+            </a>
+            
+            <a href="dog-fever-pet-symptoms.html" class="subcategory-card">
+                <div class="subcategory-icon">🩹</div>
+                <h3>First Aid & Emergencies</h3>
+                <p>Essential knowledge for handling injuries and knowing when to seek urgent care.</p>
+                <span class="subcategory-link">Emergency guide</span>
+            </a>
+            
+            <a href="prevent-dog-obesity.html" class="subcategory-card">
+                <div class="subcategory-icon">⚖️</div>
+                <h3>Preventive Care</h3>
+                <p>Vaccines, dental care, exercise, and wellness tips to keep your dog thriving.</p>
+                <span class="subcategory-link">Prevention tips</span>
+            </a>
+        </div>
+    </section>
+
+    <section class="section" style="background: var(--surface-container);">
+        <h2 class="section-title">Popular Dog Breeds</h2>
+        <p class="section-subtitle">Detailed guides for some of the most loved dog breeds</p>
+        
+        <div class="breed-grid">
+            <article class="breed-card">
+                <img src="img/golden-retriever-dogs-puppies.jpg" alt="Golden Retriever" class="breed-image" loading="lazy">
+                <div class="breed-content">
+                    <h3>Golden Retriever</h3>
+                    <div class="breed-meta">
+                        <span>📏 Large</span>
+                        <span>⏱️ 10-12 years</span>
+                        <span>💙 Family friendly</span>
+                    </div>
+                    <p>Friendly, intelligent, and devoted. Golden Retrievers excel as family companions and service dogs.</p>
+                    <a href="golden-retriever-dogs-puppies.html" class="breed-link">Learn more about Golden Retrievers</a>
+                </div>
+            </article>
+            
+            <article class="breed-card">
+                <img src="img/black-labrador-big-dog-breeds-px.jpg" alt="Labrador Retriever" class="breed-image" loading="lazy">
+                <div class="breed-content">
+                    <h3>Labrador Retriever</h3>
+                    <div class="breed-meta">
+                        <span>📏 Large</span>
+                        <span>⏱️ 10-12 years</span>
+                        <span>🎾 High energy</span>
+                    </div>
+                    <p>Outgoing, even tempered, and gentle. Labs are America's most popular breed for good reason.</p>
+                    <a href="labrador-dogs-puppies.html" class="breed-link">Learn more about Labradors</a>
+                </div>
+            </article>
+            
+            <article class="breed-card">
+                <img src="img/German-short-haired-pointer-big-dog-breeds-vh.jpg" alt="German Shepherd" class="breed-image" loading="lazy">
+                <div class="breed-content">
+                    <h3>German Shepherd</h3>
+                    <div class="breed-meta">
+                        <span>📏 Large</span>
+                        <span>⏱️ 9-13 years</span>
+                        <span>🛡️ Protective</span>
+                    </div>
+                    <p>Confident, courageous, and smart. German Shepherds excel in work roles and loyal companionship.</p>
+                    <a href="dogs.html" class="breed-link">Learn more about German Shepherds</a>
+                </div>
+            </article>
+            
+            <article class="breed-card">
+                <img src="img/bulldog-big-dog-breeds-px.jpg" alt="Bulldog" class="breed-image" loading="lazy">
+                <div class="breed-content">
+                    <h3>Bulldog</h3>
+                    <div class="breed-meta">
+                        <span>📏 Medium</span>
+                        <span>⏱️ 8-10 years</span>
+                        <span>🏠 Apartment friendly</span>
+                    </div>
+                    <p>Calm, friendly, and dignified. Bulldogs are low energy companions with big personalities.</p>
+                    <a href="dogs.html" class="breed-link">Learn more about Bulldogs</a>
+                </div>
+            </article>
+            
+            <article class="breed-card">
+                <img src="img/bassett-hound-big-dog-breeds-vh.jpg" alt="Beagle" class="breed-image" loading="lazy">
+                <div class="breed-content">
+                    <h3>Beagle</h3>
+                    <div class="breed-meta">
+                        <span>📏 Small-Medium</span>
+                        <span>⏱️ 12-15 years</span>
+                        <span>👃 Scent hound</span>
+                    </div>
+                    <p>Merry, curious, and friendly. Beagles are great family dogs with excellent noses and gentle temperaments.</p>
+                    <a href="beagle-dogs-puppies-breeds.html" class="breed-link">Learn more about Beagles</a>
+                </div>
+            </article>
+            
+            <article class="breed-card">
+                <img src="img/poodle-big-dog-breeds-vh.jpg" alt="Pomeranian" class="breed-image" loading="lazy">
+                <div class="breed-content">
+                    <h3>Pomeranian</h3>
+                    <div class="breed-meta">
+                        <span>📏 Toy</span>
+                        <span>⏱️ 12-16 years</span>
+                        <span>✨ Bold personality</span>
+                    </div>
+                    <p>Lively, bold, and inquisitive. Pomeranians pack big dog attitude into a small, fluffy package.</p>
+                    <a href="pomeranian-dogs-puppies-dog-breeds.html" class="breed-link">Learn more about Pomeranians</a>
+                </div>
+            </article>
+        </div>
+        
+        <div style="text-align: center; margin-top: 2rem;">
+            <a href="dogs.html" class="btn-primary" style="display: inline-block; background: var(--primary); color: white; padding: 0.85rem 2rem; border-radius: 50px; font-weight: 700; text-decoration: none;">View All Dog Breeds A to Z</a>
+        </div>
+    </section>
+
+    <section class="section">
+        <h2 class="section-title">Featured Dog Health Articles</h2>
+        <p class="section-subtitle">Essential information to keep your dog healthy and happy</p>
+        
+        <div class="article-list">
+            <article class="article-item">
+                <img src="img/dog-animal-pet-samoyed-breed-sick-dog-pb.jpg" alt="Dog with fever" loading="lazy">
+                <div class="article-item-content">
+                    <span class="article-tag">Health</span>
+                    <h3><a href="dog-fever-pet-symptoms.html">Understanding Fever in Dogs: Causes and Care</a></h3>
+                    <p>Learn how to recognize fever symptoms in dogs, when to worry, and what steps to take to help your dog recover safely.</p>
+                    <a href="dog-fever-pet-symptoms.html" class="breed-link">Read more</a>
+                </div>
+            </article>
+            
+            <article class="article-item">
+                <img src="img/boxer-big-dog-breeds-px.jpg" alt="Dog with allergies" loading="lazy">
+                <div class="article-item-content">
+                    <span class="article-tag">Allergies</span>
+                    <h3><a href="dogs.html">Dog Allergies: Home Remedies and Relief Options</a></h3>
+                    <p>Discover practical ways to help your dog find relief from seasonal allergies, food sensitivities, and skin irritations.</p>
+                    <a href="dogs.html" class="breed-link">Read more</a>
+                </div>
+            </article>
+            
+            <article class="article-item">
+                <img src="img/bull-terrier-big-dog-breeds-vh.jpg" alt="Puppy health check" loading="lazy">
+                <div class="article-item-content">
+                    <span class="article-tag">Emergency</span>
+                    <h3><a href="parvo-symptoms.html">Parvo in Dogs: Symptoms, Treatment, and Prevention</a></h3>
+                    <p>Parvovirus is a serious threat to puppies. Learn the warning signs and how to protect your dog through vaccination and hygiene.</p>
+                    <a href="parvo-symptoms.html" class="breed-link">Read more</a>
+                </div>
+            </article>
+            
+            <article class="article-item">
+                <img src="img/rottweiler-big-dog-breeds-vh.jpg" alt="Dog dental care" loading="lazy">
+                <div class="article-item-content">
+                    <span class="article-tag">Preventive Care</span>
+                    <h3><a href="dog-teeth-cleaning-tips.html">Dog Dental Care: Brushing Tips and Oral Health</a></h3>
+                    <p>Good dental health supports your dog's overall wellbeing. Learn effective brushing techniques and dental care routines.</p>
+                    <a href="dog-teeth-cleaning-tips.html" class="breed-link">Read more</a>
+                </div>
+            </article>
+        </div>
+    </section>
+
+    <section class="section" style="background: var(--surface-container);">
+        <h2 class="section-title">Dog Care FAQs</h2>
+        <p class="section-subtitle">Quick answers to common questions dog owners ask</p>
+        
+        <div class="faq-container" itemscope itemtype="https://schema.org/FAQPage">
+            <div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+                <div class="faq-question" itemprop="name">What is the best dog breed for first time owners?<span aria-hidden="true">+</span></div>
+                <div class="faq-answer" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+                    <div itemprop="text">Breeds like Labrador Retrievers, Golden Retrievers, and Cavalier King Charles Spaniels are often recommended for first time owners due to their friendly temperament, trainability, and adaptability. However, the best breed depends on your lifestyle, living situation, and activity level.</div>
+                </div>
+            </div>
+            
+            <div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+                <div class="faq-question" itemprop="name">How often should I take my dog to the vet?<span aria-hidden="true">+</span></div>
+                <div class="faq-answer" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+                    <div itemprop="text">Adult dogs should have a wellness exam at least once a year. Puppies need more frequent visits for vaccinations and checkups, typically every 3 to 4 weeks until they are about 16 weeks old. Senior dogs may benefit from twice yearly visits.</div>
+                </div>
+            </div>
+            
+            <div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+                <div class="faq-question" itemprop="name">What are common signs of illness in dogs?<span aria-hidden="true">+</span></div>
+                <div class="faq-answer" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+                    <div itemprop="text">Common signs include changes in appetite or water consumption, lethargy, vomiting, diarrhea, coughing, difficulty breathing, limping, excessive scratching, behavioral changes, and unexplained weight loss.</div>
+                </div>
+            </div>
+            
+            <div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+                <div class="faq-question" itemprop="name">How much exercise does my dog need?<span aria-hidden="true">+</span></div>
+                <div class="faq-answer" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+                    <div itemprop="text">Exercise needs vary by breed, age, and health. Most adult dogs benefit from 30 minutes to 2 hours of activity daily. High energy breeds like Border Collies need more, while lower energy breeds may be satisfied with shorter walks.</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- <div class="section">
+        <div class="medical-disclaimer" role="alert">
+            <strong>Medical Disclaimer</strong>
+            The content on PetSymptoms.com is for informational and educational purposes only and is not intended as a substitute for professional veterinary advice, diagnosis, or treatment. Always seek the advice of your veterinarian or other qualified animal health provider with any questions you may have regarding your pet's medical condition. Never disregard professional veterinary advice or delay seeking it because of something you have read on this website. If you think your pet has a medical emergency, contact your veterinarian or an emergency animal hospital immediately.
+        </div>
+    </div> -->
+
+    <footer class="footer" role="contentinfo">
+        <div class="footer-container">
+            <div class="footer-grid">
+                <div class="footer-section">
+                    <h4>About PetSymptoms</h4>
+                    <p>PetSymptoms is your comprehensive resource for pet health information, breed guides, and care tips.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Dog Resources</h4>
+                    <ul>
+                        <li><a href="dogs.html">All Dog Breeds</a></li>
+                        <li><a href="top-signs-sick-dog.html">Dog Health</a></li>
+                        <li><a href="crate-training-puppy.html">Training Guides</a></li>
+                        <li><a href="prevent-dog-obesity.html">Nutrition Tips</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Other Pets</h4>
+                    <ul>
+                        <li><a href="cats.html">Cat Care</a></li>
+                        <li><a href="pet-birds.html">Bird Care</a></li>
+                        <li><a href="pet-reptiles.html">Exotic Pets</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Support</h4>
+                    <ul>
+                        <li><a href="about-us.html">About Us</a></li>
+                        <li><a href="contact-us.html">Contact</a></li>
+                        <li><a href="about-us.html">Medical Disclaimer</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 PetSymptoms.com. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        document.querySelectorAll('.faq-question').forEach(question => {
+            question.addEventListener('click', () => {
+                const answer = question.nextElementSibling;
+                const isActive = answer.classList.contains('active');
+                document.querySelectorAll('.faq-answer').forEach(a => a.classList.remove('active'));
+                if (!isActive) answer.classList.add('active');
+            });
+        });
+        
+        const mobileBtn = document.querySelector('.mobile-menu-btn');
+        const navLinks = document.querySelector('.nav-links');
+        if (mobileBtn) {
+            mobileBtn.addEventListener('click', () => {
+                const isHidden = navLinks.style.display === 'none' || !navLinks.style.display;
+                navLinks.style.display = isHidden ? 'flex' : 'none';
+                if (isHidden) {
+                    navLinks.style.position = 'absolute';
+                    navLinks.style.top = '80px';
+                    navLinks.style.left = '0';
+                    navLinks.style.right = '0';
+                    navLinks.style.background = 'var(--surface)';
+                    navLinks.style.flexDirection = 'column';
+                    navLinks.style.padding = '2rem';
+                    navLinks.style.boxShadow = '0 4px 10px rgba(0,0,0,0.1)';
+                }
+            });
+        }
+    </script>
+</body>
+</html>

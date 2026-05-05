@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Learn about PetSymptoms: our mission to empower pet owners with accessible, research-based pet care information and our commitment to animal wellbeing.">
+    <meta name="keywords" content="about petsymptoms, pet care resources, animal health education, pet owner community">
+    <meta name="author" content="PetSymptoms Editorial Team">
+    <meta name="robots" content="index, follow">
+    
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://petsymptoms.com/about-us/">
+    <meta property="og:title" content="About PetSymptoms - Our Mission and Values">
+    <meta property="og:description" content="Learn about PetSymptoms, our mission to provide accessible pet health information, and our commitment to educational content.">
+    
+    <title>About PetSymptoms - Our Mission and Values</title>
+    <link rel="canonical" href="https://petsymptoms.com/about-us/">
+    
+    <!-- Schema Markup -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "AboutPage",
+        "name": "About PetSymptoms",
+        "description": "Learn about PetSymptoms, our mission to provide accessible pet health information, and our commitment to educational content.",
+        "url": "https://petsymptoms.com/about-us/",
+        "mainEntity": {
+            "@type": "Organization",
+            "name": "PetSymptoms",
+            "url": "https://petsymptoms.com",
+            "logo": "https://petsymptoms.com/img/logo.png",
+            "sameAs": []
+        }
+    }
+    </script>
+    
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+            {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://petsymptoms.com/"},
+            {"@type": "ListItem", "position": 2, "name": "About Us", "item": "https://petsymptoms.com/about-us/"}
+        ]
+    }
+    </script>
+
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        :root {
+            --primary: #0f442d; --primary-light: #2a5c43; --primary-container: #9dd2b3;
+            --secondary: #25667b; --secondary-container: #aae6fe;
+            --surface: #faf9f6; --surface-container: #efeeeb;
+            --on-surface: #1a1c1a; --on-surface-variant: #414943;
+            --error: #ba1a1a; --outline: #717972;
+        }
+        body { font-family: 'Manrope', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: var(--surface); color: var(--on-surface); line-height: 1.6; }
+        h1, h2, h3 { font-weight: 700; line-height: 1.2; }
+        a { color: var(--primary); text-decoration: none; transition: all 0.3s ease; }
+        a:hover { color: var(--secondary); }
+        
+        .navbar { background: var(--surface); border-bottom: 1px solid #e8e4db; position: sticky; top: 0; z-index: 1000; box-shadow: 0 2px 10px rgba(42, 92, 67, 0.08); }
+        .nav-container { max-width: 1280px; margin: 0 auto; padding: 0 2rem; height: 80px; display: flex; align-items: center; justify-content: space-between; }
+        .logo { font-size: 1.75rem; font-weight: 800; color: var(--primary); letter-spacing: -0.02em; }
+        .nav-links { display: flex; gap: 2rem; align-items: center; list-style: none; }
+        .nav-links a { color: var(--on-surface-variant); font-weight: 600; font-size: 0.95rem; }
+        .nav-links a:hover { color: var(--primary); }
+        .mobile-menu-btn { display: none; background: none; border: none; cursor: pointer; padding: 0.5rem; }
+        
+        .breadcrumb { background: var(--surface-container); padding: 1rem 2rem; font-size: 0.9rem; }
+        .breadcrumb-container { max-width: 1280px; margin: 0 auto; }
+        .breadcrumb a { color: var(--on-surface-variant); }
+        .breadcrumb span { margin: 0 0.5rem; color: var(--outline); }
+        
+        .page-hero { background: var(--surface-container); padding: 4rem 2rem; text-align: center; }
+        .page-hero h1 { font-size: 2.75rem; color: var(--primary); margin-bottom: 1rem; }
+        .page-hero p { max-width: 700px; margin: 0 auto; font-size: 1.15rem; color: var(--on-surface-variant); }
+        
+        .content-section { max-width: 900px; margin: 0 auto; padding: 4rem 2rem; }
+        .content-section h2 { font-size: 2rem; color: var(--primary); margin: 3rem 0 1.5rem; border-left: 4px solid var(--primary); padding-left: 1rem; }
+        .content-section h2:first-of-type { margin-top: 0; }
+        .content-section p { margin-bottom: 1.5rem; font-size: 1.05rem; }
+        
+        .highlight-box { background: var(--primary); color: white; padding: 2.5rem; border-radius: 12px; margin: 3rem 0; }
+        .highlight-box h3 { margin-bottom: 1rem; font-size: 1.5rem; }
+        
+        .medical-disclaimer { background: rgba(186, 26, 26, 0.1); border-left: 4px solid var(--error); padding: 1.5rem; border-radius: 8px; margin: 4rem 0 2rem; font-size: 0.95rem; color: var(--on-surface-variant); }
+        .medical-disclaimer strong { color: var(--error); display: block; margin-bottom: 0.5rem; font-size: 1.1rem; }
+        
+        .footer { background: var(--on-surface); color: white; padding: 4rem 2rem 2rem; margin-top: 4rem; }
+        .footer-container { max-width: 1280px; margin: 0 auto; }
+        .footer-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 3rem; margin-bottom: 3rem; }
+        .footer-section h4 { color: var(--primary-container); margin-bottom: 1.25rem; font-size: 1.1rem; }
+        .footer-section p { color: rgba(255, 255, 255, 0.8); line-height: 1.7; margin-bottom: 1rem; }
+        .footer-section ul { list-style: none; }
+        .footer-section li { margin-bottom: 0.6rem; }
+        .footer-section a { color: rgba(255, 255, 255, 0.8); transition: all 0.2s; }
+        .footer-section a:hover { color: var(--primary-container); }
+        .footer-bottom { border-top: 1px solid rgba(255, 255, 255, 0.1); padding-top: 2rem; text-align: center; color: rgba(255, 255, 255, 0.6); font-size: 0.9rem; }
+        
+        @media (max-width: 768px) {
+            .nav-links { display: none; }
+            .mobile-menu-btn { display: block; }
+            .page-hero h1 { font-size: 2rem; }
+            .content-section { padding: 3rem 1.5rem; }
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar" role="navigation" aria-label="Main navigation">
+        <div class="nav-container">
+            <a href="index.html" class="logo" aria-label="PetSymptoms Home">PetSymptoms</a>
+            <ul class="nav-links">
+                <li><a href="dogs.html">Dogs</a></li>
+                <li><a href="cats.html">Cats</a></li>
+                <li><a href="pet-birds.html">Birds</a></li>
+                <li><a href="pet-reptiles.html">Exotic Pets</a></li>
+                <li><a href="about-us.html" style="color: var(--primary);">About</a></li>
+                <li><a href="contact-us.html">Contact</a></li>
+            </ul>
+            <button class="mobile-menu-btn" aria-label="Toggle menu">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <line x1="3" y1="12" x2="21" y2="12"></line>
+                    <line x1="3" y1="6" x2="21" y2="6"></line>
+                    <line x1="3" y1="18" x2="21" y2="18"></line>
+                </svg>
+            </button>
+        </div>
+    </nav>
+
+    <div class="breadcrumb" aria-label="Breadcrumb">
+        <div class="breadcrumb-container">
+            <a href="index.html">Home</a> <span>/</span> <span>About Us</span>
+        </div>
+    </div>
+
+    <header class="page-hero">
+        <h1>About PetSymptoms</h1>
+        <p>Empowering pet owners with accessible, research-based information to help you make informed decisions for your companion's health and happiness.</p>
+    </header>
+
+    <main class="content-section">
+        <h2>Our Mission</h2>
+        <p>At PetSymptoms, we believe that every pet owner deserves access to clear, reliable information about their pet's health. Our mission is to bridge the gap between complex veterinary topics and everyday pet care.</p>
+        <p>We are dedicated to providing educational resources that help you understand common symptoms, breed-specific traits, and preventive care strategies. By fostering knowledge and awareness, we aim to support the well-being of pets everywhere.</p>
+
+        <div class="highlight-box">
+            <h3>Our Core Values</h3>
+            <p><strong>Accessibility:</strong> We strive to make pet health information easy to understand for everyone, regardless of their experience level.</p>
+            <p><strong>Accuracy:</strong> We rely on reputable, research-based sources to ensure the information we provide is current and relevant.</p>
+            <p><strong>Compassion:</strong> We understand the deep bond between humans and animals. Our content is written with empathy for both the pet and the owner.</p>
+        </div>
+
+        <h2>How We Create Content</h2>
+        <p>Our editorial team consists of passionate pet owners and researchers who are dedicated to compiling helpful guides. We review a wide range of veterinary literature, breed standards, and care manuals to synthesize information that is practical and useful.</p>
+        <p>While we take great care to ensure accuracy, it is important to note that <strong>we are not a veterinary clinic</strong>. Our content is intended for informational and educational purposes only and should not replace professional veterinary advice.</p>
+
+        <h2>Why Trust PetSymptoms?</h2>
+        <ul style="margin: 0 0 1.5rem 1.5rem; font-size: 1.05rem;">
+            <li style="margin-bottom: 0.75rem;"><strong>Comprehensive Coverage:</strong> We cover a wide range of topics including dogs, cats, birds, and exotic pets.</li>
+            <li style="margin-bottom: 0.75rem;"><strong>User-Focused Design:</strong> Our guides are structured to help you find answers quickly.</li>
+            <li style="margin-bottom: 0.75rem;"><strong>Commitment to Updates:</strong> We regularly review and update our content to reflect current best practices in pet care.</li>
+        </ul>
+
+        <div class="medical-disclaimer" role="alert">
+            <strong>Medical Disclaimer</strong>
+            The content on PetSymptoms.com is for informational and educational purposes only and is not intended as a substitute for professional veterinary advice, diagnosis, or treatment. Always seek the advice of your veterinarian or other qualified animal health provider with any questions you may have regarding your pet's medical condition. Never disregard professional veterinary advice or delay seeking it because of something you have read on this website. If you think your pet has a medical emergency, contact your veterinarian or an emergency animal hospital immediately.
+        </div>
+    </main>
+
+    <footer class="footer" role="contentinfo">
+        <div class="footer-container">
+            <div class="footer-grid">
+                <div class="footer-section">
+                    <h4>About PetSymptoms</h4>
+                    <p>PetSymptoms is your comprehensive resource for pet health information, breed guides, and care tips.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="dogs.html">Dog Care</a></li>
+                        <li><a href="cats.html">Cat Care</a></li>
+                        <li><a href="pet-birds.html">Bird Care</a></li>
+                        <li><a href="pet-reptiles.html">Exotic Pets</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Resources</h4>
+                    <ul>
+                        <li><a href="about-us.html">About Us</a></li>
+                        <li><a href="contact-us.html">Contact Us</a></li>
+                        <li><a href="about-us.html">Privacy Policy</a></li>
+                        <li><a href="about-us.html">Medical Disclaimer</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 PetSymptoms.com. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        const mb = document.querySelector('.mobile-menu-btn'), nl = document.querySelector('.nav-links');
+        if(mb) mb.addEventListener('click', () => {
+            const h = nl.style.display === 'none' || !nl.style.display;
+            nl.style.display = h ? 'flex' : 'none';
+            if(h) { nl.style.position = 'absolute'; nl.style.top = '80px'; nl.style.left = '0'; nl.style.right = '0'; nl.style.background = 'var(--surface)'; nl.style.flexDirection = 'column'; nl.style.padding = '2rem'; nl.style.boxShadow = '0 4px 10px rgba(0,0,0,0.1)'; }
+        });
+    </script>
+</body>
+</html>
