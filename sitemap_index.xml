@@ -176,23 +176,34 @@
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
-  <!-- NEW: Scared Dog Signs -->
   <url>
     <loc>https://petsymptoms.com/signs-scared-dog/</loc>
     <lastmod>2026-05-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
-  <!-- NEW: Can Dogs Eat People Food -->
   <url>
     <loc>https://petsymptoms.com/can-dogs-eat-people-food/</loc>
     <lastmod>2026-05-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
-  <!-- NEW: Check Dog Temperature Without Thermometer -->
   <url>
     <loc>https://petsymptoms.com/how-to-check-dog-temperature-without-thermometer/</loc>
+    <lastmod>2026-05-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <!-- NEW: Small Fluffy Dog Breeds -->
+  <url>
+    <loc>https://petsymptoms.com/small-fluffy-dog-breeds/</loc>
+    <lastmod>2026-05-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <!-- NEW: Big Fluffy Dog Breeds -->
+  <url>
+    <loc>https://petsymptoms.com/big-fluffy-dog-breeds/</loc>
     <lastmod>2026-05-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -253,7 +264,6 @@
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
-  <!-- NEW: Scared Cat Signs -->
   <url>
     <loc>https://petsymptoms.com/signs-scared-cat/</loc>
     <lastmod>2026-05-06</lastmod>
