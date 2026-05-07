@@ -135,8 +135,8 @@ Disallow: /
 # ============================================
 # SITEMAP DECLARATIONS
 # ============================================
-# Primary XML sitemap
-Sitemap: https://petsymptoms.com/sitemap.xml
+# Primary XML sitemap index
+Sitemap: https://petsymptoms.com/sitemap_index.xml
 
 # Optional: Image sitemap (if you create one)
 # Sitemap: https://petsymptoms.com/sitemap-images.xml
@@ -157,4 +157,4 @@ Sitemap: https://petsymptoms.com/sitemap.xml
 # 5. Monitor crawl stats in Search Console for adjustments
 
 # For questions about crawling policy, contact:
-# Webmaster: webmaster@petsymptoms.com
+# Webmaster: petsymptom@gmail.com
