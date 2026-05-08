@@ -87,6 +87,12 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://petsymptoms.com/dog-breeds-list.html</loc>
+    <lastmod>2026-05-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://petsymptoms.com/dog-diseases-pet-symptoms.html</loc>
     <lastmod>2026-05-08</lastmod>
     <changefreq>monthly</changefreq>
@@ -239,7 +245,19 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://petsymptoms.com/brachycephalic-cat-care.html</loc>
+    <lastmod>2026-05-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://petsymptoms.com/cat-care-tips.html</loc>
+    <lastmod>2026-05-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://petsymptoms.com/cat-grooming-tools.html</loc>
     <lastmod>2026-05-08</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -258,6 +276,12 @@
   </url>
   <url>
     <loc>https://petsymptoms.com/litter-box-training-cats.html</loc>
+    <lastmod>2026-05-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://petsymptoms.com/persian-cats-breeds.html</loc>
     <lastmod>2026-05-08</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
