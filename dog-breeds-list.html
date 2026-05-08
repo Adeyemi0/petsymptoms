@@ -16,17 +16,17 @@
     <meta name="author" content="PetSymptoms">
     <meta name="robots" content="index, follow">
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://petsymptoms.com/dog-breeds-list/">
+    <meta property="og:url" content="https://petsymptoms.com/dog-breeds-list.html">
     <meta property="og:title" content="Dog Breeds A to Z — Complete Breed Directory | PetSymptoms">
     <meta property="og:description" content="Browse every dog breed from Affenpinscher to Yorkshire Terrier. Find profiles, temperament, size, lifespan and care guides.">
     <meta property="og:image" content="https://petsymptoms.com/img/golden-retriever-dogs-puppies.jpg">
     <title>Dog Breeds A to Z — Complete Breed Directory | PetSymptoms</title>
-    <link rel="canonical" href="https://petsymptoms.com/dog-breeds-list/">
+    <link rel="canonical" href="https://petsymptoms.com/dog-breeds-list.html">
     <script type="application/ld+json">
-    {"@context":"https://schema.org","@type":"CollectionPage","name":"Dog Breeds A to Z","description":"Complete directory of dog breeds with profiles, temperament guides and care information.","url":"https://petsymptoms.com/dog-breeds-list/"}
+    {"@context":"https://schema.org","@type":"CollectionPage","name":"Dog Breeds A to Z","description":"Complete directory of dog breeds with profiles, temperament guides and care information.","url":"https://petsymptoms.com/dog-breeds-list.html"}
     </script>
     <script type="application/ld+json">
-    {"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://petsymptoms.com/"},{"@type":"ListItem","position":2,"name":"Dogs","item":"https://petsymptoms.com/dogs/"},{"@type":"ListItem","position":3,"name":"Dog Breeds A to Z","item":"https://petsymptoms.com/dog-breeds-list/"}]}
+    {"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://petsymptoms.com/index.html"},{"@type":"ListItem","position":2,"name":"Dogs","item":"https://petsymptoms.com/dogs.html"},{"@type":"ListItem","position":3,"name":"Dog Breeds A to Z","item":"https://petsymptoms.com/dog-breeds-list.html"}]}
     </script>
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; }
@@ -60,7 +60,6 @@
         .page-hero p { font-size: 1.1rem; opacity: 0.95; margin-bottom: 1.5rem; }
         .breed-count-badge { background: rgba(255,255,255,0.15); padding: 0.5rem 1.25rem; border-radius: 20px; font-size: 0.9rem; font-weight: 600; display: inline-block; }
 
-        /* Search + filter bar */
         .filter-bar { background: white; border-bottom: 1px solid var(--surface-container); padding: 1.25rem 2rem; position: sticky; top: 80px; z-index: 99; box-shadow: 0 2px 8px rgba(0,0,0,0.04); }
         .filter-inner { max-width: 1280px; margin: 0 auto; display: flex; gap: 1rem; align-items: center; flex-wrap: wrap; }
         .search-input { flex: 1; min-width: 200px; padding: 0.65rem 1rem; border: 1.5px solid var(--surface-container); border-radius: 8px; font-size: 0.95rem; font-family: inherit; outline: none; }
@@ -70,13 +69,11 @@
         .size-btn.active, .size-btn:hover { background: var(--primary); color: white; border-color: var(--primary); }
         .result-count { font-size: 0.85rem; color: var(--on-surface-variant); margin-left: auto; }
 
-        /* Letter index */
         .letter-nav { max-width: 1280px; margin: 0 auto; padding: 1.5rem 2rem 0; display: flex; flex-wrap: wrap; gap: 0.4rem; }
         .letter-nav a { width: 34px; height: 34px; display: flex; align-items: center; justify-content: center; border-radius: 6px; font-weight: 700; font-size: 0.85rem; background: white; border: 1px solid var(--surface-container); color: var(--on-surface-variant); transition: all 0.2s; }
         .letter-nav a:hover, .letter-nav a.active { background: var(--primary); color: white; border-color: var(--primary); }
         .letter-nav a.empty { opacity: 0.3; pointer-events: none; }
 
-        /* Breed grid */
         .breeds-section { max-width: 1280px; margin: 0 auto; padding: 2rem; }
         .letter-group { margin-bottom: 3rem; }
         .letter-heading { font-size: 2rem; font-weight: 800; color: var(--primary); border-bottom: 3px solid var(--primary-container); padding-bottom: 0.5rem; margin-bottom: 1.5rem; }
@@ -96,11 +93,9 @@
         .breed-link::after { content: '→'; transition: transform 0.2s; }
         .breed-link:hover::after { transform: translateX(4px); }
 
-        /* No-results */
         .no-results { text-align: center; padding: 4rem 2rem; color: var(--on-surface-variant); display: none; }
         .no-results .icon { font-size: 3rem; margin-bottom: 1rem; }
 
-        /* Footer */
         .site-footer { background: var(--primary); color: rgba(255,255,255,0.85); padding: 3rem 2rem 1.5rem; margin-top: 4rem; }
         .footer-grid { max-width: 1280px; margin: 0 auto; display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 2rem; margin-bottom: 2rem; }
         .footer-section h4 { color: white; font-size: 1rem; margin-bottom: 1rem; }
@@ -226,18 +221,18 @@
 <script>
 const BREEDS = [
   // A
-  { name:"Affenpinscher",       size:"small",  life:"12–15 yrs", origin:"Germany",      tags:["Playful","Curious","Stubborn"],         img:"img/poodle-big-dog-breeds-vh.jpg",                      link:"dogs.html",                                      desc:"A tiny, terrier-like toy breed with a monkey-like face and fearless personality. Great for apartment living." },
+  { name:"Affenpinscher",       size:"small",  life:"12–15 yrs", origin:"Germany",     tags:["Playful","Curious","Stubborn"],         img:"img/poodle-big-dog-breeds-vh.jpg",                    link:"dogs.html",                                      desc:"A tiny, terrier-like toy breed with a monkey-like face and fearless personality. Great for apartment living." },
   { name:"Australian Shepherd", size:"medium", life:"13–15 yrs", origin:"USA",          tags:["Energetic","Intelligent","Loyal"],       img:"img/border-collie-dogs-puppies-breeds.jpg",             link:"dogs.html",                                      desc:"Highly intelligent herding dog that thrives with a job to do. Needs plenty of exercise and mental stimulation." },
   // B
   { name:"Basset Hound",        size:"medium", life:"10–12 yrs", origin:"France",       tags:["Laid-back","Friendly","Stubborn"],       img:"img/bassett-hound-big-dog-breeds-vh.jpg",               link:"dogs.html",                                      desc:"A low-to-the-ground scent hound with droopy ears and a calm temperament. Great with children." },
   { name:"Beagle",              size:"medium", life:"12–15 yrs", origin:"England",      tags:["Curious","Merry","Friendly"],            img:"img/bassett-hound-big-dog-breeds-vh.jpg",               link:"beagle-dogs-puppies-breeds.html",                 desc:"A compact, hardy scent hound. Beagles are merry, curious and friendly with a tendency to follow their nose." },
-  { name:"Bernese Mountain Dog",size:"large",  life:"7–10 yrs",  origin:"Switzerland",  tags:["Gentle","Loyal","Calm"],                img:"img/bernese-mountain-dog-big-dog-breeds-px.jpg",        link:"dogs.html",                                      desc:"A large, sturdy working breed with a tricolour coat and gentle nature. Loves cold weather and family life." },
-  { name:"Border Collie",       size:"medium", life:"12–15 yrs", origin:"UK",           tags:["Intelligent","Energetic","Responsive"],  img:"img/border-collie-dogs-puppies-breeds.jpg",             link:"dogs.html",                                      desc:"Widely regarded as the world's most intelligent dog breed. Needs a lot of exercise and a mental challenge daily." },
+  { name:"Bernese Mountain Dog",size:"large",  life:"7–10 yrs",  origin:"Switzerland",  tags:["Gentle","Loyal","Calm"],                 img:"img/bernese-mountain-dog-big-dog-breeds-px.jpg",        link:"dogs.html",                                      desc:"A large, sturdy working breed with a tricolour coat and gentle nature. Loves cold weather and family life." },
+  { name:"Border Collie",       size:"medium", life:"12–15 yrs", origin:"UK",           tags:["Intelligent","Energetic","Responsive"], img:"img/border-collie-dogs-puppies-breeds.jpg",             link:"dogs.html",                                      desc:"Widely regarded as the world's most intelligent dog breed. Needs a lot of exercise and a mental challenge daily." },
   { name:"Boxer",               size:"large",  life:"10–12 yrs", origin:"Germany",      tags:["Playful","Loyal","Energetic"],           img:"img/boxer-big-dog-breeds-px.jpg",                       link:"dogs.html",                                      desc:"A medium to large breed with a square muzzle and boundless energy. Devoted family companion and excellent guard dog." },
   { name:"Bull Terrier",        size:"medium", life:"12–13 yrs", origin:"England",      tags:["Playful","Stubborn","Affectionate"],     img:"img/bull-terrier-big-dog-breeds-vh.jpg",                link:"dogs.html",                                      desc:"Known for its distinctive egg-shaped head. Playful and mischievous, with a clown-like personality." },
   { name:"Bulldog",             size:"medium", life:"8–10 yrs",  origin:"England",      tags:["Calm","Courageous","Friendly"],          img:"img/bulldog-big-dog-breeds-px.jpg",                     link:"dogs.html",                                      desc:"A breed synonymous with tenacity and courage. Despite their tough appearance, Bulldogs are gentle and affectionate." },
   // C
-  { name:"Chihuahua",           size:"small",  life:"14–16 yrs", origin:"Mexico",       tags:["Confident","Bold","Loyal"],              img:"img/poodle-big-dog-breeds-vh.jpg",                      link:"pomeranian-dogs-puppies-dog-breeds.html",         desc:"The world's smallest dog breed packed with enormous personality. Fiercely loyal to their owner." },
+  { name:"Chihuahua",           size:"small",  life:"14–16 yrs", origin:"Mexico",       tags:["Confident","Bold","Loyal"],              img:"img/poodle-big-dog-breeds-vh.jpg",                    link:"pomeranian-dogs-puppies-dog-breeds.html",         desc:"The world's smallest dog breed packed with enormous personality. Fiercely loyal to their owner." },
   { name:"Cocker Spaniel",      size:"medium", life:"12–15 yrs", origin:"England",      tags:["Gentle","Smart","Happy"],                img:"img/Irish-setter-big-dog-breeds-vh.jpg",                link:"dogs.html",                                      desc:"A joyful, gentle breed with a silky coat. Adaptable to apartment life and wonderful with children." },
   // D
   { name:"Dalmatian",           size:"large",  life:"11–13 yrs", origin:"Croatia",      tags:["Energetic","Outgoing","Sensitive"],      img:"img/German-short-haired-pointer-big-dog-breeds-vh.jpg", link:"dogs.html",                                      desc:"Instantly recognisable by their spotted coat. Athletic and energetic, Dalmatians need lots of daily exercise." },
@@ -246,38 +241,38 @@ const BREEDS = [
   { name:"French Bulldog",      size:"small",  life:"10–12 yrs", origin:"France",       tags:["Playful","Adaptable","Affectionate"],   img:"img/bulldog-big-dog-breeds-px.jpg",                     link:"dogs.html",                                      desc:"A small, compact breed with bat ears and a big personality. Ideal for city living — low exercise needs." },
   // G
   { name:"German Shepherd",     size:"large",  life:"9–13 yrs",  origin:"Germany",      tags:["Loyal","Courageous","Intelligent"],      img:"img/German-short-haired-pointer-big-dog-breeds-vh.jpg", link:"dogs.html",                                      desc:"One of the most versatile working dogs in the world. Used in police, military, and search & rescue roles." },
-  { name:"Golden Retriever",    size:"large",  life:"10–12 yrs", origin:"Scotland",     tags:["Friendly","Reliable","Trustworthy"],     img:"img/golden-retriever-dogs-puppies.jpg",                 link:"golden-retriever-dogs-puppies.html",              desc:"America's most popular family dog. Kind-natured, eager to please, and brilliant with children of all ages." },
-  { name:"Great Dane",          size:"large",  life:"7–10 yrs",  origin:"Germany",      tags:["Friendly","Patient","Dependable"],       img:"img/Newfoundland-big-dog-breeds-vh.jpg",                link:"dogs.html",                                      desc:"The 'Apollo of Dogs' — enormous in size but gentle in temperament. A devoted and patient family companion." },
+  { name:"Golden Retriever",    size:"large",  life:"10–12 yrs", origin:"Scotland",     tags:["Friendly","Reliable","Trustworthy"],     img:"img/golden-retriever-dogs-puppies.jpg",                  link:"golden-retriever-dogs-puppies.html",              desc:"America's most popular family dog. Kind-natured, eager to please, and brilliant with children of all ages." },
+  { name:"Great Dane",          size:"large",  life:"7–10 yrs",  origin:"Germany",      tags:["Friendly","Patient","Dependable"],        img:"img/Newfoundland-big-dog-breeds-vh.jpg",                link:"dogs.html",                                      desc:"The 'Apollo of Dogs' — enormous in size but gentle in temperament. A devoted and patient family companion." },
   // H
   { name:"Husky (Siberian)",    size:"large",  life:"12–14 yrs", origin:"Russia",       tags:["Outgoing","Mischievous","Loyal"],        img:"img/bernese-mountain-dog-big-dog-breeds-px.jpg",        link:"dogs.html",                                      desc:"Bred to run, Siberian Huskies have incredible endurance and a wolf-like appearance. Love cold weather." },
   // I
   { name:"Irish Setter",        size:"large",  life:"12–15 yrs", origin:"Ireland",      tags:["Energetic","Affectionate","Fun-loving"], img:"img/Irish-setter-big-dog-breeds-vh.jpg",                link:"dogs.html",                                      desc:"Known for their stunning mahogany coat and outgoing personality. High energy — needs daily runs." },
   // J
-  { name:"Jack Russell Terrier",size:"small",  life:"13–16 yrs", origin:"England",      tags:["Feisty","Tenacious","Alert"],            img:"img/poodle-big-dog-breeds-vh.jpg",                      link:"dogs.html",                                      desc:"A small dog with a huge personality. Athletic, determined and always ready for action." },
+  { name:"Jack Russell Terrier",size:"small",  life:"13–16 yrs", origin:"England",      tags:["Feisty","Tenacious","Alert"],            img:"img/poodle-big-dog-breeds-vh.jpg",                    link:"dogs.html",                                      desc:"A small dog with a huge personality. Athletic, determined and always ready for action." },
   // L
   { name:"Labrador Retriever",  size:"large",  life:"10–12 yrs", origin:"Canada",       tags:["Friendly","Active","Outgoing"],          img:"img/black-labrador-big-dog-breeds-px.jpg",              link:"labrador-dogs-puppies.html",                      desc:"The UK and USA's most popular breed. Friendly, outgoing and trainable. Ideal guide and assistance dog." },
-  { name:"Lhasa Apso",          size:"small",  life:"12–15 yrs", origin:"Tibet",        tags:["Confident","Assertive","Smart"],         img:"img/poodle-big-dog-breeds-vh.jpg",                      link:"dogs.html",                                      desc:"An ancient breed originally used as sentinel dogs in Tibetan monasteries. Wary of strangers, loyal to family." },
+  { name:"Lhasa Apso",          size:"small",  life:"12–15 yrs", origin:"Tibet",        tags:["Confident","Assertive","Smart"],         img:"img/poodle-big-dog-breeds-vh.jpg",                    link:"dogs.html",                                      desc:"An ancient breed originally used as sentinel dogs in Tibetan monasteries. Wary of strangers, loyal to family." },
   // M
-  { name:"Maltese",             size:"small",  life:"12–15 yrs", origin:"Malta",        tags:["Gentle","Playful","Charming"],           img:"img/poodle-big-dog-breeds-vh.jpg",                      link:"dogs.html",                                      desc:"A toy breed covered in long, silky white hair. Lively and playful, thriving on human companionship." },
+  { name:"Maltese",             size:"small",  life:"12–15 yrs", origin:"Malta",        tags:["Gentle","Playful","Charming"],           img:"img/poodle-big-dog-breeds-vh.jpg",                    link:"dogs.html",                                      desc:"A toy breed covered in long, silky white hair. Lively and playful, thriving on human companionship." },
   { name:"Mastiff",             size:"large",  life:"6–10 yrs",  origin:"England",      tags:["Calm","Courageous","Dignified"],         img:"img/Mastiff-big-dog-breeds-vh.jpg",                     link:"dogs.html",                                      desc:"One of the largest dog breeds by mass. Despite their imposing size, Mastiffs are gentle giants." },
   // N
   { name:"Newfoundland",        size:"large",  life:"9–10 yrs",  origin:"Canada",       tags:["Sweet","Patient","Devoted"],             img:"img/Newfoundland-big-dog-breeds-vh.jpg",                link:"dogs.html",                                      desc:"A giant working breed renowned for water rescue. Gentle and patient — nicknamed the 'nanny dog'." },
   // P
-  { name:"Pomeranian",          size:"small",  life:"12–16 yrs", origin:"Germany",      tags:["Bold","Lively","Inquisitive"],           img:"img/poodle-big-dog-breeds-vh.jpg",                      link:"pomeranian-dogs-puppies-dog-breeds.html",         desc:"A fluffy toy breed bursting with personality. Alert and intelligent, they make excellent watchdogs." },
-  { name:"Poodle (Standard)",   size:"large",  life:"12–15 yrs", origin:"Germany/France",tags:["Intelligent","Active","Elegant"],       img:"img/poodle-big-dog-breeds-vh.jpg",                      link:"dogs.html",                                      desc:"One of the most intelligent breeds and highly trainable. Their curly coat is hypoallergenic and minimal shedding." },
+  { name:"Pomeranian",          size:"small",  life:"12–16 yrs", origin:"Germany",      tags:["Bold","Lively","Inquisitive"],           img:"img/poodle-big-dog-breeds-vh.jpg",                    link:"pomeranian-dogs-puppies-dog-breeds.html",         desc:"A fluffy toy breed bursting with personality. Alert and intelligent, they make excellent watchdogs." },
+  { name:"Poodle (Standard)",   size:"large",  life:"12–15 yrs", origin:"Germany/France",tags:["Intelligent","Active","Elegant"],       img:"img/poodle-big-dog-breeds-vh.jpg",                    link:"dogs.html",                                      desc:"One of the most intelligent breeds and highly trainable. Their curly coat is hypoallergenic and minimal shedding." },
   { name:"Pug",                 size:"small",  life:"12–15 yrs", origin:"China",        tags:["Charming","Mischievous","Loving"],       img:"img/bulldog-big-dog-breeds-px.jpg",                     link:"dogs.html",                                      desc:"A small breed with a wrinkled face and curled tail. Adaptable, even-tempered and great for flat living." },
   // R
   { name:"Rottweiler",          size:"large",  life:"9–10 yrs",  origin:"Germany",      tags:["Loyal","Confident","Calm"],              img:"img/rottweiler-big-dog-breeds-vh.jpg",                  link:"dogs.html",                                      desc:"A powerful working dog with a natural instinct to protect. Calm and confident when properly socialised." },
   // S
-  { name:"Samoyed",             size:"large",  life:"12–14 yrs", origin:"Russia",       tags:["Friendly","Gentle","Adaptable"],        img:"img/dog-animal-pet-samoyed-breed-sick-dog-pb.jpg",      link:"dogs.html",                                      desc:"A fluffy white Arctic breed with a permanent 'smile'. Friendly and gentle, a true family companion." },
-  { name:"Shih Tzu",            size:"small",  life:"10–16 yrs", origin:"China/Tibet",  tags:["Affectionate","Playful","Outgoing"],     img:"img/poodle-big-dog-breeds-vh.jpg",                      link:"dogs.html",                                      desc:"A small dog with a regal long coat and lion-like mane. Bred as a companion — loves cuddles and people." },
+  { name:"Samoyed",             size:"large",  life:"12–14 yrs", origin:"Russia",       tags:["Friendly","Gentle","Adaptable"],         img:"img/dog-animal-pet-samoyed-breed-sick-dog-pb.jpg",      link:"dogs.html",                                      desc:"A fluffy white Arctic breed with a permanent 'smile'. Friendly and gentle, a true family companion." },
+  { name:"Shih Tzu",            size:"small",  life:"10–16 yrs", origin:"China/Tibet",  tags:["Affectionate","Playful","Outgoing"],     img:"img/poodle-big-dog-breeds-vh.jpg",                    link:"dogs.html",                                      desc:"A small dog with a regal long coat and lion-like mane. Bred as a companion — loves cuddles and people." },
   { name:"Springer Spaniel",    size:"medium", life:"12–14 yrs", origin:"England",      tags:["Friendly","Playful","Obedient"],         img:"img/Irish-setter-big-dog-breeds-vh.jpg",                link:"dogs.html",                                      desc:"A cheerful, active gundog that excels in the field and in the home. Great for active families." },
   { name:"Staffordshire Bull Terrier",size:"medium",life:"12–14 yrs",origin:"England",  tags:["Loyal","Affectionate","Bold"],           img:"img/bull-terrier-big-dog-breeds-vh.jpg",                link:"dogs.html",                                      desc:"Muscular yet gentle, Staffies are renowned for their love of people especially children." },
   // W
   { name:"Weimaraner",          size:"large",  life:"11–14 yrs", origin:"Germany",      tags:["Friendly","Fearless","Alert"],           img:"img/German-short-haired-pointer-big-dog-breeds-vh.jpg", link:"dogs.html",                                      desc:"A sleek, silver-grey hunting breed with striking amber or blue eyes. Loyal and energetic." },
-  { name:"Welsh Corgi (Pembroke)",size:"small",life:"12–15 yrs", origin:"Wales",        tags:["Bold","Friendly","Outgoing"],            img:"img/poodle-big-dog-breeds-vh.jpg",                      link:"dogs.html",                                      desc:"Short-legged herding breed famous for being the Queen's favourite. Surprisingly agile and very smart." },
+  { name:"Welsh Corgi (Pembroke)",size:"small",life:"12–15 yrs", origin:"Wales",        tags:["Bold","Friendly","Outgoing"],           img:"img/poodle-big-dog-breeds-vh.jpg",                    link:"dogs.html",                                      desc:"Short-legged herding breed famous for being the Queen's favourite. Surprisingly agile and very smart." },
   // Y
-  { name:"Yorkshire Terrier",   size:"small",  life:"13–16 yrs", origin:"England",      tags:["Bold","Confident","Independent"],        img:"img/poodle-big-dog-breeds-vh.jpg",                      link:"dogs.html",                                      desc:"A tiny but spirited terrier with a silky steel-blue and tan coat. Brave, bossy and fiercely devoted." },
+  { name:"Yorkshire Terrier",   size:"small",  life:"13–16 yrs", origin:"England",      tags:["Bold","Confident","Independent"],       img:"img/poodle-big-dog-breeds-vh.jpg",                    link:"dogs.html",                                      desc:"A tiny but spirited terrier with a silky steel-blue and tan coat. Brave, bossy and fiercely devoted." },
 ];
 
 const container = document.getElementById('breedsContainer');
