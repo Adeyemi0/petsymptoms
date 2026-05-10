@@ -1,13 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <script>
-  var ahrefs_analytics_script = document.createElement('script');
-  ahrefs_analytics_script.async = true;
-  ahrefs_analytics_script.src = 'https://analytics.ahrefs.com/analytics.js';
-  ahrefs_analytics_script.setAttribute('data-key', 'NO1/tEYts9/KDh9FsFxVgg');
-  document.getElementsByTagName('head')[0].appendChild(ahrefs_analytics_script);
-</script>
     <script src="https://analytics.ahrefs.com/analytics.js" data-key="NO1/tEYts9/KDh9FsFxVgg" async></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -28,57 +21,61 @@
     
     <!-- Schema Markup -->
     <script type="application/ld+json">
-    {
-        "@context": "https://schema.org",
-        "@type": "CollectionPage",
-        "name": "Cat Care Guides",
-        "description": "Comprehensive cat care information including breed guides, health symptoms, behavior tips, and nutrition advice.",
-        "url": "https://petsymptoms.com/cats.html"
-    }
-    </script>
-    
-    <script type="application/ld+json">
-    {
-        "@context": "https://schema.org",
-        "@type": "BreadcrumbList",
-        "itemListElement": [
-            {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://petsymptoms.com/index.html"},
-            {"@type": "ListItem", "position": 2, "name": "Cats", "item": "https://petsymptoms.com/cats.html"}
-        ]
-    }
-    </script>
-    
-    <script type="application/ld+json">
-    {
-        "@context": "https://schema.org",
-        "@type": "FAQPage",
-        "mainEntity": [
-            {
-                "@type": "Question",
-                "name": "What is the best cat breed for apartments?",
-                "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "Breeds like the Russian Blue, British Shorthair, and Ragdoll are often recommended for apartments due to their calm temperament and lower exercise needs. However, any cat can thrive in an apartment with adequate vertical space, toys, and attention."
+    [
+        {
+            "@context": "https://schema.org",
+            "@type": "CollectionPage",
+            "name": "Cat Care Guides",
+            "description": "Comprehensive cat care information including breed guides, health symptoms, behavior tips, and nutrition advice.",
+            "url": "https://petsymptoms.com/cats.html"
+        },
+        {
+            "@context": "https://schema.org",
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+                {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://petsymptoms.com/index.html"},
+                {"@type": "ListItem", "position": 2, "name": "Cats", "item": "https://petsymptoms.com/cats.html"}
+            ]
+        },
+        {
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            "mainEntity": [
+                {
+                    "@type": "Question",
+                    "name": "What is the best cat breed for apartments?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "Breeds like the Russian Blue, British Shorthair, and Ragdoll are often recommended for apartments due to their calm temperament and lower exercise needs. However, any cat can thrive in an apartment with adequate vertical space, toys, and attention."
+                    }
+                },
+                {
+                    "@type": "Question",
+                    "name": "How often should cats visit the vet?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "Adult cats should have a wellness exam at least once a year. Kittens need more frequent visits for vaccinations and checkups, typically every 3 to 4 weeks until they are about 16 weeks old. Senior cats (7+ years) benefit from twice yearly visits to monitor for age-related conditions."
+                    }
+                },
+                {
+                    "@type": "Question",
+                    "name": "What are signs of illness in cats?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "Cats often hide illness, so look for subtle changes like hiding more than usual, changes in litter box habits, reduced grooming, lethargy, changes in appetite, vomiting, or vocalizing differently. Any persistent change warrants a veterinary consultation."
+                    }
+                },
+                {
+                    "@type": "Question",
+                    "name": "How do I introduce a new cat to my home?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "Start by keeping the new cat in a separate room with food, water, and litter. Swap scents using blankets, then allow visual contact through a barrier before supervised face-to-face meetings. Go slowly and reward calm behavior."
+                    }
                 }
-            },
-            {
-                "@type": "Question",
-                "name": "How often should cats visit the vet?",
-                "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "Adult cats should have a wellness exam at least once a year. Kittens need more frequent visits for vaccinations and checkups, typically every 3 to 4 weeks until they are about 16 weeks old. Senior cats (7+ years) benefit from twice yearly visits to monitor for age-related conditions."
-                }
-            },
-            {
-                "@type": "Question",
-                "name": "What are signs of illness in cats?",
-                "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "Cats often hide illness, so look for subtle changes like hiding more than usual, changes in litter box habits, reduced grooming, lethargy, changes in appetite, vomiting, or vocalizing differently. Any persistent change warrants a veterinary consultation."
-                }
-            }
-        ]
-    }
+            ]
+        }
+    ]
     </script>
 
     <style>
@@ -113,7 +110,6 @@
         .hero-content { max-width: 800px; margin: 0 auto; position: relative; z-index: 1; }
         .category-hero h1 { font-size: 2.75rem; margin-bottom: 1.25rem; font-weight: 800; }
         .category-hero p { font-size: 1.15rem; margin-bottom: 2rem; opacity: 0.95; }
-        .category-disclaimer { font-size: 0.85rem; opacity: 0.9; background: rgba(255, 255, 255, 0.1); padding: 0.75rem 1.5rem; border-radius: 8px; display: inline-block; }
         
         .section { padding: 4rem 2rem; max-width: 1280px; margin: 0 auto; }
         .section-title { font-size: 2rem; color: var(--primary); margin-bottom: 0.75rem; }
@@ -153,9 +149,6 @@
         .faq-question:hover { background: var(--surface-container); }
         .faq-answer { padding: 0 1.5rem 1.25rem; color: var(--on-surface-variant); line-height: 1.7; display: none; }
         .faq-answer.active { display: block; }
-        
-        .medical-disclaimer { background: rgba(186, 26, 26, 0.1); border-left: 4px solid var(--error); padding: 1.5rem; border-radius: 8px; margin: 3rem 0; font-size: 0.9rem; color: var(--on-surface-variant); }
-        .medical-disclaimer strong { color: var(--error); display: block; margin-bottom: 0.5rem; }
         
         .footer { background: var(--on-surface); color: white; padding: 4rem 2rem 2rem; margin-top: 4rem; }
         .footer-container { max-width: 1280px; margin: 0 auto; }
@@ -210,7 +203,6 @@
         <div class="hero-content">
             <h1>Complete Cat Care Guides</h1>
             <p>From kitten care to senior cat wellness, find expert information about cat breeds, health symptoms, behavior, nutrition, and litter training for your feline friend.</p>
-            <!-- <div class="category-disclaimer">⚠️ Educational information only. Always consult a licensed veterinarian for medical advice.</div> -->
         </div>
     </header>
 
@@ -324,10 +316,6 @@
                 </div>
             </article>
         </div>
-        
-        <div style="text-align: center; margin-top: 2rem;">
-            <a href="bengal-cats-kittens-breeds.html" class="btn-primary" style="display: inline-block; background: var(--primary); color: white; padding: 0.85rem 2rem; border-radius: 50px; font-weight: 700; text-decoration: none;">Explore Cat Breeds</a>
-        </div>
     </section>
 
     <section class="section">
@@ -354,26 +342,6 @@
                     <a href="signs-cat-has-cystitis.html" class="breed-link">Read more</a>
                 </div>
             </article>
-            
-            <article class="article-item">
-                <img src="img/persian-cats-kittens-breeds.jpg" alt="Cat behavior" loading="lazy">
-                <div class="article-item-content">
-                    <span class="article-tag">Behavior</span>
-                    <h3><a href="cat-care-tips.html">What Your Cat's Tail Is Telling You</a></h3>
-                    <p>A cat's tail is a powerful communication tool. Decode tail positions to understand your cat's mood and needs better.</p>
-                    <a href="cat-care-tips.html" class="breed-link">Read more</a>
-                </div>
-            </article>
-            
-            <article class="article-item">
-                <img src="img/Persian-cats-kittens-breeds.jpg" alt="Cat grooming" loading="lazy">
-                <div class="article-item-content">
-                    <span class="article-tag">Grooming</span>
-                    <h3><a href="cat-care-tips.html">Essential Cat Care & Grooming Tips</a></h3>
-                    <p>Regular grooming prevents matting, hairballs, and skin issues. Learn brushing techniques and nail trimming basics.</p>
-                    <a href="cat-care-tips.html" class="breed-link">Read more</a>
-                </div>
-            </article>
         </div>
     </section>
 
@@ -381,43 +349,36 @@
         <h2 class="section-title">Cat Care FAQs</h2>
         <p class="section-subtitle">Quick answers to common questions cat owners ask</p>
         
-        <div class="faq-container" itemscope itemtype="https://schema.org/FAQPage">
-            <div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
-                <div class="faq-question" itemprop="name">What is the best cat breed for apartments?<span aria-hidden="true">+</span></div>
-                <div class="faq-answer" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
-                    <div itemprop="text">Breeds like the Russian Blue, British Shorthair, and Ragdoll are often recommended for apartments due to their calm temperament and lower exercise needs. However, any cat can thrive in an apartment with adequate vertical space, toys, and attention.</div>
+        <div class="faq-container">
+            <div class="faq-item">
+                <div class="faq-question">What is the best cat breed for apartments?<span aria-hidden="true">+</span></div>
+                <div class="faq-answer">
+                    <div>Breeds like the Russian Blue, British Shorthair, and Ragdoll are often recommended for apartments due to their calm temperament and lower exercise needs. However, any cat can thrive in an apartment with adequate vertical space, toys, and attention.</div>
                 </div>
             </div>
             
-            <div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
-                <div class="faq-question" itemprop="name">How often should cats visit the vet?<span aria-hidden="true">+</span></div>
-                <div class="faq-answer" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
-                    <div itemprop="text">Adult cats should have a wellness exam at least once a year. Kittens need more frequent visits for vaccinations and checkups, typically every 3 to 4 weeks until they are about 16 weeks old. Senior cats (7+ years) benefit from twice yearly visits.</div>
+            <div class="faq-item">
+                <div class="faq-question">How often should cats visit the vet?<span aria-hidden="true">+</span></div>
+                <div class="faq-answer">
+                    <div>Adult cats should have a wellness exam at least once a year. Kittens need more frequent visits for vaccinations and checkups, typically every 3 to 4 weeks until they are about 16 weeks old. Senior cats (7+ years) benefit from twice yearly visits to monitor for age-related conditions.</div>
                 </div>
             </div>
             
-            <div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
-                <div class="faq-question" itemprop="name">What are signs of illness in cats?<span aria-hidden="true">+</span></div>
-                <div class="faq-answer" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
-                    <div itemprop="text">Cats often hide illness, so look for subtle changes like hiding more than usual, changes in litter box habits, reduced grooming, lethargy, changes in appetite, vomiting, or vocalizing differently. Any persistent change warrants a veterinary consultation.</div>
+            <div class="faq-item">
+                <div class="faq-question">What are signs of illness in cats?<span aria-hidden="true">+</span></div>
+                <div class="faq-answer">
+                    <div>Cats often hide illness, so look for subtle changes like hiding more than usual, changes in litter box habits, reduced grooming, lethargy, changes in appetite, vomiting, or vocalizing differently. Any persistent change warrants a veterinary consultation.</div>
                 </div>
             </div>
             
-            <div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
-                <div class="faq-question" itemprop="name">How do I introduce a new cat to my home?<span aria-hidden="true">+</span></div>
-                <div class="faq-answer" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
-                    <div itemprop="text">Start by keeping the new cat in a separate room with food, water, and litter. Swap scents using blankets, then allow visual contact through a barrier before supervised face-to-face meetings. Go slowly and reward calm behavior.</div>
+            <div class="faq-item">
+                <div class="faq-question">How do I introduce a new cat to my home?<span aria-hidden="true">+</span></div>
+                <div class="faq-answer">
+                    <div>Start by keeping the new cat in a separate room with food, water, and litter. Swap scents using blankets, then allow visual contact through a barrier before supervised face-to-face meetings. Go slowly and reward calm behavior.</div>
                 </div>
             </div>
         </div>
     </section>
-
-    <!-- <div class="section">
-        <div class="medical-disclaimer" role="alert">
-            <strong>Medical Disclaimer</strong>
-            The content on PetSymptoms.com is for informational and educational purposes only and is not intended as a substitute for professional veterinary advice, diagnosis, or treatment. Always seek the advice of your veterinarian or other qualified animal health provider with any questions you may have regarding your pet's medical condition. Never disregard professional veterinary advice or delay seeking it because of something you have read on this website. If you think your pet has a medical emergency, contact your veterinarian or an emergency animal hospital immediately.
-        </div>
-    </div> -->
 
     <footer class="footer" role="contentinfo">
         <div class="footer-container">
@@ -453,7 +414,7 @@
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2024 PetSymptoms.com. All rights reserved.</p>
+                <p>&copy; 2026 PetSymptoms.com. All rights reserved.</p>
             </div>
         </div>
     </footer>
